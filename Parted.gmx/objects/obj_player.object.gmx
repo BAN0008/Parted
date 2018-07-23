@@ -83,7 +83,7 @@ for (i = 0; i &lt; abs(vsp); i++)
 }
 
 hsp = hsp * 0.85;
-hsp = hsp * 0.85;
+vsp = vsp * 0.85;
 
 if (hsp &lt; 1 &amp;&amp; hsp &gt; -1) hsp = 0;
 if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
