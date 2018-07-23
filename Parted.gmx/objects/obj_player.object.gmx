@@ -61,13 +61,13 @@ for (i = 0; i &lt; abs(vsp); i++)
 hsp = hsp * 0.85;
 hsp = hsp * 0.85;
 
-if ()
+if (hsp &lt; 1)
 {
-
+    hsp = 0;
 }
-if ()
+if (vsp &lt; 1)
 {
-
+    vsp = 0;
 }
 </string>
           </argument>
