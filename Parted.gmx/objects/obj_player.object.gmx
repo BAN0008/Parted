@@ -49,10 +49,10 @@ vsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord('W'))) vsp = -10;
-if (keyboard_check(ord('S'))) vsp =  10;
-if (keyboard_check(ord('D'))) hsp =  10;
-if (keyboard_check(ord('A'))) hsp = -10;
+            <string>if (keyboard_check(ord('W'))) vsp = -5;
+if (keyboard_check(ord('S'))) vsp =  5;
+if (keyboard_check(ord('D'))) hsp =  5;
+if (keyboard_check(ord('A'))) hsp = -5;
 
 for (i = 0; i &lt; abs(hsp); i++)
 {
