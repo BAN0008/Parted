@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>hsp = 0;
 vsp = 0;
+dodge_cooldown = 0;
 </string>
           </argument>
         </arguments>
@@ -49,10 +50,25 @@ vsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord('W'))) vsp = -5;
-if (keyboard_check(ord('S'))) vsp =  5;
-if (keyboard_check(ord('D'))) hsp =  5;
-if (keyboard_check(ord('A'))) hsp = -5;
+            <string>var current_speed = 5;
+
+if (dodge_cooldown &gt; 0)
+{
+    dodge_cooldown--;
+}
+else
+{
+    if (keyboard_check(vk_shift))
+    {
+        dodge_cooldown = room_speed;
+        current_speed *= 10;
+    }
+}
+
+if (keyboard_check(ord('W'))) vsp += -current_speed;
+if (keyboard_check(ord('S'))) vsp +=  current_speed;
+if (keyboard_check(ord('D'))) hsp +=  current_speed;
+if (keyboard_check(ord('A'))) hsp += -current_speed;
 
 for (i = 0; i &lt; abs(hsp); i++)
 {
