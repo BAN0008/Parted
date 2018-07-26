@@ -18,7 +18,7 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_rock1</object>
-    <object>objects\object2</object>
+    <object>objects\obj_shortsword</object>
     <objects name="Enemies">
       <object>objects\obj_slimesmall1</object>
     </objects>
