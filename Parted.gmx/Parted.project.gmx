@@ -25,6 +25,7 @@
     <objects name="Enemies">
       <object>objects\obj_slimesmall1</object>
     </objects>
+    <object>objects\obj_solid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
