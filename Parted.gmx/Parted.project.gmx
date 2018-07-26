@@ -12,6 +12,8 @@
     <sprites name="Trees">
       <sprite>sprites\spr_willow1</sprite>
       <sprite>sprites\spr_willow2</sprite>
+      <sprite>sprites\spr_oak1</sprite>
+      <sprite>sprites\spr_oakaspen</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
