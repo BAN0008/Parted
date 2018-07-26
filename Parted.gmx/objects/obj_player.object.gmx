@@ -50,7 +50,7 @@ dodge_cooldown = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var current_speed = 5;
+            <string>var current_speed = 1.35;
 
 if (dodge_cooldown &gt; 0)
 {
@@ -61,7 +61,7 @@ else
     if (keyboard_check(vk_shift))
     {
         dodge_cooldown = room_speed;
-        current_speed *= 10;
+        current_speed *= 13;
     }
 }
 
