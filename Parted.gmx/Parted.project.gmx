@@ -15,6 +15,9 @@
       <sprite>sprites\spr_oak1</sprite>
       <sprite>sprites\spr_oakaspen</sprite>
     </sprites>
+    <sprites name="Weapons">
+      <sprite>sprites\spr_steel_shortsword</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tileset1</background>
@@ -33,6 +36,9 @@
       <object>objects\obj_oakaspen</object>
       <object>objects\obj_willow1</object>
       <object>objects\obj_willow2</object>
+    </objects>
+    <objects name="Weapons">
+      <object>objects\obj_steel_shortsword</object>
     </objects>
   </objects>
   <rooms name="rooms">
