@@ -28,6 +28,12 @@
       <object>objects\obj_slimesmall1</object>
     </objects>
     <object>objects\obj_solid</object>
+    <objects name="Trees">
+      <object>objects\obj_oak1</object>
+      <object>objects\obj_oakaspen</object>
+      <object>objects\obj_willow1</object>
+      <object>objects\obj_willow2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
