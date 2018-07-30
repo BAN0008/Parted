@@ -109,6 +109,8 @@ vsp = vsp * 0.85;
 
 if (hsp &lt; 1 &amp;&amp; hsp &gt; -1) hsp = 0;
 if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
+    //sprite direction
+    image_angle = point_direction(x, y, mouse_x, mouse_y);
 </string>
           </argument>
         </arguments>
@@ -131,7 +133,8 @@ if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_shortsword);
+            <string>instance_create(x, y, obj_steel_shortsword);
+sprite_index = spr_playerattacking;
 
 </string>
           </argument>
