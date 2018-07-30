@@ -45,23 +45,26 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_rock1</object>
+    <object>objects\obj_solid</object>
+    <object>objects\obj_character</object>
     <objects name="Enemies">
       <object>objects\obj_slimesmall1</object>
     </objects>
-    <object>objects\obj_solid</object>
-    <objects name="Trees">
+    <objects name="Enviroment Objects">
       <object>objects\obj_oak1</object>
       <object>objects\obj_oakaspen</object>
       <object>objects\obj_willow1</object>
       <object>objects\obj_willow2</object>
+      <object>objects\obj_rock1</object>
     </objects>
     <objects name="Weapons">
       <object>objects\obj_steel_shortsword</object>
     </objects>
     <object>objects\obj_krenkus</object>
-    <object>objects\obj_water</object>
-    <object>objects\obj_splash</object>
+    <objects name="Animation Objects">
+      <object>objects\obj_water</object>
+      <object>objects\obj_splash</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
