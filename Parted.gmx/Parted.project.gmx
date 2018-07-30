@@ -24,6 +24,20 @@
     <sprites name="Weapons">
       <sprite>sprites\spr_steel_shortsword</sprite>
     </sprites>
+    <sprites name="Water">
+      <sprite>sprites\spr_water1</sprite>
+      <sprite>sprites\spr_water2</sprite>
+      <sprite>sprites\spr_water3</sprite>
+      <sprite>sprites\spr_water4</sprite>
+      <sprite>sprites\spr_water5</sprite>
+      <sprite>sprites\spr_water6</sprite>
+      <sprite>sprites\spr_water7</sprite>
+      <sprite>sprites\spr_water8</sprite>
+      <sprite>sprites\spr_water9</sprite>
+      <sprite>sprites\spr_water10</sprite>
+      <sprite>sprites\spr_waterblank</sprite>
+      <sprite>sprites\spr_splash1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tileset1</background>
@@ -47,6 +61,8 @@
       <object>objects\obj_steel_shortsword</object>
     </objects>
     <object>objects\obj_krenkus</object>
+    <object>objects\obj_water</object>
+    <object>objects\obj_splash</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
