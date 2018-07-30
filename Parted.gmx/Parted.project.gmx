@@ -6,8 +6,13 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_playerattacking</sprite>
-    <sprite>sprites\spr_player</sprite>
+    <sprites name="Characters">
+      <sprite>sprites\spr_krenkus</sprite>
+      <sprites name="Central Characters">
+        <sprite>sprites\spr_player</sprite>
+        <sprite>sprites\spr_playerattacking</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\spr_rock1</sprite>
     <sprite>sprites\obj_slimesmall</sprite>
     <sprites name="Trees">
@@ -41,6 +46,7 @@
     <objects name="Weapons">
       <object>objects\obj_steel_shortsword</object>
     </objects>
+    <object>objects\obj_krenkus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
