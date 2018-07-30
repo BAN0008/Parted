@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>if (keyboard_check(ord('E'))) {
-    if(distance_to_object(obj_player) &lt; 256)    {
+    if(distance_to_object(obj_player) &lt;  64)    {
         show_debug_message("SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT 
 SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT 
 SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT SHIT 
