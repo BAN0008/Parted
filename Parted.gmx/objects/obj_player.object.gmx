@@ -184,6 +184,7 @@ if (keyboard_check(ord('E'))) {
             <string>if(splash = true and (hsp != 0 or vsp != 0))
 {
     instance_create(x,y,obj_splash);
+    instance_create(x,y,obj_ripple);
     splash = false;
     alarm[11] = 5;
 }
