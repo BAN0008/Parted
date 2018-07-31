@@ -58,6 +58,17 @@
       <sprite>sprites\spr_water10</sprite>
       <sprite>sprites\spr_waterblank</sprite>
       <sprite>sprites\spr_splash1</sprite>
+      <sprite>sprites\spr_ripple</sprite>
+    </sprites>
+    <sprites name="Buildings">
+      <sprite>sprites\spr_brokencottage1</sprite>
+      <sprite>sprites\spr_swamproof</sprite>
+      <sprite>sprites\spr_shadow_256x8</sprite>
+    </sprites>
+    <sprites name="Particles">
+      <sprite>sprites\spr_slimegib1</sprite>
+      <sprite>sprites\spr_slimegib2</sprite>
+      <sprite>sprites\spr_slimegib3</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -67,6 +78,9 @@
   <scripts name="scripts">
     <script>scripts\scr_npcrunning.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_standard</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
@@ -91,6 +105,15 @@
       <object>objects\obj_splash</object>
     </objects>
     <object>objects\obj_controller</object>
+    <object>objects\obj_ripple</object>
+    <objects name="Buildings">
+      <object>objects\obj_brokencottage1</object>
+      <object>objects\obj_swamproof</object>
+      <object>objects\obj_shadow_256x8</object>
+    </objects>
+    <objects name="Particles">
+      <object>objects\obj_slimegib</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
