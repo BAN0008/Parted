@@ -31,6 +31,7 @@ image_speed = .1;
 jump_cooldown = 0;
 hsp = 0;
 vsp = 0;
+vhealth = 3;
 
 jump_force = 20; //Speed and power behind each jump
 jump_max_cooldown = 1.5; //Seconds between jumps

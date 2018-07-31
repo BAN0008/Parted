@@ -91,7 +91,6 @@
       <object>objects\obj_splash</object>
     </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>

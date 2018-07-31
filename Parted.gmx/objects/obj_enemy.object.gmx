@@ -51,6 +51,9 @@
             <string>if !(global.paused) {
     
 }
+if (vhealth) &lt; 1 {
+    instance_destroy();
+}
 
 </string>
           </argument>
