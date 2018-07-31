@@ -4,7 +4,28 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_ambient_swamp</sound>
+    <sound>sound\snd_lord1</sound>
+    <sound>sound\snd_lord2</sound>
+    <sound>sound\snd_nyeh</sound>
+    <sound>sound\snd_season</sound>
+    <sound>sound\snd_slime1</sound>
+    <sound>sound\snd_slime2</sound>
+    <sound>sound\snd_slime3</sound>
+    <sound>sound\snd_splash1</sound>
+    <sound>sound\snd_swing</sound>
+    <sound>sound\snd_waterwalk1</sound>
+    <sound>sound\snd_waterwalk2</sound>
+    <sound>sound\snd_waterwalk3</sound>
+    <sound>sound\snd_waterwalk4</sound>
+    <sound>sound\snd_waterwalk5</sound>
+    <sound>sound\snd_waterwalk6</sound>
+    <sound>sound\snd_waterwalk7</sound>
+    <sound>sound\snd_waterwalk8</sound>
+    <sound>sound\snd_waterwalk9</sound>
+    <sound>sound\snd_waterwalk10</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Characters">
       <sprite>sprites\spr_krenkus</sprite>
@@ -43,12 +64,16 @@
     <background>background\tileset1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_npcrunning.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
     <object>objects\obj_character</object>
     <objects name="Enemies">
       <object>objects\obj_slimesmall1</object>
+      <object>objects\obj_enemy</object>
     </objects>
     <objects name="Enviroment Objects">
       <object>objects\obj_oak1</object>
@@ -66,6 +91,7 @@
       <object>objects\obj_splash</object>
     </objects>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
