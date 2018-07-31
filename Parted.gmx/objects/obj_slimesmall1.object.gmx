@@ -32,6 +32,7 @@ jump_cooldown = 0;
 hsp = 0;
 vsp = 0;
 vhealth = 3;
+dmg = 1;
 
 jump_force = 20; //Speed and power behind each jump
 jump_max_cooldown = 1.5; //Seconds between jumps
@@ -168,6 +169,20 @@ if(splash_sound = false and !place_meeting(x,y,obj_water))
 </string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>604</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_inherited</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="obj_water">
