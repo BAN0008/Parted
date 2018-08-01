@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -36,10 +36,19 @@ splash = true;  //Allows the splash animation to appear
 splash_sound = true;    //Allows the splash sound to play
 sploosh_sound = true;    //Allows the water_walk sound to play
 vhealth = 5;
+global.worldpos_x = obj_player.x;   //x coordinate of player in the world room
+global.worldpos_y = obj_player.y;   //y coordinate of player in the world room
 
 audio_play_sound(snd_ambient_swamp,5,true); /*Plays the ambient swamp sound
 (Will make it play ambient sounds according to the enviroment) */
 
+if(room = room0)
+{
+    obj_player.x = global.worldpos_x;
+    obj_player.y = global.worldpos_y;
+}
+
+global.travel = true;   //Allows the player to travel between rooms
 </string>
           </argument>
         </arguments>
@@ -292,6 +301,30 @@ instance_create(x, y, obj_steel_shortsword);
 sprite_index = spr_playerattacking;
 audio_play_sound(snd_swing,30,false);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(x,y + 64,global.worldpos_x);
+draw_self();
 </string>
           </argument>
         </arguments>
