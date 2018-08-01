@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.paused = false
+attack_cooldown = 0;
 </string>
           </argument>
         </arguments>
@@ -55,6 +56,10 @@ if (vhealth) &lt; 1 {
     instance_destroy();
 }
 
+if (attack_cooldown &gt; 0)
+{
+    attack_cooldown--;
+}
 </string>
           </argument>
         </arguments>

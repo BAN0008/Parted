@@ -258,7 +258,13 @@ if(splash_sound = true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vhealth -= other.dmg;
+            <string>if (other.attack_cooldown == 0)
+{
+    vhealth -= other.dmg;
+    attack_cooldown = room_speed;
+    hsp += other.hsp;
+    vsp += other.vsp;
+}
 </string>
           </argument>
         </arguments>
