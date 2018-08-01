@@ -50,40 +50,28 @@ vsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !(global.paused) {
-    for (i = 0; i &lt; abs(hsp); i++)
-    {
-        //Check for collision
-        if (true)
-        {
-            x += sign(hsp);
-        }
-        else
-        {
-            hsp = 0;
-            break;
-        }
-    }
-    
-    for (i = 0; i &lt; abs(vsp); i++)
-    {
-        //Check for collision
-        if (true)
-        {
-            y += sign(vsp);
-        }
-        else
-        {
-            vsp = 0;
-            break;
-        }
-    }
-    
-    hsp = hsp * 0.85;
-    vsp = vsp * 0.85;
-    
-    if (hsp &lt; 1 &amp;&amp; hsp &gt; -1) hsp = 0;
-    if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
+            <string>
+//running away
+if(distance_to_object(instance_nearest(x, y, obj_enemy)) &lt; 256) {
+    mood = "active";
+    alarm[0] = 480
+    npcdirection = point_direction(x,y,obj_enemy.x,obj_enemy.y)
+    direction = (npcdirection + (160 + random(40)));
+    speed = 2;
+    audio_play_sound(snd_nyeh,50,false);
+}
+else {
+    speed = 0;
+}
+
+if (mood = "active" and distance_to_object(instance_nearest(x, y, obj_enemy)) &lt; 600) {
+    npcdirection = point_direction(x,y,obj_enemy.x,obj_enemy.y)
+    direction = (npcdirection + (160 + random(40)));
+    speed = 2;
+    audio_play_sound(snd_nyeh,50,false);
+}
+else {
+    speed = 0;
 }
 
 </string>
