@@ -84,7 +84,6 @@
     <background>background\tileset1</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_standard</font>
   </fonts>
