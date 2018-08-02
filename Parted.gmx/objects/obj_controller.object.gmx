@@ -72,14 +72,14 @@ alarm[0] = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>keyboard_check(vk_escape) {
-if global.paused = false {
-    global.paused = true
+            <string>if (keyboard_check(vk_escape))
+{
+    if (global.paused == false) {
+        global.paused = true;
     }
-else {
-    if (global.paused = true) {
-        global.paused = false
-        }
+    else
+    {
+        global.paused = false;
     }
 }
 </string>

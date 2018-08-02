@@ -49,16 +49,17 @@ attack_cooldown = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !(global.paused) {
-    
-}
-if (vhealth) &lt; 1 {
-    instance_destroy();
-}
-
-if (attack_cooldown &gt; 0)
+            <string>if (global.paused == false)
 {
-    attack_cooldown--;
+    if (vhealth &lt; 1)
+    {
+        instance_destroy();
+    }
+    
+    if (attack_cooldown &gt; 0)
+    {
+        attack_cooldown--;
+    }
 }
 </string>
           </argument>

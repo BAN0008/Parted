@@ -201,8 +201,8 @@ if(splash_sound = false and !place_meeting(x,y,obj_water))
     splash_sound = true;
 }
 
-if vhealth &lt; 1 {
-    room_restart();
+if (vhealth &lt; 1) {
+    game_restart();
 }
 </string>
           </argument>
@@ -267,10 +267,10 @@ if(splash_sound = true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (other.attack_cooldown == 0)
+            <string>if (other.attack_cooldown &lt;= 0)
 {
     vhealth -= other.dmg;
-    attack_cooldown = room_speed;
+    other.attack_cooldown = room_speed;
     hsp += other.hsp;
     vsp += other.vsp;
 }
