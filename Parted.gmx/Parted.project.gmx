@@ -79,6 +79,7 @@
       <sprite>sprites\spr_slimegib2</sprite>
       <sprite>sprites\spr_slimegib3</sprite>
     </sprites>
+    <sprite>sprites\spr_booksmall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileset1</background>
