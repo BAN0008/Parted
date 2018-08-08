@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_character</parentName>
+  <parentName>obj_interactable</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -29,23 +29,14 @@
 speak = false;
 text = "memes";
 mood = "idle";
+global.paused = false;
+hsp = 0;
+vsp = 0;
+interact_script = krenkus_interact;
+priority = 10;
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>604</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_inherited</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="2" enumb="11">
@@ -135,7 +126,8 @@ mood = "idle";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord('E'))) {
+            <string>/*
+if (keyboard_check(ord('E'))) {
     if(distance_to_object(obj_player) &lt; 64 and mood != "active")    {
         if(nyeh = true)
         {
@@ -146,25 +138,12 @@ mood = "idle";
         }
     }
 }
-
-
+*/
+//running away
+runningaway();
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>604</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_inherited</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="8" enumb="0">

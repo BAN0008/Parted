@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -171,9 +171,43 @@ if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
           <argument>
             <kind>1</kind>
             <string>/// Interact
-
+var interactables;
+var found_nearby_object = false;
 if (keyboard_check(ord('E'))) {
-    
+    for (var i = 0; i &lt; instance_number(obj_interactable); i++)
+    {
+        var interactable_id = instance_find(obj_interactable, i);
+        if (distance_to_object(interactable_id) &lt; 64)
+        {
+            found_nearby_object = true;
+            interactables[i] = interactable_id;
+        }
+    }
+    if (found_nearby_object)
+    {
+        while (true)
+        {
+            var swaps = 0;
+            for (var i = 1; i &lt; instance_number(obj_interactable); i++)
+            {
+                if (interactables[i - 1].priority &gt; interactables[i].priority)
+                {
+                    swaps++;
+                    var temp = interactables[i];
+                    interactables[i] = interactables[i - 1];
+                    interactables[i - 1] = temp;
+                }
+            }
+            if (swaps == 0)
+            {
+                break;
+            }
+        }
+        with (interactables[0])
+        {
+            script_execute(interactables[0].interact_script);
+        }
+    }
 }
 </string>
           </argument>
