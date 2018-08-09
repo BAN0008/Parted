@@ -343,7 +343,6 @@ if(splash_sound = true)
             <kind>1</kind>
             <string>if !(instance_exists(obj_steel_shortsword)) {
 instance_create(x, y, obj_steel_shortsword);
-sprite_index = spr_playerattacking;
 audio_play_sound(snd_swing,30,false);
 }
 </string>
