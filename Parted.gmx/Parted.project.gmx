@@ -93,6 +93,7 @@
     </scripts>
     <scripts name="Interactable's">
       <script>scripts\krenkus_interact.gml</script>
+      <script>scripts\portal_interact.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
