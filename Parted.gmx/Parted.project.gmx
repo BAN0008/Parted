@@ -45,6 +45,7 @@
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\spr_steel_shortsword</sprite>
+      <sprite>sprites\spr_steel_shortsword_blocking</sprite>
     </sprites>
     <sprites name="Water">
       <sprite>sprites\spr_water1</sprite>
