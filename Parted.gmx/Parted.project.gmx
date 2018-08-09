@@ -79,6 +79,10 @@
       <sprite>sprites\spr_slimegib2</sprite>
       <sprite>sprites\spr_slimegib3</sprite>
     </sprites>
+    <sprites name="Book Pages">
+      <sprite>sprites\spr_blankpage</sprite>
+      <sprite>sprites\spr_rangartheded</sprite>
+    </sprites>
     <sprites name="Clutter">
       <sprite>sprites\spr_booksmall</sprite>
     </sprites>
