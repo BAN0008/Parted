@@ -125,7 +125,7 @@ else
 for (i = 0; i &lt; abs(hsp); i++)
 {
     //Check for collision
-    if (true)
+    if (collision_circle(x + sign(hsp), y, sprite_width / 2, obj_solid, 1, 1))
     {
         x += sign(hsp);
     }
@@ -139,7 +139,7 @@ for (i = 0; i &lt; abs(hsp); i++)
 for (i = 0; i &lt; abs(vsp); i++)
 {
     //Check for collision
-    if (true)
+    if (collision_circle(x, y + sign(vsp), sprite_width / 2, obj_solid, 1, 1))
     {
         y += sign(vsp);
     }
