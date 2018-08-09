@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_ambient_swamp</sound>
@@ -86,6 +87,7 @@
     <sprites name="Clutter">
       <sprite>sprites\spr_booksmall</sprite>
     </sprites>
+    <sprite>sprites\spr_solid</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileset1</background>
