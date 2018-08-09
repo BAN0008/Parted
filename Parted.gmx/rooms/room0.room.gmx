@@ -3,8 +3,8 @@
   <caption></caption>
   <width>4096</width>
   <height>2672</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -192,7 +192,7 @@
     <instance objName="obj_brokencottage1" x="1440" y="704" name="inst_C8ED25BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_swamproof" x="1408" y="672" name="inst_CD723A9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shadow_256x8" x="1440" y="832" name="inst_C12C5BFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="1548" y="768" name="inst_A713BDD8" locked="0" code="destination_room = rm_swamphouse1;&#xA;destination_x = 448;&#xA;destination_y = 256;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="1440" y="768" name="inst_04F8A46E" locked="0" code="" scaleX="8" scaleY="1.54838705062866" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
