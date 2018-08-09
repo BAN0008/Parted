@@ -170,44 +170,21 @@ if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Interact
-var interactables;
-var found_nearby_object = false;
-if (keyboard_check(ord('E'))) {
-    for (var i = 0; i &lt; instance_number(obj_interactable); i++)
-    {
-        var interactable_id = instance_find(obj_interactable, i);
-        if (distance_to_object(interactable_id) &lt; 64)
-        {
-            found_nearby_object = true;
-            interactables[i] = interactable_id;
-        }
-    }
-    if (found_nearby_object)
-    {
-        while (true)
-        {
-            var swaps = 0;
-            for (var i = 1; i &lt; instance_number(obj_interactable); i++)
-            {
-                if (interactables[i - 1].priority &gt; interactables[i].priority)
-                {
-                    swaps++;
-                    var temp = interactables[i];
-                    interactables[i] = interactables[i - 1];
-                    interactables[i - 1] = temp;
-                }
-            }
-            if (swaps == 0)
-            {
-                break;
-            }
-        }
-        with (interactables[0])
-        {
-            script_execute(interactables[0].interact_script);
-        }
-    }
+            <string>///Misc
+if(splash_sound = false and !place_meeting(x,y,obj_water))
+{
+    splash_sound = true;
+}
+
+if (vhealth &lt; 1) {
+    game_restart();
+}
+
+if (global.traveling &amp;&amp; global.portal_used_destination_room == room)
+{
+    x = global.portal_used_destination_x;
+    y = global.portal_used_destination_y;
+    global.traveling = false;
 }
 </string>
           </argument>
@@ -229,14 +206,48 @@ if (keyboard_check(ord('E'))) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Misc
-if(splash_sound = false and !place_meeting(x,y,obj_water))
+            <string>/// Interact
+var interactables;
+var found_nearby_object = false;
+if (keyboard_check_pressed(ord('E')))
 {
-    splash_sound = true;
-}
+    var nearby_object_count = 0;
+    for (var i = 0; i &lt; instance_number(obj_interactable); i++)
+    {
+        var interactable_id = instance_find(obj_interactable, i);
+        if (interactable_id != noone &amp;&amp; distance_to_object(interactable_id) &lt; 64)
+        {
+            found_nearby_object = true;
+            interactables[nearby_object_count] = interactable_id;
+            nearby_object_count++;
+        }
+    }
 
-if (vhealth &lt; 1) {
-    game_restart();
+    if (found_nearby_object)
+    {
+        while (true)
+        {
+            var swaps = 0;
+            for (var i = 1; i &lt; nearby_object_count; i++)
+            {
+                if (interactables[i - 1].priority &gt; interactables[i].priority)
+                {
+                    swaps++;
+                    var temp = interactables[i];
+                    interactables[i] = interactables[i - 1];
+                    interactables[i - 1] = temp;
+                }
+            }
+            if (swaps == 0)
+            {
+                break;
+            }
+        }
+        with (interactables[0])
+        {
+            script_execute(interactables[0].interact_script);
+        }
+    }
 }
 </string>
           </argument>

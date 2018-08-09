@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>nyeh = true;
+            <string>//nyeh = true;
 </string>
           </argument>
         </arguments>
@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>nyeh = true;
+            <string>//nyeh = true;
 </string>
           </argument>
         </arguments>
@@ -71,7 +71,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord('E'))) {
+            <string>/*
+if (keyboard_check(ord('E'))) {
     if(distance_to_object(obj_player) &lt; 64)    {
         if(nyeh = true)
         {
@@ -89,6 +90,7 @@
         }
     }
 }
+*/
 </string>
           </argument>
         </arguments>
