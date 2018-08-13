@@ -88,10 +88,16 @@
     <sprites name="Clutter">
       <sprite>sprites\spr_booksmall</sprite>
     </sprites>
+    <sprites name="Hentai">
+      <sprite>sprites\spr_ah</sprite>
+      <sprite>sprites\spr_ahh</sprite>
+      <sprite>sprites\spr_ahhh</sprite>
+    </sprites>
     <sprite>sprites\spr_solid</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileset1</background>
+    <background>background\bk_runag</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -152,6 +158,7 @@
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\rm_swamphouse1</room>
+    <room>rooms\rm_watergut</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
