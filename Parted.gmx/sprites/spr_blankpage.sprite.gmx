@@ -20,6 +20,6 @@
   <width>1360</width>
   <height>768</height>
   <frames>
-    <frame index="0">images\spr_rangartheded_0.png</frame>
+    <frame index="0">images\spr_blankpage_0.png</frame>
   </frames>
 </sprite>
