@@ -26,14 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>nyeh = true;
-speak = false;
-text = "memes";
+speak = true;
 mood = "idle";
 global.paused = false;
 hsp = 0;
 vsp = 0;
 interact_script = krenkus_interact;
 priority = 10;
+global.krenkus_tree = -1;  //The status of Krenkus' talk tree
 </string>
           </argument>
         </arguments>
@@ -145,6 +145,26 @@ runningaway();
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="8" enumb="0">
       <action>
@@ -163,20 +183,49 @@ runningaway();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(speak = true)
+            <string>///Krenkus Dialogue
+if(speak = true)
 {
     draw_set_color(c_white);
     draw_set_font(fnt_standard);
-    text = draw_text(x - 64,y - 32,"It's almost harvestin' season!");
-    alarm[10] = 180;
-}
-
-if(speak = false)
-{
-
+    switch(global.krenkus_tree)
+    {
+        case 0: draw_text(x - 64,y - 32,"You there! Traveller, can you help me?"); break;
+        case 1: draw_text(x - 64,y - 32,"By the gods, thank you. There are two slimes, near my house! I can't get in, Can you rid them for me?"); break;
+    }
 }
 
 draw_self();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Dialogue Options
+
+switch(global.krenkus_tree)
+{
+    case 0: 
+    draw_text(x - 32,y + 32,"1. Yes, what's wrong?"); 
+    draw_text(x - 32,y + 64,"2. Who are you?"); 
+    draw_text(x - 32,y + 128,"3. No... Fuck off!"); 
+    break;
+}
 </string>
           </argument>
         </arguments>

@@ -5,6 +5,7 @@ if(mood != "active")    {
         nyeh = false;
         alarm[11] = 85;
         speak = true;
+        global.krenkus_tree = 0;
     }
 }
 
