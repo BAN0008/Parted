@@ -99,8 +99,9 @@
     <sprite>sprites\spr_inventory_slot</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\tileset1</background>
+    <background>background\bg_grass</background>
     <background>background\bk_runag</background>
+    <background>background\tileset1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_door</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_interactable</parentName>
@@ -40,8 +40,8 @@ if (!found)
 }
 
 destination_room = rm_swamphouse1;
-destination_x = 448;
-destination_y = 256;
+destination_x = 624;
+destination_y = 448;
 interact_script = portal_interact;
 </string>
           </argument>
