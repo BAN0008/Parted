@@ -92,6 +92,9 @@
       <sprite>sprites\spr_ahh</sprite>
       <sprite>sprites\spr_ahhh</sprite>
     </sprites>
+    <sprites name="Logos And Text">
+      <sprite>sprites\spr_welcomebeta</sprite>
+    </sprites>
     <sprite>sprites\spr_solid</sprite>
   </sprites>
   <backgrounds name="background">
@@ -153,8 +156,10 @@
     <objects name="Clutter">
       <object>objects\obj_booksmall</object>
     </objects>
+    <object>objects\obj_welcomebeta</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_betalobby</room>
     <room>rooms\room0</room>
     <room>rooms\rm_swamphouse1</room>
     <room>rooms\rm_watergut</room>
