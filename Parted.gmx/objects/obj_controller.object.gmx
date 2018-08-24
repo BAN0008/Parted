@@ -29,6 +29,7 @@
 global.travel = true;
 global.traveling = false;
 global.paused = false;
+global.activequest = "shit";
 alarm[0] = 120;
 </string>
           </argument>
@@ -83,6 +84,13 @@ alarm[0] = 120;
     else
     {
         global.paused = false;
+    }
+}
+if (room = rm_swamphouse1) {
+    if activequest = "krekusslime" {
+        if instance_exists(obj_slimesmall) {
+            activequest = "complete";
+        }
     }
 }
 

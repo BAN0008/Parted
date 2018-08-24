@@ -70,10 +70,10 @@
     <instance objName="obj_oakaspen" x="240" y="512" name="inst_4F6F6188" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oakaspen" x="224" y="256" name="inst_96C435E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_krenkus" x="144" y="640" name="inst_3654749B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_brokencottage1" x="656" y="720" name="inst_D66B0323" locked="0" code="" scaleX="1.50588238239288" scaleY="1.52380955219269" colour="4294967295" rotation="0"/>
-    <instance objName="obj_swamproof" x="624" y="688" name="inst_065C2C91" locked="0" code="" scaleX="1.01935482025146" scaleY="1.07692313194275" colour="4294967295" rotation="0"/>
-    <instance objName="obj_shadow_256x8" x="688" y="720" name="inst_0D211E17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="752" y="768" name="inst_BCB6C2B4" locked="0" code="" scaleX="1.5" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_brokencottage1" x="592" y="1152" name="inst_D66B0323" locked="0" code="" scaleX="1.50588238239288" scaleY="1.52380955219269" colour="4294967295" rotation="0"/>
+    <instance objName="obj_swamproof" x="560" y="1120" name="inst_065C2C91" locked="0" code="" scaleX="1.01935482025146" scaleY="1.07692313194275" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shadow_256x8" x="592" y="1168" name="inst_0D211E17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="688" y="1200" name="inst_BCB6C2B4" locked="0" code="" scaleX="1.5" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="128" y="784" name="inst_20646136" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="160" y="784" name="inst_46E2615A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="192" y="784" name="inst_DCC000C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -121,6 +121,11 @@
     <instance objName="obj_water" x="160" y="880" name="inst_83C6D50D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="192" y="880" name="inst_87409E7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="224" y="880" name="inst_BBDC8166" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="608" y="1232" name="inst_BF416439" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="-16" y="0" name="inst_6AB9296C" locked="0" code="" scaleX="0.5" scaleY="44.3899993896484" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="0" y="1392" name="inst_4ED62389" locked="0" code="" scaleX="32" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="1024" y="1408" name="inst_9FA0A439" locked="0" code="" scaleX="0.5" scaleY="-44" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="1040" y="-16" name="inst_F688C436" locked="0" code="" scaleX="-33" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

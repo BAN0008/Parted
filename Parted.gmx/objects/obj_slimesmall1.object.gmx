@@ -109,16 +109,19 @@ else
 {
     if (!collision_line(x,y, obj_player.x, obj_player.y, obj_solid, 0, 1))
     {
-        var vx = (obj_player.x - x) + irandom_range(-jump_accuracy, jump_accuracy);
-        var vy = (obj_player.y - y) + irandom_range(-jump_accuracy, jump_accuracy);
-        var length = sqrt((vx * vx) + (vy * vy));
-        audio_play_sound(choose(snd_slime1,snd_slime2,snd_slime3),30,false);
-        if (view_distance &lt;= 0 || length &lt; view_distance)
+        if (distance_to_object(obj_player) &lt; 256)
         {
-            jump_cooldown = room_speed * jump_max_cooldown;
-            hsp = (vx / length) * jump_force;
-            vsp = (vy / length) * jump_force;
-        }
+            var vx = (obj_player.x - x) + irandom_range(-jump_accuracy, jump_accuracy);
+            var vy = (obj_player.y - y) + irandom_range(-jump_accuracy, jump_accuracy);
+            var length = sqrt((vx * vx) + (vy * vy));
+            audio_play_sound(choose(snd_slime1,snd_slime2,snd_slime3),30,false);
+            if (view_distance &lt;= 0 || length &lt; view_distance)
+            {
+                jump_cooldown = room_speed * jump_max_cooldown;
+                hsp = (vx / length) * jump_force;
+                vsp = (vy / length) * jump_force;
+            }
+        } 
     }
 }
 
