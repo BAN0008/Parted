@@ -73,6 +73,7 @@
         <sprite>sprites\spr_floorboards_dmg3</sprite>
         <sprite>sprites\spr_plaster_corner</sprite>
         <sprite>sprites\spr_plaster_side</sprite>
+        <sprite>sprites\spr_dooredge</sprite>
         <sprite>sprites\spr_door</sprite>
       </sprites>
     </sprites>
@@ -150,6 +151,7 @@
       <object>objects\obj_shadow_256x8</object>
       <objects name="Blocks">
         <object>objects\obj_floorboards_swamp</object>
+        <object>objects\obj_dooredge</object>
         <object>objects\obj_plaster_side</object>
         <object>objects\obj_plaster_corner</object>
         <object>objects\obj_door</object>

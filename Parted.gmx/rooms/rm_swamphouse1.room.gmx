@@ -171,7 +171,6 @@
     <instance objName="obj_plaster_side" x="752" y="240" name="inst_1776376B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_plaster_side" x="720" y="496" name="inst_CE57FC8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_plaster_side" x="752" y="496" name="inst_29A15415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_plaster_side" x="688" y="496" name="inst_E085423F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_plaster_side" x="656" y="528" name="inst_20B16B72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_plaster_side" x="560" y="496" name="inst_BCA8C6AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_plaster_side" x="592" y="496" name="inst_373A0C08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
@@ -188,7 +187,8 @@
     <instance objName="obj_player" x="624" y="464" name="inst_8AEFEBF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorboards_swamp" x="544" y="448" name="inst_B65875F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="640" y="480" name="inst_E2907955" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_plaster_side" x="624" y="496" name="inst_88D0F84B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dooredge" x="624" y="496" name="inst_C1392B6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_dooredge" x="688" y="496" name="inst_A3871149" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
