@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="320" vborder="250" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="" xview="320" yview="224" wview="480" hview="290" xport="0" yport="0" wport="480" hport="290" hborder="320" vborder="250" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -186,9 +186,18 @@
     <instance objName="obj_plaster_corner" x="336" y="496" name="inst_C1BD6759" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="624" y="464" name="inst_8AEFEBF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorboards_swamp" x="544" y="448" name="inst_B65875F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="640" y="480" name="inst_E2907955" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="640" y="480" name="inst_E2907955" locked="0" code="destination_room = rm_betalobby;&#xA;destination_x = 768;&#xA;destination_y = 848;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dooredge" x="624" y="496" name="inst_C1392B6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_dooredge" x="688" y="496" name="inst_A3871149" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_solid" x="320" y="224" name="inst_B9E56D15" locked="0" code="" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="768" y="256" name="inst_0F18D1AB" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="320" y="256" name="inst_B73BBECD" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="320" y="544" name="inst_EC146BE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="352" y="480" name="inst_17AAD1A2" locked="0" code="" scaleX="8.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="688" y="480" name="inst_81178338" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorboards_swamp" x="608" y="480" name="inst_FB2FEB9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorboards_swamp" x="640" y="480" name="inst_1BB3EA15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorboards_swamp" x="672" y="480" name="inst_8FE90D8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

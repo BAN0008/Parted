@@ -5,7 +5,15 @@ if(mood != "active")    {
         nyeh = false;
         alarm[11] = 85;
         speak = true;
-        global.krenkus_tree = 0;
+        if(quest1 = false) 
+        {
+            global.krenkus_tree = 0;
+        }
+        else if(quest1 = true)
+        {
+            alreadyactive = choose("Please...", "I need to get back into my house!")
+            global.krenkus_tree = 12;
+        }
     }
 }
 

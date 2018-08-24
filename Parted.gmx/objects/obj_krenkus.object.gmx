@@ -34,6 +34,9 @@ vsp = 0;
 interact_script = krenkus_interact;
 priority = 10;
 global.krenkus_tree = -1;  //The status of Krenkus' talk tree
+// initialising quests
+quest1 = false;
+paid = false;
 </string>
           </argument>
         </arguments>
@@ -126,20 +129,7 @@ global.krenkus_tree = -1;  //The status of Krenkus' talk tree
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-if (keyboard_check(ord('E'))) {
-    if(distance_to_object(obj_player) &lt; 64 and mood != "active")    {
-        if(nyeh = true)
-        {
-            audio_play_sound(choose(snd_nyeh, snd_season, snd_lord1, snd_lord2),40,false);
-            nyeh = false;
-            alarm[11] = 85;
-            speak = true;
-        }
-    }
-}
-*/
-//running away
+            <string>
 runningaway();
 </string>
           </argument>
@@ -183,6 +173,7 @@ switch(global.krenkus_tree)
     case 1: 
         if(keyboard_check_pressed(ord(1))) //No problem
         {
+            quest1 = true;
             global.krenkus_tree = 4;
         } 
         if(keyboard_check_pressed(ord(2))) //I can for a price
@@ -213,6 +204,7 @@ switch(global.krenkus_tree)
      case 7: 
         if(keyboard_check_pressed(ord(1))) //Sure!
         {
+            quest1 = true;
             global.krenkus_tree = 4;
         } 
         if(keyboard_check_pressed(ord(2))) //I can for a price
@@ -228,14 +220,19 @@ switch(global.krenkus_tree)
     case 5: 
         if(keyboard_check_pressed(ord(1))) //$20 is good
         {
+            quest1 = true;
+            paid = true;
             global.krenkus_tree = 10;
         } 
         if(keyboard_check_pressed(ord(2))) //$50 or no deal
         {
+            quest1 = true;
+            paid = true;
             global.krenkus_tree = 11;
         } 
         if(keyboard_check_pressed(ord(3))) //Screw money
         {
+            quest1 = true;
             global.krenkus_tree = 4;
         } 
         if(keyboard_check_pressed(ord(4))) //Nevermind
@@ -271,6 +268,7 @@ switch(global.krenkus_tree)
 if(speak = true)
 {
     draw_set_color(c_white);
+randomize();
     draw_set_font(fnt_standard);
     switch(global.krenkus_tree)
     {
@@ -286,6 +284,7 @@ if(speak = true)
         case 9: draw_text(x - 64,y - 32,"Goodbye then..."); break;
         case 10: draw_text(x - 64,y - 32,"Then it's settled, I'll pay once you have the job done."); break;
         case 11: draw_text(x - 64,y - 32,"Alright, 50 but no higher, just get the job done and see to me afterwards."); break;
+        case 12: draw_text(x - 64,y - 32,alreadyactive); break;
     }
 }
 
@@ -317,7 +316,7 @@ switch(global.krenkus_tree)
     case 0: 
     draw_text(x - 32,y + 32,"1. Yes, what's wrong?"); 
     draw_text(x - 32,y + 64,"2. Who are you?"); 
-    draw_text(x - 32,y + 128,"3. No... Fuck off!"); 
+    draw_text(x - 32,y + 128,"3. No... Mate!"); 
     break;
     
     case 1: 
