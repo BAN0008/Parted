@@ -33,6 +33,7 @@ hsp = 0;
 vsp = 0;
 interact_script = peri_interact;
 priority = 10;
+playerattack = 0;
 global.peri_tree = -1;  //The status of Peri's talk tree
 // initialising quests
 </string>
@@ -150,7 +151,7 @@ runningaway();
           <argument>
             <kind>1</kind>
             <string>///Dialogue Options
-
+randomize()
 switch(global.peri_tree)
 {
     case 0: 
@@ -281,11 +282,29 @@ switch(global.peri_tree)
     case 11: 
         if(keyboard_check_pressed(ord(1))) //Give me all your gold!
         {
+            playerattack = irandom_range(1,2)
+            if playerattack = 1
+            {
             global.peri_tree = 15;
+            }
+            else if playerattack = 2
+            {
+            runningawayfromplayer()
+            global.peri_tree = 15;
+            }
         } 
         if(keyboard_check_pressed(ord(2))) //Die!
         {
+               playerattack = irandom_range(1,2)
+            if playerattack = 1
+            {
             global.peri_tree = 12;
+            }
+            else if playerattack = 2
+            {
+            runningawayfromplayer()
+            global.peri_tree = 12;
+            }
         } 
     break;
 }

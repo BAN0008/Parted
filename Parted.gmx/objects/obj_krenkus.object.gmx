@@ -174,7 +174,7 @@ switch(global.krenkus_tree)
         if(keyboard_check_pressed(ord(1))) //No problem
         {
             quest1 = true;
-            global.activequest = "krenkuslime";
+            global.activequest = "krenkusslime";
             global.krenkus_tree = 4;
         } 
         if(keyboard_check_pressed(ord(2))) //I can for a price
@@ -206,7 +206,7 @@ switch(global.krenkus_tree)
         if(keyboard_check_pressed(ord(1))) //Sure!
         {
             quest1 = true;
-            global.activequest = "krenkuslime";
+            global.activequest = "krenkusslime";
             global.krenkus_tree = 4;
         } 
         if(keyboard_check_pressed(ord(2))) //I can for a price
@@ -224,20 +224,20 @@ switch(global.krenkus_tree)
         {
             quest1 = true;
             paid = true;
-            global.activequest = "krenkuslime";
+            global.activequest = "krenkusslime";
             global.krenkus_tree = 10;
         } 
         if(keyboard_check_pressed(ord(2))) //$50 or no deal
         {
             quest1 = true;
             paid = true;
-            global.activequest = "krenkuslime";
+            global.activequest = "krenkusslime";
             global.krenkus_tree = 11;
         } 
         if(keyboard_check_pressed(ord(3))) //Screw money
         {
             quest1 = true;
-            global.activequest = "krenkuslime";
+            global.activequest = "krenkusslime";
             global.krenkus_tree = 4;
         } 
         if(keyboard_check_pressed(ord(4))) //Nevermind

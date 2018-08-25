@@ -108,6 +108,7 @@
   <scripts name="scripts">
     <scripts name="NPC's">
       <script>scripts\runningaway.gml</script>
+      <script>scripts\runningawayfromplayer.gml</script>
     </scripts>
     <scripts name="Interactable's">
       <script>scripts\krenkus_interact.gml</script>
