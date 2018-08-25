@@ -111,6 +111,7 @@
     </scripts>
     <scripts name="Interactable's">
       <script>scripts\krenkus_interact.gml</script>
+      <script>scripts\peri_interact.gml</script>
       <script>scripts\portal_interact.gml</script>
     </scripts>
   </scripts>
@@ -144,6 +145,7 @@
     </objects>
     <objects name="NPC's">
       <object>objects\obj_krenkus</object>
+      <object>objects\obj_peri</object>
     </objects>
     <objects name="Buildings">
       <object>objects\obj_brokencottage1</object>
@@ -161,6 +163,7 @@
       <object>objects\obj_booksmall</object>
     </objects>
     <object>objects\obj_welcomebeta</object>
+    <object>objects\obj_imusingthistoteachpablo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>

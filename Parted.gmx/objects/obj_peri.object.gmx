@@ -31,12 +31,10 @@ mood = "idle";
 global.paused = false;
 hsp = 0;
 vsp = 0;
-interact_script = krenkus_interact;
+interact_script = peri_interact;
 priority = 10;
-global.krenkus_tree = -1;  //The status of Krenkus' talk tree
+global.peri_tree = -1;  //The status of Peri's talk tree
 // initialising quests
-quest1 = false;
-paid = false;
 </string>
           </argument>
         </arguments>
@@ -153,99 +151,143 @@ runningaway();
             <kind>1</kind>
             <string>///Dialogue Options
 
-switch(global.krenkus_tree)
+switch(global.peri_tree)
 {
     case 0: 
-        if(keyboard_check_pressed(ord(1))) //Yes, what's wrong?
+        if(keyboard_check_pressed(ord(1))) //Sale?
         {
-            global.krenkus_tree = 1;
+            global.peri_tree = 100;
         } 
-        if(keyboard_check_pressed(ord(2))) //Who are you?
+        if(keyboard_check_pressed(ord(2))) //Questions
         {
-            global.krenkus_tree = 2;
+            global.peri_tree = 1;
         } 
-        if(keyboard_check_pressed(ord(3))) //No
+        if(keyboard_check_pressed(ord(3))) //Goodbye
         {
-            global.krenkus_tree = 3;
+            global.peri_tree = 101;
         } 
     break;
     
     case 1: 
-        if(keyboard_check_pressed(ord(1))) //No problem
+        if(keyboard_check_pressed(ord(1))) //Who are you?
         {
-            quest1 = true;
-            global.activequest = "krenkuslime";
-            global.krenkus_tree = 4;
+            global.peri_tree = 2;
         } 
-        if(keyboard_check_pressed(ord(2))) //I can for a price
+        if(keyboard_check_pressed(ord(2))) //Directions
         {
-            global.krenkus_tree = 5;
+            global.peri_tree = 3;
         } 
-        if(keyboard_check_pressed(ord(3))) //No thanks
+        if(keyboard_check_pressed(ord(3))) //Coin
         {
-            global.krenkus_tree = 6;
+            global.peri_tree = 4;
+        } 
+        if(keyboard_check_pressed(ord(4))) //War?
+        {
+            global.peri_tree = 5;
+        } 
+        if(keyboard_check_pressed(ord(5))) //Nevermind
+        {
+            global.peri_tree = 0;
+        }
+    break;
+    
+    case 2: 
+        if(keyboard_check_pressed(ord(1))) //Sale
+        {
+            global.peri_tree = 100;
+        } 
+        if(keyboard_check_pressed(ord(2))) //Coin
+        {
+            global.peri_tree = 4;
+        } 
+        if(keyboard_check_pressed(ord(3))) //War?
+        {
+            global.peri_tree = 5;
+        } 
+        if(keyboard_check_pressed(ord(4))) //Enough
+        {
+            global.peri_tree = 0;
         } 
     break;
     
-        case 2: 
-        if(keyboard_check_pressed(ord(1))) //Oh ok, what did you need help with?
+    case 3: 
+        if(keyboard_check_pressed(ord(1))) //Krenkus?
         {
-            global.krenkus_tree = 7;
+            global.peri_tree = 7;
         } 
-        if(keyboard_check_pressed(ord(2))) //No peasants
+        if(keyboard_check_pressed(ord(2))) //Inn?
         {
-            global.krenkus_tree = 8;
+            global.peri_tree = 8;
         } 
-        if(keyboard_check_pressed(ord(3))) //I need to go
+        if(keyboard_check_pressed(ord(3))) //Market?
         {
-            global.krenkus_tree = 9;
+            global.peri_tree = 9;
+        } 
+        if(keyboard_check_pressed(ord(4))) //Capital?
+        {
+            global.peri_tree = 10;
         } 
     break;
     
-     case 7: 
-        if(keyboard_check_pressed(ord(1))) //Sure!
+    case 4: 
+        if(keyboard_check_pressed(ord(1))) //This is a robbery
         {
-            quest1 = true;
-            global.activequest = "krenkuslime";
-            global.krenkus_tree = 4;
+            global.peri_tree = 11;
         } 
-        if(keyboard_check_pressed(ord(2))) //I can for a price
+        if(keyboard_check_pressed(ord(2))) //Hands up!
         {
-            global.krenkus_tree = 5;
+            global.peri_tree = 12;
         } 
-        if(keyboard_check_pressed(ord(3))) //Maybe not
+        if(keyboard_check_pressed(ord(3))) //Nevermind
         {
-            global.krenkus_tree = 6;
+            global.peri_tree = 1;
         } 
     break;
     
     case 5: 
-        if(keyboard_check_pressed(ord(1))) //$20 is good
+        if(keyboard_check_pressed(ord(1))) //War Profit?
         {
-            quest1 = true;
-            paid = true;
-            global.activequest = "krenkuslime";
-            global.krenkus_tree = 10;
+            global.peri_tree = 13;
         } 
-        if(keyboard_check_pressed(ord(2))) //$50 or no deal
+        if(keyboard_check_pressed(ord(2))) //Join Army?
         {
-            quest1 = true;
-            paid = true;
-            global.activequest = "krenkuslime";
-            global.krenkus_tree = 11;
+            global.peri_tree = 14;
         } 
-        if(keyboard_check_pressed(ord(3))) //Screw money
+        if(keyboard_check_pressed(ord(3))) //Questions
         {
-            quest1 = true;
-            global.activequest = "krenkuslime";
-            global.krenkus_tree = 4;
-        } 
-        if(keyboard_check_pressed(ord(4))) //Nevermind
-        {
-            global.krenkus_tree = 6;
+            global.peri_tree = 1;
         } 
     break;
     
+    case 7: 
+        if(keyboard_check_pressed(ord(1))) //Krenkus?
+        {
+            global.peri_tree = 7;
+        } 
+        if(keyboard_check_pressed(ord(2))) //Inn?
+        {
+            global.peri_tree = 8;
+        } 
+        if(keyboard_check_pressed(ord(3))) //Market?
+        {
+            global.peri_tree = 9;
+        } 
+        if(keyboard_check_pressed(ord(4))) //Capital?
+        {
+            global.peri_tree = 10;
+        } 
+    break;
+    
+    case 11: 
+        if(keyboard_check_pressed(ord(1))) //Give me all your gold!
+        {
+            global.peri_tree = 15;
+        } 
+        if(keyboard_check_pressed(ord(2))) //Die!
+        {
+            global.peri_tree = 12;
+        } 
+    break;
 }
 </string>
           </argument>
@@ -274,22 +316,25 @@ if(speak = true)
 {
     draw_set_color(c_white);
     draw_set_font(fnt_standard);
-    switch(global.krenkus_tree)
+    switch(global.peri_tree)
     {
-        case 0: draw_text(x - 64,y - 32,"You there! Traveller, can you help me?"); break;
-        case 1: draw_text(x - 64,y - 32,"By the gods, thank you. There are two slimes destroying my house! I can't get in, Can you rid them for me?"); break;
-        case 2: draw_text(x - 64,y - 32,"I'm but a humble farmer, looking to support myself in these troubled times..."); break;
-        case 3: draw_text(x - 64,y - 32,"Oh my!"); break;
-        case 4: draw_text(x - 64,y - 32,"Thank you a thousand times!"); break;
-        case 5: draw_text(x - 64,y - 32,"I thought you might say so... how is 20 *CURRENCY*?"); break;
-        case 6: draw_text(x - 64,y - 32,"Sorry for wasting your time then..."); break;
-        case 7: draw_text(x - 64,y - 32,"There are two slimes destroying my house! I can't get in, Can you rid them for me?"); break;
-        case 8: draw_text(x - 64,y - 32,"Damn you, rich bastard!"); break;
-        case 9: draw_text(x - 64,y - 32,"Goodbye then..."); break;
-        case 10: draw_text(x - 64,y - 32,"Then it's settled, I'll pay once you have the job done."); break;
-        case 11: draw_text(x - 64,y - 32,"Alright, 50 but no higher, just get the job done and see to me afterwards."); break;
-        case 12: draw_text(x - 64,y - 32,alreadyactive); break;
-        case 13: draw_text(x - 64,y - 32,"Cheers Mate."); break;
+        case 0: draw_text(x - 64,y - 32,"Hello there traveller, how may I assist you?"); break;
+        case 1: draw_text(x - 64,y - 32,"Then ask away..."); break;
+        case 2: draw_text(x - 64,y - 32,"I am but a humble merchant."); break;
+        case 3: draw_text(x - 64,y - 32,"Of course, where do you want to go?"); break;
+        case 4: draw_text(x - 64,y - 32,"What do you mean?"); break;
+        case 5: draw_text(x - 64,y - 32,"Many soldiers and travellers come and go..."); break;
+        case 7: draw_text(x - 64,y - 32,"Ah, Krenkus, the village mad man, he can be found lurking the streets during the day."); break;
+        case 8: draw_text(x - 64,y - 32,"Just up the north side of town, the Warm Hearth Inn is it's name."); break;
+        case 9: draw_text(x - 64,y - 32,"The market lies in the middle of the town, it shouldn't be hard to spot."); break;
+        case 10: draw_text(x - 64,y - 32,"The capital lies south of our village."); break;
+        case 11: draw_text(x - 64,y - 32,"Oh dear! What are your demands?"); break;
+        case 12: draw_text(x - 64,y - 32,"Wait! Please don't kill me! I'll... I'll give you anything!"); break;
+        case 13: draw_text(x - 64,y - 32,"I will admit, I've never made more money in my entire life ever since the war began."); break;
+        case 14: draw_text(x - 64,y - 32,"When I was young, yes. But I have already been exposed to the brutality of war and do not wish to have any direct involvement in it."); break;
+        case 15: draw_text(x - 64,y - 32,"Here! Take it and leave me alone!"); break;
+        case 100: draw_text(x - 64,y - 32,"Take a look"); break;
+        case 101: draw_text(x - 64,y - 32,"Goodbye then..."); break;
     }
 }
 
@@ -316,38 +361,52 @@ draw_self();
             <kind>1</kind>
             <string>///Dialogue Options
 
-switch(global.krenkus_tree)
+switch(global.peri_tree)
 {
     case 0: 
-    draw_text(x - 32,y + 32,"1. Yes, what's wrong?"); 
-    draw_text(x - 32,y + 64,"2. Who are you?"); 
-    draw_text(x - 32,y + 128,"3. No... Mate!"); 
-    break;
+    draw_text(x - 32,y + 32,"1. What have you got for sale?"); 
+    draw_text(x - 32,y + 64,"2. I have some questions."); 
+    draw_text(x - 32,y + 128,"3. Nevermind..."); 
+    break; 
     
     case 1: 
-    draw_text(x - 32,y + 32,"1. No Problem"); 
-    draw_text(x - 32,y + 64,"2. I can, but for a price..."); 
-    draw_text(x - 32,y + 128,"3. Let me reconsider"); 
-    break;
+    draw_text(x - 32,y + 32,"1. Who are you?"); 
+    draw_text(x - 32,y + 64,"2. I need directions."); 
+    draw_text(x - 32,y + 128,"3. That's an interesting amount of coin you're carrying."); 
+    draw_text(x - 32,y + 164,"4. How goes the war?");
+    draw_text(x - 32,y + 200,"5. Nevermind.");
+    break; 
     
     case 2: 
-    draw_text(x - 32,y + 32,"1. Oh ok, so what did you need help with?"); 
-    draw_text(x - 32,y + 64,"2. I don't meddle with peasants!"); 
-    draw_text(x - 32,y + 128,"3. I'm sorry, but I must be off"); 
-    break;
+    draw_text(x - 32,y + 32,"1. What have you got for sale?"); 
+    draw_text(x - 32,y + 64,"2. You must make quite a handful of coin then."); 
+    draw_text(x - 32,y + 128,"3. How goes the war?"); 
+    draw_text(x - 32,y + 164,"4. Thats enough questions for today.");
+    break; 
     
-    case 7: 
-    draw_text(x - 32,y + 32,"1. Consider it done."); 
-    draw_text(x - 32,y + 64,"2. I can, but for a price..."); 
-    draw_text(x - 32,y + 128,"3. Let me reconsider"); 
-    break;
+    case 3: 
+    draw_text(x - 32,y + 32,"1. I need to know where a man named Krenkus is."); 
+    draw_text(x - 32,y + 64,"2. Where is the closest inn?"); 
+    draw_text(x - 32,y + 128,"3. Do you know where the market is?"); 
+    draw_text(x - 32,y + 164,"4. I need to get to the capital.");
+    break; 
+    
+    case 4: 
+    draw_text(x - 32,y + 32,"1. I mean to say that this is a robbery."); 
+    draw_text(x - 32,y + 64,"2. Hand over your coin! or I cut you!"); 
+    draw_text(x - 32,y + 128,"3. Oh, nevermind that."); 
+    break; 
     
     case 5: 
-    draw_text(x - 32,y + 32,"1. 20 *CURRENCY* sounds good"); 
-    draw_text(x - 32,y + 64,"2. I'm killing monsters, not washing your laundry. 50 *CURRENCY*"); 
-    draw_text(x - 32,y + 128,"3. Actually, I'll do it for free"); 
-    draw_text(x - 32,y + 164,"4. Nevermind, I should be off anyway.");
-    break;
+    draw_text(x - 32,y + 32,"1. I take it the war has been very profitable?"); 
+    draw_text(x - 32,y + 64,"2. Have you considered joining the army?"); 
+    draw_text(x - 32,y + 128,"3. I have more questions."); 
+    break; 
+    
+    case 11: 
+    draw_text(x - 32,y + 32,"1. Give me all of your gold!"); 
+    draw_text(x - 32,y + 64,"2. Die, merchant scum!"); 
+    break; 
     
     
 }
