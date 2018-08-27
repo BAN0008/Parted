@@ -31,6 +31,7 @@ global.travel = true;
 global.traveling = false;
 global.paused = false;
 global.activequest = "shit";
+global.completedquests = ds_list_create();
 alarm[0] = 120;
 
 </string>
