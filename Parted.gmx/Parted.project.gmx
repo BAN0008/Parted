@@ -96,6 +96,7 @@
     </sprites>
     <sprites name="Logos And Text">
       <sprite>sprites\spr_welcomebeta</sprite>
+      <sprite>sprites\spr_movetutorial</sprite>
     </sprites>
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_inventory_slot</sprite>
@@ -174,6 +175,7 @@
       <object>objects\obj_booksmall</object>
     </objects>
     <object>objects\obj_welcomebeta</object>
+    <object>objects\obj_movetutorial</object>
     <object>objects\obj_imusingthistoteachpablo</object>
   </objects>
   <rooms name="rooms">
