@@ -264,37 +264,39 @@ switch(global.krenkus_tree)
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
             <string>///Krenkus Dialogue
-if(speak = true)
+if distance_to_object(obj_player) &lt; 128
 {
-    draw_set_color(c_white);
-    draw_set_font(fnt_standard);
-    switch(global.krenkus_tree)
+    if(speak = true) 
     {
-        case 0: draw_text(x - 64,y - 32,"You there! Traveller, can you help me?"); break;
-        case 1: draw_text(x - 64,y - 32,"By the gods, thank you. There are two slimes destroying my house! I can't get in, Can you rid them for me?"); break;
-        case 2: draw_text(x - 64,y - 32,"I'm but a humble farmer, looking to support myself in these troubled times..."); break;
-        case 3: draw_text(x - 64,y - 32,"Oh my!"); break;
-        case 4: draw_text(x - 64,y - 32,"Thank you a thousand times!"); break;
-        case 5: draw_text(x - 64,y - 32,"I thought you might say so... how is 20 *CURRENCY*?"); break;
-        case 6: draw_text(x - 64,y - 32,"Sorry for wasting your time then..."); break;
-        case 7: draw_text(x - 64,y - 32,"There are two slimes destroying my house! I can't get in, Can you rid them for me?"); break;
-        case 8: draw_text(x - 64,y - 32,"Damn you, rich bastard!"); break;
-        case 9: draw_text(x - 64,y - 32,"Goodbye then..."); break;
-        case 10: draw_text(x - 64,y - 32,"Then it's settled, I'll pay once you have the job done."); break;
-        case 11: draw_text(x - 64,y - 32,"Alright, 50 but no higher, just get the job done and see to me afterwards."); break;
-        case 12: draw_text(x - 64,y - 32,alreadyactive); break;
-        case 13: draw_text(x - 64,y - 32,"Cheers Mate."); break;
+        draw_set_color(c_white);
+        draw_set_font(fnt_standard);
+        switch(global.krenkus_tree)
+        {
+            case 0: draw_text(x - 64,y - 32,"You there! Traveller, can you help me?"); break;
+            case 1: draw_text(x - 64,y - 32,"By the gods, thank you. There are two slimes destroying my house! I can't get in, Can you rid them for me?"); break;
+            case 2: draw_text(x - 64,y - 32,"I'm but a humble farmer, looking to support myself in these troubled times..."); break;
+            case 3: draw_text(x - 64,y - 32,"Oh my!"); break;
+            case 4: draw_text(x - 64,y - 32,"Thank you a thousand times!"); break;
+            case 5: draw_text(x - 64,y - 32,"I thought you might say so... how is 20 *CURRENCY*?"); break;
+            case 6: draw_text(x - 64,y - 32,"Sorry for wasting your time then..."); break;
+            case 7: draw_text(x - 64,y - 32,"There are two slimes destroying my house! I can't get in, Can you rid them for me?"); break;
+            case 8: draw_text(x - 64,y - 32,"Damn you, rich bastard!"); break;
+            case 9: draw_text(x - 64,y - 32,"Goodbye then..."); break;
+            case 10: draw_text(x - 64,y - 32,"Then it's settled, I'll pay once you have the job done."); break;
+            case 11: draw_text(x - 64,y - 32,"Alright, 50 but no higher, just get the job done and see to me afterwards."); break;
+            case 12: draw_text(x - 64,y - 32,alreadyactive); break;
+            case 13: draw_text(x - 64,y - 32,"Cheers Mate."); break;
+        }
     }
-}
-
-draw_self();
+} 
+    draw_self();
 </string>
           </argument>
         </arguments>
@@ -316,41 +318,42 @@ draw_self();
           <argument>
             <kind>1</kind>
             <string>///Dialogue Options
-
-switch(global.krenkus_tree)
+if distance_to_object(obj_player) &lt; 128
 {
-    case 0: 
-    draw_text(x - 32,y + 32,"1. Yes, what's wrong?"); 
-    draw_text(x - 32,y + 64,"2. Who are you?"); 
-    draw_text(x - 32,y + 128,"3. No... Mate!"); 
-    break;
-    
-    case 1: 
-    draw_text(x - 32,y + 32,"1. No Problem"); 
-    draw_text(x - 32,y + 64,"2. I can, but for a price..."); 
-    draw_text(x - 32,y + 128,"3. Let me reconsider"); 
-    break;
-    
-    case 2: 
-    draw_text(x - 32,y + 32,"1. Oh ok, so what did you need help with?"); 
-    draw_text(x - 32,y + 64,"2. I don't meddle with peasants!"); 
-    draw_text(x - 32,y + 128,"3. I'm sorry, but I must be off"); 
-    break;
-    
-    case 7: 
-    draw_text(x - 32,y + 32,"1. Consider it done."); 
-    draw_text(x - 32,y + 64,"2. I can, but for a price..."); 
-    draw_text(x - 32,y + 128,"3. Let me reconsider"); 
-    break;
-    
-    case 5: 
-    draw_text(x - 32,y + 32,"1. 20 *CURRENCY* sounds good"); 
-    draw_text(x - 32,y + 64,"2. I'm killing monsters, not washing your laundry. 50 *CURRENCY*"); 
-    draw_text(x - 32,y + 128,"3. Actually, I'll do it for free"); 
-    draw_text(x - 32,y + 164,"4. Nevermind, I should be off anyway.");
-    break;
-    
-    
+    switch(global.krenkus_tree)
+    {
+        case 0: 
+        draw_text(x - 32,y + 32,"1. Yes, what's wrong?"); 
+        draw_text(x - 32,y + 64,"2. Who are you?"); 
+        draw_text(x - 32,y + 128,"3. No... Mate!"); 
+        break;
+        
+        case 1: 
+        draw_text(x - 32,y + 32,"1. No Problem"); 
+        draw_text(x - 32,y + 64,"2. I can, but for a price..."); 
+        draw_text(x - 32,y + 128,"3. Let me reconsider"); 
+        break;
+        
+        case 2: 
+        draw_text(x - 32,y + 32,"1. Oh ok, so what did you need help with?"); 
+        draw_text(x - 32,y + 64,"2. I don't meddle with peasants!"); 
+        draw_text(x - 32,y + 128,"3. I'm sorry, but I must be off"); 
+        break;
+        
+        case 7: 
+        draw_text(x - 32,y + 32,"1. Consider it done."); 
+        draw_text(x - 32,y + 64,"2. I can, but for a price..."); 
+        draw_text(x - 32,y + 128,"3. Let me reconsider"); 
+        break;
+        
+        case 5: 
+        draw_text(x - 32,y + 32,"1. 20 *CURRENCY* sounds good"); 
+        draw_text(x - 32,y + 64,"2. I'm killing monsters, not washing your laundry. 50 *CURRENCY*"); 
+        draw_text(x - 32,y + 128,"3. Actually, I'll do it for free"); 
+        draw_text(x - 32,y + 164,"4. Nevermind, I should be off anyway.");
+        break;
+        
+    }        
 }
 </string>
           </argument>

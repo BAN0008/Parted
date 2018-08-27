@@ -88,13 +88,10 @@ alarm[0] = 120;
         global.paused = false;
     }
 }
-if (room = rm_swamphouse1) {   
-    show_debug_message(global.activequest)
-    if (global.activequest = "krekusslime") {
-        show_debug_message("shit2")
+if (room = rm_swamphouse1) {  
+    if (global.activequest = "krenkusslime") {
         if !(instance_exists(obj_slimesmall)) {
             global.activequest = "complete";
-            show_debug_message("SHIT IN ARSE")
         }
     }
 }

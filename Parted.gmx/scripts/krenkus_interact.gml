@@ -1,9 +1,10 @@
 if(mood != "active")    {
+    show_debug_message("hmmm")
     if(distance_to_object(obj_player) < 128) && (nyeh = true)
     {
         audio_play_sound(choose(snd_nyeh, snd_season, snd_lord1, snd_lord2),40,false);
         nyeh = false;
-        alarm[11] = 85;        //Beren wtf is this? use comments! (you mean alarm11? you added that)
+        alarm[11] = 85;
         speak = true;
         if(quest1 = false) 
         if !(global.activequest = "complete")
