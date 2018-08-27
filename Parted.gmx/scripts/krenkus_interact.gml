@@ -17,6 +17,7 @@ if(mood != "active")    {
         }
         else if (global.activequest = "complete")
         {
+            show_debug_message("Fuck Shit")
             global.krekus_tree = 13;
         }
     }

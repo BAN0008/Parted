@@ -25,14 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room = rm_betalobby) {
-    global.portals = ds_list_create();
-    global.travel = true;
-    global.traveling = false;
-    global.paused = false;
-    global.activequest = "shit";
-    alarm[0] = 120;
-}
+            <string>
+global.portals = ds_list_create();
+global.travel = true;
+global.traveling = false;
+global.paused = false;
+global.activequest = "shit";
+alarm[0] = 120;
+
 </string>
           </argument>
         </arguments>
@@ -88,8 +88,10 @@
         global.paused = false;
     }
 }
-if (room = rm_swamphouse1) {
-    if global.activequest = "krekusslime" {
+if (room = rm_swamphouse1) {   
+    show_debug_message(global.activequest)
+    if (global.activequest = "krekusslime") {
+        show_debug_message("shit2")
         if !(instance_exists(obj_slimesmall)) {
             global.activequest = "complete";
             show_debug_message("SHIT IN ARSE")
