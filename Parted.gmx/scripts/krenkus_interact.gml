@@ -1,5 +1,5 @@
 if(mood != "active")    {
-    if(nyeh = true)
+    if(distance_to_object(obj_player) < 128) && (nyeh = true)
     {
         audio_play_sound(choose(snd_nyeh, snd_season, snd_lord1, snd_lord2),40,false);
         nyeh = false;
