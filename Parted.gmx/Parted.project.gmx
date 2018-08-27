@@ -42,6 +42,7 @@
       <sprite>sprites\spr_willow2</sprite>
       <sprite>sprites\spr_oak1</sprite>
       <sprite>sprites\spr_oakaspen</sprite>
+      <sprite>sprites\spr_oakshadow</sprite>
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\spr_steel_shortsword</sprite>
@@ -99,11 +100,17 @@
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_inventory_slot</sprite>
     <sprite>sprites\obj_smalltable</sprite>
+    <sprites name="Nature">
+      <sprite>sprites\spr_grassdetail1</sprite>
+      <sprite>sprites\spr_grassdetail2</sprite>
+      <sprite>sprites\spr_grassdetail3</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
     <background>background\bk_runag</background>
     <background>background\tileset1</background>
+    <background>background\bg_grass2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -135,6 +142,8 @@
       <object>objects\obj_willow1</object>
       <object>objects\obj_willow2</object>
       <object>objects\obj_rock1</object>
+      <object>objects\obj_grassdetail</object>
+      <object>objects\obj_oakshadow</object>
     </objects>
     <objects name="Weapons">
       <object>objects\obj_steel_shortsword</object>
