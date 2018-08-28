@@ -89,6 +89,7 @@
     <sprites name="Clutter">
       <sprite>sprites\spr_booksmall</sprite>
       <sprite>sprites\spr_smalltable</sprite>
+      <sprite>sprites\spr_emptybowl</sprite>
     </sprites>
     <sprites name="Hentai">
       <sprite>sprites\spr_ah</sprite>
@@ -174,6 +175,7 @@
     <objects name="Clutter">
       <object>objects\obj_booksmall</object>
       <object>objects\obj_smalltable</object>
+      <object>objects\obj_emptybowl</object>
     </objects>
     <object>objects\obj_welcomebeta</object>
     <object>objects\obj_movetutorial</object>
