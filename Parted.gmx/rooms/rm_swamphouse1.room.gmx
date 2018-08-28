@@ -156,7 +156,7 @@
     <instance objName="obj_plaster_side" x="336" y="464" name="inst_5BD5CBE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plaster_side" x="784" y="464" name="inst_A68AC17F" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plaster_side" x="784" y="432" name="inst_B649F731" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_booksmall" x="688" y="272" name="inst_AEDB7F41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_booksmall" x="720" y="272" name="inst_AEDB7F41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plaster_side" x="368" y="240" name="inst_C0D1642A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_plaster_side" x="400" y="240" name="inst_C5FDBD66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_plaster_side" x="432" y="240" name="inst_CD7353D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
