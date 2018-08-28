@@ -29,9 +29,9 @@
 hsp = 0;
 vsp = 0;
 dodge_cooldown = 0;
-normal_speed = 1.35; //Speed that player moves
+normal_speed = 1.17654447; //Speed that player moves
 dodge_max_cooldown = 1; //Cooldown for dodging in seconds
-dodge_multiplier = 15; //Multiplier for move velocity while dodging
+dodge_multiplier = 10; //Multiplier for move velocity while dodging
 splash = true;  //Allows the splash animation to appear
 splash_sound = true;    //Allows the splash sound to play
 sploosh_sound = true;    //Allows the water_walk sound to play
@@ -368,7 +368,7 @@ audio_play_sound(snd_swing,30,false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x,y + 64,global.worldpos_x);
+            <string>draw_text(x,y + 64,vhealth);
 draw_self();
 </string>
           </argument>

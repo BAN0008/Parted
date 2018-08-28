@@ -88,6 +88,7 @@
     </sprites>
     <sprites name="Clutter">
       <sprite>sprites\spr_booksmall</sprite>
+      <sprite>sprites\spr_smalltable</sprite>
     </sprites>
     <sprites name="Hentai">
       <sprite>sprites\spr_ah</sprite>
@@ -100,7 +101,6 @@
     </sprites>
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_inventory_slot</sprite>
-    <sprite>sprites\obj_smalltable</sprite>
     <sprites name="Nature">
       <sprite>sprites\spr_grassdetail1</sprite>
       <sprite>sprites\spr_grassdetail2</sprite>
@@ -173,6 +173,7 @@
     </objects>
     <objects name="Clutter">
       <object>objects\obj_booksmall</object>
+      <object>objects\obj_smalltable</object>
     </objects>
     <object>objects\obj_welcomebeta</object>
     <object>objects\obj_movetutorial</object>
