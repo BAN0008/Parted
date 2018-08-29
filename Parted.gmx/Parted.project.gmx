@@ -118,6 +118,9 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="Items">
+      <script>scripts\looting.gml</script>
+    </scripts>
     <scripts name="NPC's">
       <script>scripts\runningaway.gml</script>
       <script>scripts\runningawayfromplayer.gml</script>
@@ -182,6 +185,7 @@
     <object>objects\obj_welcomebeta</object>
     <object>objects\obj_movetutorial</object>
     <object>objects\obj_imusingthistoteachpablo</object>
+    <object>objects\obj_dead</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
