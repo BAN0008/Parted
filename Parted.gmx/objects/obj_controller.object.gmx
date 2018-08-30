@@ -79,9 +79,10 @@ alarm[0] = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(vk_escape))
+            <string>if (keyboard_check_pressed(vk_escape))
 {
-    if (global.paused == false) {
+    if (global.paused == false)
+    {
         global.paused = true;
     }
     else
@@ -89,9 +90,12 @@ alarm[0] = 120;
         global.paused = false;
     }
 }
-if (room = rm_swamphouse1) {  
-    if (global.activequest = "krenkusslime") {
-        if !(instance_exists(obj_slimesmall)) {
+if (room == rm_swamphouse1)
+{
+    if (global.activequest = "krenkusslime")
+    {
+        if !(instance_exists(obj_slimesmall))
+        {
             global.activequest = "complete";
         }
     }
@@ -120,17 +124,18 @@ if (room = rm_swamphouse1) {
           <argument>
             <kind>1</kind>
             <string>///Draw Inventory
-/*
-draw_set_colour(c_black);
-draw_rectangle(0, 0, 48 * 9, 48 * 9, false);
-for (ix = 0; ix &lt; 8; ix++)
+if (global.paused)
 {
-    for (iy = 0; iy &lt; 8; iy++)
+    draw_set_colour(c_black);
+    draw_rectangle(0, 0, 80 * 9, 80 * 9, false);
+    for (ix = 0; ix &lt; 8; ix++)
     {
-        draw_sprite(spr_inventory_slot, -1, (48 * (ix + 1)), (48 * (iy + 1)));
+        for (iy = 0; iy &lt; 8; iy++)
+        {
+            draw_sprite(spr_inventory_slot, -1, (80 * (ix + 1)), (80 * (iy + 1)));
+        }
     }
 }
-*/
 </string>
           </argument>
         </arguments>
