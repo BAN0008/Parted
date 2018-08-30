@@ -124,6 +124,7 @@
   <scripts name="scripts">
     <scripts name="Items">
       <script>scripts\looting.gml</script>
+      <script>scripts\damageplayer.gml</script>
     </scripts>
     <scripts name="NPC's">
       <script>scripts\runningaway.gml</script>

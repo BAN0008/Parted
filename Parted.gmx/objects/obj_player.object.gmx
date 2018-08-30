@@ -35,9 +35,11 @@ dodge_multiplier = 10; //Multiplier for move velocity while dodging
 splash = true;  //Allows the splash animation to appear
 splash_sound = true;    //Allows the splash sound to play
 sploosh_sound = true;    //Allows the water_walk sound to play
-global.vhealth = 5;
+global.vhealth = 5;     //The player health
+global.armour = 2;      //the player armour
 global.worldpos_x = obj_player.x;   //x coordinate of player in the world room
 global.worldpos_y = obj_player.y;   //y coordinate of player in the world room
+armourcooldown = 240 //the amount of time it takes before your armour regenerates
 
 //audio_sound_gain(snd_ambient_swamp, -10, 10);
 audio_play_sound(snd_ambient_swamp,5,true); /*Plays the ambient swamp sound
@@ -73,6 +75,29 @@ global.travel = true;   //Allows the player to travel between rooms
           <argument>
             <kind>1</kind>
             <string>splash = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.armour ++;
 </string>
           </argument>
         </arguments>
@@ -221,6 +246,10 @@ if (global.traveling &amp;&amp; global.portal_used_destination_room == room)
     y = global.portal_used_destination_y;
     global.traveling = false;
 }
+if (global.armour &lt; 2 &amp;&amp; global.armour &gt; 0 &amp;&amp; alarm[0] &lt;= 0)
+{
+alarm[0] = armourcooldown;
+}
 </string>
           </argument>
         </arguments>
@@ -363,7 +392,7 @@ if(splash_sound = true)
             <kind>1</kind>
             <string>if (other.attack_cooldown &lt;= 0)
 {
-    global.vhealth -= other.dmg;
+    damageplayer(other.dmg)
     other.attack_cooldown = room_speed;
     hsp += other.hsp;
     vsp += other.vsp;
@@ -464,9 +493,18 @@ audio_play_sound(snd_swing,30,false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.vhealth &lt; 5)
+            <string>if (global.armour &gt; 0)
 {
-    draw_healthbar(20,720,200,700,global.vhealth * 20,c_black,c_red,c_red,0,true,true);
+    if (global.armour &lt; 2)
+    {
+        draw_healthbar(20,720,200,700,global.armour * 50, c_white, c_gray,c_gray,0,true,true)
+    }
+}
+else {
+    if(global.vhealth &lt; 5)
+    {
+        draw_healthbar(20,720,200,700,global.vhealth * 20,c_black,c_red,c_red,0,true,true);
+    }
 }
 </string>
           </argument>
