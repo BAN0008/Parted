@@ -35,8 +35,9 @@
         <sprite>sprites\spr_playerattacking</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\spr_rock1</sprite>
-    <sprite>sprites\obj_slimesmall</sprite>
+    <sprites name="Enemies">
+      <sprite>sprites\obj_slimesmall</sprite>
+    </sprites>
     <sprites name="Trees">
       <sprite>sprites\spr_willow1</sprite>
       <sprite>sprites\spr_willow2</sprite>
@@ -100,14 +101,17 @@
       <sprite>sprites\spr_welcomebeta</sprite>
       <sprite>sprites\spr_movetutorial</sprite>
     </sprites>
-    <sprite>sprites\spr_solid</sprite>
-    <sprite>sprites\spr_solid_small</sprite>
-    <sprite>sprites\spr_inventory_slot</sprite>
+    <sprites name="Other">
+      <sprite>sprites\spr_inventory_slot</sprite>
+    </sprites>
     <sprites name="Nature">
       <sprite>sprites\spr_grassdetail1</sprite>
       <sprite>sprites\spr_grassdetail2</sprite>
       <sprite>sprites\spr_grassdetail3</sprite>
+      <sprite>sprites\spr_rock1</sprite>
     </sprites>
+    <sprite>sprites\spr_solid</sprite>
+    <sprite>sprites\spr_solid_small</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>

@@ -28,6 +28,7 @@
             <string>instance_create(x + 64,y + 118,obj_oakshadow);
 col = instance_create(x + 64,y + 96,obj_solid);
 col.sprite_index = spr_solid_small;
+fadein = false;
 </string>
           </argument>
         </arguments>
@@ -50,7 +51,19 @@ col.sprite_index = spr_solid_small;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = 1;
+            <string>if fadein = true &amp;&amp; image_alpha &gt; 0.33
+{
+image_alpha -= 0.03;
+}
+if !(collision_circle(x,y, sprite_width *2, obj_player, true, true)) 
+{
+    fadein = false
+    if (image_alpha &lt; 1)
+    {
+        image_alpha += 0.3;
+    }
+}
+
 </string>
           </argument>
         </arguments>
@@ -73,7 +86,7 @@ col.sprite_index = spr_solid_small;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = 0.33;
+            <string>fadein = true
 </string>
           </argument>
         </arguments>
