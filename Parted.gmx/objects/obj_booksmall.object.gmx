@@ -3,7 +3,7 @@
   <spriteName>spr_booksmall</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>obj_interactable</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -51,7 +51,7 @@ open = false;   //If the book is open or not
             <kind>1</kind>
             <string>if(open = true)
 {
-    if(keyboard_check(ord(vk_tab)))
+    if(keyboard_check(vk_tab))
     {
         open = false;
         //Unpause room here
@@ -81,8 +81,9 @@ open = false;   //If the book is open or not
             <kind>1</kind>
             <string>if(open = true)
 {
-    draw_sprite(0,0,spr_rangartheded,1);
-    draw_text(512,256,"Rangarrrrrrrrrr");
+    page = draw_sprite(spr_bookpage,0,200,80);
+    page.depth = -10;
+    draw_text(512,256,"Rangarrrrrrrrrr#We need to fill this with stuff");
 }
 
 draw_self();

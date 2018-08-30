@@ -86,6 +86,7 @@
     </sprites>
     <sprites name="Book Pages">
       <sprite>sprites\spr_rangartheded</sprite>
+      <sprite>sprites\spr_bookpage</sprite>
     </sprites>
     <sprites name="Clutter">
       <sprite>sprites\spr_booksmall</sprite>

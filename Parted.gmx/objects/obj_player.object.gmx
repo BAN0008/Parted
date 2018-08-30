@@ -493,10 +493,10 @@ audio_play_sound(snd_swing,30,false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.armour &lt; 2 or global.vhealth &lt;5)
+            <string>if (global.armour &lt; 2 or global.vhealth &lt; 5)
 {
-    draw_healthbar(20,680,200,660,global.armour * 50, c_black, c_gray,c_gray,0,true,true);
-    draw_healthbar(20,720,200,700,global.vhealth * 20,c_black,c_red,c_red,0,true,true);
+    draw_healthbar(20,680,250,660,global.armour * 50, c_black, c_gray,c_gray,0,true,true);
+    draw_healthbar(20,720,250,700,global.vhealth * 20,c_black,c_red,c_red,0,true,true);
 }
 </string>
           </argument>
