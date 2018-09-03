@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialise Variables
+            <string>// Changable Variables
+persuasion = 10;
+armourcooldown = 240; //the amount of time it takes before your armour regenerates
+weaponcooldown = 60; //the amount of time it takes before your weapon regenerates
+global.vhealth = 5;  //The player health
+global.armour = 2;   //the player armour
+///Initialise Variables
 hsp = 0;
 vsp = 0;
 dodge_cooldown = 0;
@@ -35,12 +41,8 @@ dodge_multiplier = 10; //Multiplier for move velocity while dodging
 splash = true;  //Allows the splash animation to appear
 splash_sound = true;    //Allows the splash sound to play
 sploosh_sound = true;    //Allows the water_walk sound to play
-global.vhealth = 5;     //The player health
-global.armour = 2;      //the player armour
 global.worldpos_x = obj_player.x;   //x coordinate of player in the world room
 global.worldpos_y = obj_player.y;   //y coordinate of player in the world room
-armourcooldown = 240; //the amount of time it takes before your armour regenerates
-weaponcooldown = 60; //the amount of time it takes before your weapon regenerates
 canattack = true;
 
 //audio_sound_gain(snd_ambient_swamp, -10, 10);
