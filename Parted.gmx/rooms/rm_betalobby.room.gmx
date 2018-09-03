@@ -144,6 +144,7 @@
     <instance objName="obj_oak1" x="128" y="112" name="inst_C5415952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="816" y="208" name="inst_BAA1CE24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movetutorial" x="480" y="208" name="inst_EB92B1F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dead" x="96" y="224" name="inst_0AF88600" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tle_grass" x="640" y="640" w="32" h="32" xo="32" yo="0" id="10000014" name="inst_2FF2C47E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

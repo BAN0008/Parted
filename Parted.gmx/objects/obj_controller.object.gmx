@@ -90,12 +90,14 @@ alarm[0] = 120;
         global.paused = false;
     }
 }
-if (room == rm_swamphouse1)
+if (room = rm_swamphouse1)
 {
     if (global.activequest = "krenkusslime")
     {
+        show_debug_message(instance_number(obj_slimesmall))
         if !(instance_exists(obj_slimesmall))
         {
+        show_debug_message(global.activequest)
             global.activequest = "complete";
         }
     }

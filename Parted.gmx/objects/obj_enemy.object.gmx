@@ -51,10 +51,7 @@ attack_cooldown = 0;
             <kind>1</kind>
             <string>if (global.paused == false)
 {
-    if (vhealth &lt; 1)
-    {
-        instance_destroy();
-    }
+looting()
     
     if (attack_cooldown &gt; 0)
     {
