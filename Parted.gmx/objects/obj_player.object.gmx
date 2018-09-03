@@ -39,7 +39,9 @@ global.vhealth = 5;     //The player health
 global.armour = 2;      //the player armour
 global.worldpos_x = obj_player.x;   //x coordinate of player in the world room
 global.worldpos_y = obj_player.y;   //y coordinate of player in the world room
-armourcooldown = 240 //the amount of time it takes before your armour regenerates
+armourcooldown = 240; //the amount of time it takes before your armour regenerates
+weaponcooldown = 60; //the amount of time it takes before your weapon regenerates
+canattack = true;
 
 //audio_sound_gain(snd_ambient_swamp, -10, 10);
 audio_play_sound(snd_ambient_swamp,5,true); /*Plays the ambient swamp sound
@@ -75,6 +77,29 @@ global.travel = true;   //Allows the player to travel between rooms
           <argument>
             <kind>1</kind>
             <string>splash = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canattack = true;
 </string>
           </argument>
         </arguments>
@@ -453,7 +478,9 @@ if(splash_sound = true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !(instance_exists(obj_steel_shortsword)) {
+            <string>if !(instance_exists(obj_steel_shortsword)) &amp;&amp; canattack = true{
+alarm[5] = weaponcooldown;
+canattack = false;
 instance_create(x, y, obj_steel_shortsword);
 audio_play_sound(snd_swing,30,false);
 }
