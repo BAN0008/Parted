@@ -33,6 +33,16 @@
       <sprites name="Central Characters">
         <sprite>sprites\spr_player</sprite>
         <sprite>sprites\spr_playerattacking</sprite>
+        <sprites name="player">
+          <sprite>sprites\spr_playerfront</sprite>
+          <sprite>sprites\spr_playerback</sprite>
+          <sprite>sprites\spr_playerright</sprite>
+          <sprite>sprites\spr_playerleft</sprite>
+          <sprite>sprites\spr_playerright_w</sprite>
+          <sprite>sprites\spr_playerleft_w</sprite>
+          <sprite>sprites\spr_playerback_w</sprite>
+          <sprite>sprites\spr_playerfront_w</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Enemies">
@@ -169,8 +179,10 @@
       <object>objects\obj_ripple</object>
     </objects>
     <objects name="NPC's">
-      <object>objects\obj_krenkus</object>
-      <object>objects\obj_peri</object>
+      <objects name="beta">
+        <object>objects\obj_peri</object>
+        <object>objects\obj_krenkus</object>
+      </objects>
     </objects>
     <objects name="Buildings">
       <object>objects\obj_brokencottage1</object>

@@ -41,6 +41,8 @@ jump_accuracy = 128; //The smaller the value the more accurate the slime will be
 splash = true;  //Allows the splash animation to appear
 splash_sound = true;    //Allows the splash sound to play
 sploosh_sound = true    //Allows the water_walk sound to play
+quest_true = false;  //Whether the object is related to a quest
+quest = "empty";    //The quest the object is related to
 </string>
           </argument>
         </arguments>
@@ -182,6 +184,11 @@ if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
 if(splash_sound = false and !place_meeting(x,y,obj_water))
 {
     splash_sound = true;
+}
+
+if(vhealth &lt;= 0 and quest_true = true)
+{
+    global.activequest = quest;
 }
 </string>
           </argument>
