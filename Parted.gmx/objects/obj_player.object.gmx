@@ -28,7 +28,7 @@
             <string>// Changable Variables
 persuasion = 10;
 armourcooldown = 240; //the amount of time it takes before your armour regenerates
-weaponcooldown = 60; //the amount of time it takes before your weapon regenerates
+weaponcooldown = 180; //the amount of time it takes before your weapon regenerates
 global.vhealth = 5;  //The player health
 global.armour = 2;   //the player armour
 ///Initialise Variables
@@ -480,11 +480,12 @@ if(splash_sound = true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !(instance_exists(obj_steel_shortsword)) &amp;&amp; canattack = true{
-alarm[5] = weaponcooldown;
-canattack = false;
-instance_create(x, y, obj_steel_shortsword);
-audio_play_sound(snd_swing,30,false);
+            <string>if !(instance_exists(obj_steel_shortsword) &amp;&amp; canattack)
+{
+    alarm[5] = weaponcooldown;
+    canattack = false;
+    instance_create(x, y, obj_steel_shortsword);
+    audio_play_sound(snd_swing,30,false);
 }
 </string>
           </argument>
