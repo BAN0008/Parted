@@ -46,7 +46,7 @@ global.worldpos_y = obj_player.y;   //y coordinate of player in the world room
 canattack = true;
 
 //audio_sound_gain(snd_ambient_swamp, -10, 10);
-audio_play_sound(snd_ambient_swamp,5,true); /*Plays the ambient swamp sound
+/*audio_play_sound(snd_ambient_swamp,5,true); Plays the ambient swamp sound
 (Will make it play ambient sounds according to the enviroment) */
 
 if(room = room0)
@@ -551,7 +551,8 @@ if(splash_sound = true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>draw_text(x + 32,y - 32,"Active Quest: " + global.activequest);
+draw_self();
 </string>
           </argument>
         </arguments>
