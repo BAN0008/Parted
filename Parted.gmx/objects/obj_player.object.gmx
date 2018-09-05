@@ -205,9 +205,9 @@ if (keyboard_check(ord('A'))) hsp += -current_speed;
 for (i = 0; i &lt; abs(hsp); i++)
 {
     //Check for collision
-    if (!collision_circle(x + sign(hsp), y, sprite_width / 2, obj_solid, 1, 1))
+    if (!collision_circle(x + (sign(hsp) * 0.4), y, sprite_width / 2, obj_solid, 1, 1))
     {
-        x += sign(hsp);
+        x += sign(hsp) * 0.4;
     }
     else
     {
@@ -219,9 +219,9 @@ for (i = 0; i &lt; abs(hsp); i++)
 for (i = 0; i &lt; abs(vsp); i++)
 {
     //Check for collision
-    if (!collision_circle(x, y + sign(vsp), sprite_width / 2, obj_solid, 1, 1))
+    if (!collision_circle(x, y + (sign(vsp) * 0.4), sprite_width / 2, obj_solid, 1, 1))
     {
-        y += sign(vsp);
+        y += sign(vsp) * 0.4;
     }
     else
     {
@@ -230,13 +230,14 @@ for (i = 0; i &lt; abs(vsp); i++)
     }
 }
 
-hsp = hsp * 0.85;
-vsp = vsp * 0.85;
+hsp = hsp * 0.88;
+vsp = vsp * 0.88;
 
 if (hsp &lt; 1 &amp;&amp; hsp &gt; -1) hsp = 0;
 if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
-    //sprite direction
-    image_angle = point_direction(x, y, mouse_x, mouse_y);
+
+//sprite direction
+image_angle = point_direction(x, y, mouse_x, mouse_y);
 </string>
           </argument>
         </arguments>
