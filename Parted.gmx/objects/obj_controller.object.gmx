@@ -100,6 +100,11 @@ if (room = rm_swamphouse1)
         show_debug_message(global.activequest)
             global.activequest = "complete";
         }
+        else
+        {
+            show_debug_message("x: " + string(obj_slimesmall.x));
+            show_debug_message("y: " + string(obj_slimesmall.y));
+        }
     }
 }
 

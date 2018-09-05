@@ -36,7 +36,7 @@
       </sprites>
     </sprites>
     <sprites name="Enemies">
-      <sprite>sprites\obj_slimesmall</sprite>
+      <sprite>sprites\spr_slimesmall</sprite>
     </sprites>
     <sprites name="Trees">
       <sprite>sprites\spr_willow1</sprite>
