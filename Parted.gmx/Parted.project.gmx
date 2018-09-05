@@ -196,6 +196,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
+    <room>rooms\rm_startingshore</room>
     <room>rooms\room0</room>
     <room>rooms\rm_swamphouse1</room>
     <room>rooms\rm_watergut</room>

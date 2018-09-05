@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>instance_create(x + 64,y + 118,obj_oakshadow);
-col = instance_create(x + 64,y + 96,obj_solid);
-col.sprite_index = spr_solid_small;
+//col = instance_create(x + 64,y + 96,obj_solid);
+//col.sprite_index = spr_solid_small;
 fadein = false;
 </string>
           </argument>
