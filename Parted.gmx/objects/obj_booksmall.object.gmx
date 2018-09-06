@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>interact_script = book_interact;
 open = false;   //If the book is open or not
-content = "empty";  //The contents of the book
 </string>
           </argument>
         </arguments>
@@ -83,9 +82,11 @@ content = "empty";  //The contents of the book
             <string>if(open = true)
 {
     page = draw_sprite(spr_bookpage,0,200,80);
-    page.depth = 10;
-    draw_text(512,256,content);
+    page.depth = -10;
+    draw_text(512,256,"Rangarrrrrrrrrr#We need to fill this with stuff");
 }
+
+draw_self();
 </string>
           </argument>
         </arguments>
