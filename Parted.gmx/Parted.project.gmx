@@ -73,7 +73,10 @@
       <sprite>sprites\spr_water10</sprite>
       <sprite>sprites\spr_waterblank</sprite>
       <sprite>sprites\spr_splash1</sprite>
-      <sprite>sprites\spr_ripple</sprite>
+      <sprites name="newwater">
+        <sprite>sprites\spr_waterwaves</sprite>
+        <sprite>sprites\spr_goodwater</sprite>
+      </sprites>
     </sprites>
     <sprites name="Buildings">
       <sprite>sprites\spr_brokencottage1</sprite>
@@ -131,6 +134,8 @@
     <background>background\tileset1</background>
     <background>background\bg_grass2</background>
     <background>background\tle_grass</background>
+    <background>background\tle_wateredge</background>
+    <background>background\tle_wateredge_in</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
