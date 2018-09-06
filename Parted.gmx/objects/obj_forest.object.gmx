@@ -25,22 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spawnx = 0;
-spawny = 0;
-creaturelevelmodifier = irandom_range(1,10)
-enemyamount = bbox_bottom*bbox_left / 10000;
-round(enemyamount);
-show_debug_message(enemyamount);
+            <string>var slime_count = (sprite_width * sprite_height) / (512 * 512);
 enemy = obj_slimesmall1;
+creaturelevelmodifier = irandom_range(1,10)
 if (creaturelevelmodifier &gt; 5)
 {
-creaturelevel = global.playerlevel + creaturelevelmodifier
+global.creaturelevel = global.playerlevel + creaturelevelmodifier
 }
 else if (creaturelevelmodifier &lt;= 5) &amp;&amp; global.playerlevel &gt; creaturelevelmodifier
 {
-creaturelevel = global.playerlevel - creaturelevelmodifier
+global.creaturelevel = global.playerlevel - creaturelevelmodifier
 }
+randomize();
 
+for (i = 0; i &lt; slime_count; i++)
+{
+    spawn_x = irandom_range(bbox_left, bbox_right);
+    spawn_y = irandom_range(bbox_top, bbox_bottom);
+    while (collision_rectangle(spawn_x - (sprite_get_width(spr_slimesmall) / 2), spawn_y - (sprite_get_height(spr_slimesmall) / 2), spawn_x + (sprite_get_width(spr_slimesmall) / 2), spawn_y + (sprite_get_height(spr_slimesmall) / 2), obj_solid, 1, 1))
+    {
+        spawn_x = irandom_range(bbox_left, bbox_right);
+        spawn_y = irandom_range(bbox_top, bbox_bottom);
+    }
+    instance_create(spawn_x, spawn_y, enemy);
+}
 </string>
           </argument>
         </arguments>
@@ -63,7 +71,8 @@ creaturelevel = global.playerlevel - creaturelevelmodifier
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if enemyamount &gt; 0
+            <string>/*
+if enemyamount &gt; 0
 {
     spawnx = random_range(bbox_left,bbox_right);
     spawny = random_range(bbox_top,bbox_bottom);
@@ -73,7 +82,7 @@ creaturelevel = global.playerlevel - creaturelevelmodifier
         enemyamount --;
         show_debug_message(enemyamount)
     }
-    else
+    else if (instance_position(spawnx,spawny,obj_solid))
     {
         spawnx = random_range(bbox_left,bbox_right); 
         spawny = random_range(bbox_top,bbox_bottom);
@@ -82,7 +91,7 @@ creaturelevel = global.playerlevel - creaturelevelmodifier
 else 
 {
 exit;
-}
+}*/
 </string>
           </argument>
         </arguments>
