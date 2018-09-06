@@ -74,7 +74,7 @@ content = "empty";  //The contents of the book
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>obj_booksmall</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>

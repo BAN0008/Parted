@@ -118,13 +118,13 @@
     <instance objName="obj_solid" x="1024" y="1408" name="inst_9FA0A439" locked="0" code="" scaleX="0.5" scaleY="-44" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="1040" y="-16" name="inst_F688C436" locked="0" code="" scaleX="-33" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_peri" x="224" y="1216" name="inst_613518C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_oak1" x="272" y="512" name="inst_6F2D1BF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="288" y="576" name="inst_6F2D1BF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="32" y="528" name="inst_BC5AD6E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="112" y="432" name="inst_8A31F23E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="16" y="400" name="inst_7D0486C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="176" y="512" name="inst_25DCEC1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="-16" y="256" name="inst_A0EB8E42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_oak1" x="256" y="208" name="inst_60C17460" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="256" y="192" name="inst_60C17460" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="352" y="128" name="inst_1FBC8930" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="-16" y="96" name="inst_88E8D80C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="32" y="-32" name="inst_E491103E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -145,6 +145,22 @@
     <instance objName="obj_oak1" x="816" y="208" name="inst_BAA1CE24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movetutorial" x="480" y="208" name="inst_EB92B1F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dead" x="96" y="224" name="inst_0AF88600" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="128" y="640" name="inst_A035514C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="384" y="704" name="inst_70AE54C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="96" y="928" name="inst_E6EC44C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="0" y="832" name="inst_2F75A176" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="320" y="800" name="inst_B104313F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="352" y="1056" name="inst_F3A48100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="64" y="1152" name="inst_15ED7DD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="736" y="736" name="inst_DB7EC933" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="896" y="704" name="inst_6C17C386" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="800" y="672" name="inst_1D10C83D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="896" y="864" name="inst_DE2D37EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="800" y="832" name="inst_F665FC58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="672" y="864" name="inst_573FBC52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="800" y="960" name="inst_5D1B58EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="224" y="1056" name="inst_3BF4AFE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_oak1" x="416" y="1216" name="inst_7C27D588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tle_grass" x="640" y="640" w="32" h="32" xo="32" yo="0" id="10000014" name="inst_2FF2C47E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

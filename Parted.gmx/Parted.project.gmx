@@ -57,6 +57,7 @@
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\spr_steel_shortsword</sprite>
+      <sprite>sprites\spr_steel_shortsword_attack</sprite>
       <sprite>sprites\spr_steel_shortsword_blocking</sprite>
     </sprites>
     <sprites name="Water">
@@ -213,6 +214,12 @@
     <room>rooms\rm_swamphouse1</room>
     <room>rooms\rm_watergut</room>
   </rooms>
+  <constants number="4">
+    <constant name="NONE">0</constant>
+    <constant name="COOLDOWN">1</constant>
+    <constant name="CHARGING">2</constant>
+    <constant name="RELEASING">3</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
