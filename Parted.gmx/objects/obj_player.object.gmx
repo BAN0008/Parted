@@ -426,10 +426,10 @@ if (keyboard_check_pressed(ord('E')))
             <kind>1</kind>
             <string>if(splash = true and (hsp != 0 or vsp != 0))
 {
-    instance_create(x,y,obj_splash);
-    instance_create(x,y,obj_ripple);
+    instance_create(x,y + 32,obj_splash);
+    instance_create(x,y + 32,obj_ripple);
     splash = false;
-    alarm[11] = 5;
+    alarm[11] = 15;
     sploosh_sound = choose(true,false);
     
     if(sploosh_sound = true)
