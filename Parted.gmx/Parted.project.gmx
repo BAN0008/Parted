@@ -48,36 +48,10 @@
     <sprites name="Enemies">
       <sprite>sprites\spr_slimesmall</sprite>
     </sprites>
-    <sprites name="Trees">
-      <sprite>sprites\spr_willow1</sprite>
-      <sprite>sprites\spr_willow2</sprite>
-      <sprite>sprites\spr_oak1</sprite>
-      <sprite>sprites\spr_oakaspen</sprite>
-      <sprite>sprites\spr_oakshadow</sprite>
-    </sprites>
     <sprites name="Weapons">
       <sprite>sprites\spr_steel_shortsword</sprite>
       <sprite>sprites\spr_steel_shortsword_attack</sprite>
       <sprite>sprites\spr_steel_shortsword_blocking</sprite>
-    </sprites>
-    <sprites name="Water">
-      <sprite>sprites\spr_water1</sprite>
-      <sprite>sprites\spr_water2</sprite>
-      <sprite>sprites\spr_water3</sprite>
-      <sprite>sprites\spr_water4</sprite>
-      <sprite>sprites\spr_water5</sprite>
-      <sprite>sprites\spr_water6</sprite>
-      <sprite>sprites\spr_water7</sprite>
-      <sprite>sprites\spr_water8</sprite>
-      <sprite>sprites\spr_water9</sprite>
-      <sprite>sprites\spr_water10</sprite>
-      <sprite>sprites\spr_waterblank</sprite>
-      <sprite>sprites\spr_splash1</sprite>
-      <sprites name="newwater">
-        <sprite>sprites\spr_waterwaves</sprite>
-        <sprite>sprites\spr_goodwater</sprite>
-        <sprite>sprites\spr_ripple</sprite>
-      </sprites>
     </sprites>
     <sprites name="Buildings">
       <sprite>sprites\spr_brokencottage1</sprite>
@@ -121,15 +95,39 @@
       <sprite>sprites\spr_inventory_slot</sprite>
     </sprites>
     <sprites name="Nature">
+      <sprites name="Water">
+        <sprite>sprites\spr_water1</sprite>
+        <sprite>sprites\spr_water2</sprite>
+        <sprite>sprites\spr_water3</sprite>
+        <sprite>sprites\spr_water4</sprite>
+        <sprite>sprites\spr_water5</sprite>
+        <sprite>sprites\spr_water6</sprite>
+        <sprite>sprites\spr_water7</sprite>
+        <sprite>sprites\spr_water8</sprite>
+        <sprite>sprites\spr_water9</sprite>
+        <sprite>sprites\spr_water10</sprite>
+        <sprite>sprites\spr_waterblank</sprite>
+        <sprite>sprites\spr_splash1</sprite>
+        <sprites name="newwater">
+          <sprite>sprites\spr_waterwaves</sprite>
+          <sprite>sprites\spr_goodwater</sprite>
+          <sprite>sprites\spr_ripple</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Trees">
+        <sprite>sprites\spr_willow1</sprite>
+        <sprite>sprites\spr_willow2</sprite>
+        <sprite>sprites\spr_oak1</sprite>
+        <sprite>sprites\spr_oakaspen</sprite>
+        <sprite>sprites\spr_oakshadow</sprite>
+      </sprites>
       <sprite>sprites\spr_grassdetail1</sprite>
       <sprite>sprites\spr_grassdetail2</sprite>
       <sprite>sprites\spr_grassdetail3</sprite>
+      <sprite>sprites\spr_rock1</sprite>
     </sprites>
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_solid_small</sprite>
-    <sprites name="Rocks">
-      <sprite>sprites\spr_rock1</sprite>
-    </sprites>
     <sprites name="Furniture">
       <sprite>sprites\spr_table</sprite>
       <sprite>sprites\spr_stool</sprite>
