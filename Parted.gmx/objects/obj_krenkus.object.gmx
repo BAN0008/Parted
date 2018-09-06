@@ -130,6 +130,11 @@ paid = false;
           <argument>
             <kind>1</kind>
             <string>runningaway();
+
+if(global.activequest = "krenkusslime_fin")
+{
+    global.krenkus_tree = 14;
+}
 </string>
           </argument>
         </arguments>
