@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>creaturelevelmodifier = irandom_range(1,10)
+            <string>spawnx = 0;
+spawny = 0;
+creaturelevelmodifier = irandom_range(1,10)
 enemyamount = bbox_bottom*bbox_left / 8000;
 round(enemyamount);
 show_debug_message(enemyamount);
@@ -63,10 +65,23 @@ creaturelevel = global.playerlevel - creaturelevelmodifier
             <kind>1</kind>
             <string>if enemyamount &gt; 0
 {
-instance_create(random_range(bbox_left,bbox_right), random_range(bbox_top,bbox_bottom), enemy);
-enemyamount --;
+    spawnx = random_range(bbox_left,bbox_right);
+    spawny = random_range(bbox_top,bbox_bottom);
+    if !instance_position(spawnx,spawny,obj_solid)
+    {
+        instance_create(random_range(bbox_left,bbox_right), random_range(bbox_top,bbox_bottom), enemy);
+        enemyamount --;
+    }
+    else
+    {
+        spawnx = random_range(bbox_left,bbox_right); 
+        spawny = random_range(bbox_top,bbox_bottom);
+    }
+}  
+else 
+{
+exit;
 }
-else exit;
 </string>
           </argument>
         </arguments>
