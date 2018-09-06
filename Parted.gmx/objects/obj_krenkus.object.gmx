@@ -160,86 +160,86 @@ if(global.activequest = "krenkusslime_fin")
 switch(global.krenkus_tree)
 {
     case 0: 
-        if(keyboard_check_pressed(ord(1))) &amp;&amp; distance_to_object(obj_player) &lt; 128 //Yes, what's wrong?
+        if(keyboard_check_pressed(ord("1")))  //Yes, what's wrong?
         {
             global.krenkus_tree = 1;
         } 
-        if(keyboard_check_pressed(ord(2))) &amp;&amp; distance_to_object(obj_player) &lt; 128//Who are you?
+        if(keyboard_check_pressed(ord("2"))) //Who are you?
         {
             global.krenkus_tree = 2;
         } 
-        if(keyboard_check_pressed(ord(3))) &amp;&amp; distance_to_object(obj_player) &lt; 128//No
+        if(keyboard_check_pressed(ord("3"))) //No
         {
             global.krenkus_tree = 3;
         } 
     break;
     
     case 1: 
-        if(keyboard_check_pressed(ord(1))) &amp;&amp; distance_to_object(obj_player) &lt; 128//No problem
+        if(keyboard_check_pressed(ord("1"))) //No problem
         {
             global.activequest = "krenkusslime";
             global.krenkus_tree = 4;
         } 
-        if(keyboard_check_pressed(ord(2))) &amp;&amp; distance_to_object(obj_player) &lt; 128//I can for a price
+        if(keyboard_check_pressed(ord("2"))) //I can for a price
         {
             global.krenkus_tree = 5;
         } 
-        if(keyboard_check_pressed(ord(3))) &amp;&amp; distance_to_object(obj_player) &lt; 128//No thanks
+        if(keyboard_check_pressed(ord("3"))) //No thanks
         {
             global.krenkus_tree = 6;
         } 
     break;
     
         case 2: 
-        if(keyboard_check_pressed(ord(1))) &amp;&amp; distance_to_object(obj_player) &lt; 128//Oh ok, what did you need help with?
+        if(keyboard_check_pressed(ord("1"))) //Oh ok, what did you need help with?
         {
             global.krenkus_tree = 7;
         } 
-        if(keyboard_check_pressed(ord(2))) &amp;&amp; distance_to_object(obj_player) &lt; 128//No peasants
+        if(keyboard_check_pressed(ord("2"))) //No peasants
         {
             global.krenkus_tree = 8;
         } 
-        if(keyboard_check_pressed(ord(3))) &amp;&amp; distance_to_object(obj_player) &lt; 128//I need to go
+        if(keyboard_check_pressed(ord("3"))) //I need to go
         {
             global.krenkus_tree = 9;
         } 
     break;
     
      case 7: 
-        if(keyboard_check_pressed(ord(1))) &amp;&amp; distance_to_object(obj_player) &lt; 128//Sure!
+        if(keyboard_check_pressed(ord("1"))) //Sure!
         {
             global.activequest = "krenkusslime";
             global.krenkus_tree = 4;
         } 
-        if(keyboard_check_pressed(ord(2))) &amp;&amp; distance_to_object(obj_player) &lt; 128//I can for a price
+        if(keyboard_check_pressed(ord("2"))) //I can for a price
         {
             global.krenkus_tree = 5;
         } 
-        if(keyboard_check_pressed(ord(3))) &amp;&amp; distance_to_object(obj_player) &lt; 128//Maybe not
+        if(keyboard_check_pressed(ord("3"))) //Maybe not
         {
             global.krenkus_tree = 6;
         } 
     break;
     
     case 5: 
-        if(keyboard_check_pressed(ord(1))) &amp;&amp; distance_to_object(obj_player) &lt; 128//$20 is good
+        if(keyboard_check_pressed(ord("1"))) //$20 is good
         {
             paid = true;
             global.activequest = "krenkusslime";
             global.krenkus_tree = 10;
         } 
-        if(keyboard_check_pressed(ord(2))) &amp;&amp; distance_to_object(obj_player) &lt; 128//$50 or no deal
+        if(keyboard_check_pressed(ord("2"))) //$50 or no deal
         {
             paid = true;
             global.activequest = "krenkusslime";
             global.krenkus_tree = 11;
         } 
-        if(keyboard_check_pressed(ord(3))) &amp;&amp; distance_to_object(obj_player) &lt; 128//Screw money
+        if(keyboard_check_pressed(ord("3"))) //Screw money
         {
             global.activequest = "krenkusslime";
             global.krenkus_tree = 4;
         } 
-        if(keyboard_check_pressed(ord(4))) &amp;&amp; distance_to_object(obj_player) &lt; 128//Nevermind
+        if(keyboard_check_pressed(ord("4"))) //Nevermind
         {
             global.krenkus_tree = 6;
         } 
