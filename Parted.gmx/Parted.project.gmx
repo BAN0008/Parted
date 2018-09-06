@@ -31,8 +31,6 @@
     <sprites name="Characters">
       <sprite>sprites\spr_krenkus</sprite>
       <sprites name="Central Characters">
-        <sprite>sprites\spr_player</sprite>
-        <sprite>sprites\spr_playerattacking</sprite>
         <sprites name="player">
           <sprite>sprites\spr_playerfront</sprite>
           <sprite>sprites\spr_playerback</sprite>
