@@ -300,9 +300,9 @@ alarm[0] = armourcooldown;
             <kind>1</kind>
             <string>///Sprite Index
 
-image_speed = 0.05;
+image_speed = 0.075;
 
-if(vsp &gt; 0)
+if(keyboard_check(ord("S")))
 {
     sprite_index = spr_playerfront_w;
 }
@@ -312,17 +312,17 @@ if(vsp = 0 and hsp = 0)
     sprite_index = spr_playerfront;
 }
 
-if(vsp &lt; 0)
+if(keyboard_check(ord("W")))
 {
     sprite_index = spr_playerback_w;
 }
 
-if(hsp &gt; 0)
+if(keyboard_check(ord("D")))
 {
     sprite_index = spr_playerright_w;
 }
 
-if(hsp &lt; 0)
+if(keyboard_check(ord("A")))
 {
     sprite_index = spr_playerleft_w;
 }
