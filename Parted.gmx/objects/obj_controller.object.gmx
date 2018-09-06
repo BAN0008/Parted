@@ -33,6 +33,7 @@ global.paused = false;
 global.activequest = "empty";
 global.completedquests = ds_list_create();
 alarm[0] = 120;
+global.weather = 1; //0 = Clear, 1 = Rain, 2 = Storm, 3 = Snow, 4 = Dust Storm
 
 </string>
           </argument>
@@ -131,6 +132,28 @@ global.ragnartheded = "Aww mate, Ragnar the Ded is# Fuckin' sick!";
     }
 }
 */ 
+/*
+if(keyboard_check(ord("v")))    //Toggles Rain
+{
+    if(global.weather = 0)
+    {
+        global.weather = 1;
+    }
+    if(global.weather = 1)
+    {
+        global.weather = 0;
+    }
+}
+
+if(global.weather = 0)
+{
+    effect_clear();
+}
+
+if(global.weather = 1)
+{
+    effect_create_above(ef_rain,0,0,1,c_gray);
+} */
 </string>
           </argument>
         </arguments>

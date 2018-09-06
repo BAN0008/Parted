@@ -78,7 +78,9 @@
       <sprite>sprites\spr_bookpage</sprite>
     </sprites>
     <sprites name="Clutter">
-      <sprite>sprites\spr_booksmall</sprite>
+      <sprite>sprites\spr_book</sprite>
+      <sprite>sprites\spr_book_o</sprite>
+      <sprite>sprites\spr_book_r</sprite>
       <sprite>sprites\spr_smalltable</sprite>
       <sprite>sprites\spr_emptybowl</sprite>
     </sprites>
@@ -93,6 +95,8 @@
     </sprites>
     <sprites name="Other">
       <sprite>sprites\spr_inventory_slot</sprite>
+      <sprite>sprites\spr_fire</sprite>
+      <sprite>sprites\spr_fire_b</sprite>
     </sprites>
     <sprites name="Nature">
       <sprites name="Water">
@@ -137,6 +141,7 @@
       <sprite>sprites\spr_wall_b</sprite>
       <sprite>sprites\spr_wall_s</sprite>
       <sprite>sprites\spr_rug</sprite>
+      <sprite>sprites\spr_bench</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -202,6 +207,7 @@
       <object>objects\obj_slimegib</object>
       <object>objects\obj_splash</object>
       <object>objects\obj_ripple</object>
+      <object>objects\obj_fire</object>
     </objects>
     <objects name="NPC's">
       <objects name="beta">
@@ -233,6 +239,7 @@
       <object>objects\obj_wall_b</object>
       <object>objects\obj_wall_s</object>
       <object>objects\obj_rug</object>
+      <object>objects\obj_bench</object>
     </objects>
     <objects name="Per Room Objects">
       <object>objects\obj_forest</object>
