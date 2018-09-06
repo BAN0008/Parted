@@ -31,6 +31,7 @@ armourcooldown = 240; //the amount of time it takes before your armour regenerat
 global.weaponstate = NONE;
 global.vhealth = 5;  //The player health
 global.armour = 2;   //the player armour
+global.playerlevel = 1; // the player's ingame level
 ///Initialise Variables
 hsp = 0;
 vsp = 0;

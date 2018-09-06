@@ -234,6 +234,9 @@
       <object>objects\obj_wall_s</object>
       <object>objects\obj_rug</object>
     </objects>
+    <objects name="Per Room Objects">
+      <object>objects\obj_forest</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
