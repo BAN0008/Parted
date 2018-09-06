@@ -130,11 +130,6 @@ paid = false;
           <argument>
             <kind>1</kind>
             <string>runningaway();
-
-if(global.activequest = "krenkusslime_fin")
-{
-    global.krenkus_tree = 14;
-}
 </string>
           </argument>
         </arguments>
@@ -281,7 +276,7 @@ if distance_to_object(obj_player) &lt; 128
             case 1: draw_text(x - 64,y - 32,"By the gods, thank you. There are two slimes destroying my house! I can't get in, Can you rid them for me?"); break;
             case 2: draw_text(x - 64,y - 32,"I'm but a humble farmer, looking to support myself in these troubled times..."); break;
             case 3: draw_text(x - 64,y - 32,"Oh my!"); break;
-            case 4: draw_text(x - 64,y - 32,"Thank you a thousand times!"); break;
+            case 4: draw_text(x - 64,y - 32,"I am counting on you.."); break;
             case 5: draw_text(x - 64,y - 32,"I thought you might say so... how is 20 *CURRENCY*?"); break;
             case 6: draw_text(x - 64,y - 32,"Sorry for wasting your time then..."); break;
             case 7: draw_text(x - 64,y - 32,"There are two slimes destroying my house! I can't get in, Can you rid them for me?"); break;
@@ -290,8 +285,9 @@ if distance_to_object(obj_player) &lt; 128
             case 10: draw_text(x - 64,y - 32,"Then it's settled, I'll pay once you have the job done."); break;
             case 11: draw_text(x - 64,y - 32,"Alright, 50 but no higher, just get the job done and see to me afterwards."); break;
             case 12: draw_text(x - 64,y - 32,alreadyactive); break;
-            case 13: draw_text(x - 64,y - 32,"Cheers Mate."); break;
-            case 14: draw_text(x - 64,y - 32,"Aw thats fuckin' good shit mate!"); break;
+            case 13: draw_text(x - 64,y - 32,"Thank you a thousand times!"); break;
+            case 14: draw_text(x - 64,y - 32,"My thanks to you, here is your pay"); break;
+            case 15: draw_text(x - 64,y - 32,alreadyactive + ", i payed you for this!"); break;
         }
     }
 } 
