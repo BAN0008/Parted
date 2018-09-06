@@ -49,7 +49,7 @@ attacked = false;
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>spr_player</sprite>
+            <sprite>spr_playerfront</sprite>
           </argument>
           <argument>
             <kind>0</kind>

@@ -33,6 +33,8 @@
       <sprites name="Central Characters">
         <sprites name="player">
           <sprite>sprites\spr_playerfront</sprite>
+          <sprite>sprites\spr_playerattacking</sprite>
+          <sprite>sprites\spr_playerotherthing</sprite>
           <sprite>sprites\spr_playerback</sprite>
           <sprite>sprites\spr_playerright</sprite>
           <sprite>sprites\spr_playerleft</sprite>

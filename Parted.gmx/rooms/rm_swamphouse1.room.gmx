@@ -203,7 +203,7 @@
     <instance objName="obj_emptybowl" x="416" y="432" name="inst_CB4E271D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="400" y="416" name="inst_A38C862A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="720" y="272" name="inst_DCF5637B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slimesmall1" x="496" y="320" name="inst_D66E3206" locked="0" code="quest = &quot;krenkusslime_fin&quot;;&#xA;quest_true = true;&#xA;if (global.activequest = krenkusslime_fin) &#xA;{&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slimesmall1" x="496" y="320" name="inst_D66E3206" locked="0" code="quest = &quot;krenkusslime_fin&quot;;&#xA;quest_true = true;&#xA;&#xA;if(global.activequest = &quot;krenkusslime_fin&quot;) &#xA;{&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
