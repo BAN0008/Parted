@@ -144,14 +144,14 @@
     <instance objName="obj_booksmall" x="720" y="272" name="inst_AEDB7F41" locked="0" code="content = global.ragnartheded;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="624" y="464" name="inst_8AEFEBF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorboards_swamp" x="544" y="448" name="inst_B65875F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="640" y="480" name="inst_E2907955" locked="0" code="destination_room = rm_betalobby;&#xA;destination_x = 768;&#xA;destination_y = 848;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="640" y="512" name="inst_E2907955" locked="0" code="destination_room = rm_betalobby;&#xA;destination_x = 768;&#xA;destination_y = 848;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dooredge" x="624" y="496" name="inst_C1392B6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_dooredge" x="688" y="496" name="inst_A3871149" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="obj_solid" x="320" y="544" name="inst_EC146BE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorboards_swamp" x="608" y="480" name="inst_FB2FEB9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorboards_swamp" x="640" y="480" name="inst_1BB3EA15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorboards_swamp" x="672" y="480" name="inst_8FE90D8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid" x="640" y="512" name="inst_5E8C15FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="640" y="528" name="inst_5E8C15FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slimesmall1" x="496" y="320" name="inst_D66E3206" locked="0" code="quest = &quot;krenkusslime_fin&quot;;&#xA;quest_true = true;&#xA;&#xA;if(global.activequest = &quot;krenkusslime_fin&quot;) &#xA;{&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_table" x="704" y="256" name="inst_6682C568" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stool" x="672" y="272" name="inst_E5C15FA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -83,6 +83,17 @@
       <sprite>sprites\spr_book_r</sprite>
       <sprite>sprites\spr_smalltable</sprite>
       <sprite>sprites\spr_emptybowl</sprite>
+      <sprites name="Furniture">
+        <sprite>sprites\spr_table</sprite>
+        <sprite>sprites\spr_stool</sprite>
+        <sprite>sprites\spr_crate</sprite>
+        <sprite>sprites\spr_bed</sprite>
+        <sprite>sprites\spr_trapdoor</sprite>
+        <sprite>sprites\spr_wall_b</sprite>
+        <sprite>sprites\spr_wall_s</sprite>
+        <sprite>sprites\spr_rug</sprite>
+        <sprite>sprites\spr_bench</sprite>
+      </sprites>
     </sprites>
     <sprites name="Hentai">
       <sprite>sprites\spr_ah</sprite>
@@ -132,17 +143,6 @@
     </sprites>
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_solid_small</sprite>
-    <sprites name="Furniture">
-      <sprite>sprites\spr_table</sprite>
-      <sprite>sprites\spr_stool</sprite>
-      <sprite>sprites\spr_crate</sprite>
-      <sprite>sprites\spr_bed</sprite>
-      <sprite>sprites\spr_trapdoor</sprite>
-      <sprite>sprites\spr_wall_b</sprite>
-      <sprite>sprites\spr_wall_s</sprite>
-      <sprite>sprites\spr_rug</sprite>
-      <sprite>sprites\spr_bench</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -176,8 +176,6 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_movetutorial</object>
-    <object>objects\obj_welcomebeta</object>
     <object>objects\obj_imusingthistoteachpablo</object>
     <object>objects\obj_dead</object>
     <object>objects\obj_solid</object>
@@ -226,23 +224,27 @@
       </objects>
     </objects>
     <objects name="Clutter">
+      <objects name="Furniture">
+        <object>objects\obj_table</object>
+        <object>objects\obj_stool</object>
+        <object>objects\obj_crate</object>
+        <object>objects\obj_bed</object>
+        <object>objects\obj_trapdoor</object>
+        <object>objects\obj_wall_b</object>
+        <object>objects\obj_wall_s</object>
+        <object>objects\obj_rug</object>
+        <object>objects\obj_bench</object>
+      </objects>
       <object>objects\obj_booksmall</object>
       <object>objects\obj_smalltable</object>
       <object>objects\obj_emptybowl</object>
     </objects>
-    <objects name="Furniture">
-      <object>objects\obj_table</object>
-      <object>objects\obj_stool</object>
-      <object>objects\obj_crate</object>
-      <object>objects\obj_bed</object>
-      <object>objects\obj_trapdoor</object>
-      <object>objects\obj_wall_b</object>
-      <object>objects\obj_wall_s</object>
-      <object>objects\obj_rug</object>
-      <object>objects\obj_bench</object>
-    </objects>
-    <objects name="Per Room Objects">
-      <object>objects\obj_forest</object>
+    <objects name="Other">
+      <objects name="Per Room Objects">
+        <object>objects\obj_forest</object>
+      </objects>
+      <object>objects\obj_movetutorial</object>
+      <object>objects\obj_welcomebeta</object>
     </objects>
   </objects>
   <rooms name="rooms">
