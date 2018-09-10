@@ -242,16 +242,20 @@
       <objects name="Per Room Objects">
         <object>objects\obj_forest</object>
       </objects>
+      <objects name="Hentai">
+        <object>objects\obj_ahh</object>
+        <object>objects\obj_ah</object>
+      </objects>
       <object>objects\obj_movetutorial</object>
       <object>objects\obj_welcomebeta</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
+    <room>rooms\rm_watergut</room>
     <room>rooms\rm_startingshore</room>
     <room>rooms\room0</room>
     <room>rooms\rm_swamphouse1</room>
-    <room>rooms\rm_watergut</room>
   </rooms>
   <constants number="4">
     <constant name="NONE">0</constant>
