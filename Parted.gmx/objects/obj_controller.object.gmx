@@ -37,6 +37,10 @@ global.weather = 1; //0 = Clear, 1 = Rain, 2 = Storm, 3 = Snow, 4 = Dust Storm
 global.hour = 1;
 alarm[1] = 1000;
 
+if (!directory_exists(program_directory + "Books"))
+{
+    directory_create(program_directory + "Books");
+}
 </string>
           </argument>
         </arguments>
@@ -60,6 +64,11 @@ alarm[1] = 1000;
             <string>///Books
 
 global.ragnartheded = "Aww mate, Ragnar the Ded is# Fuckin' sick!";
+
+var ragnar;
+ragnar = file_text_open_write(program_directory + 'Ragnar_the_Dead');
+file_text_write_string(ragnar, 'Oke');
+file_text_close(ragnar);
 </string>
           </argument>
         </arguments>
