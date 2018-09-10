@@ -672,6 +672,7 @@ if(splash_sound = true)
           <argument>
             <kind>1</kind>
             <string>draw_text(x + 32,y - 32,"Active Quest: " + global.activequest);
+
 draw_self();
 </string>
           </argument>
