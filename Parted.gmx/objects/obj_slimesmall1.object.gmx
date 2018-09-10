@@ -85,6 +85,28 @@ quest = "empty";    //The quest the object is related to
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -109,21 +131,23 @@ if (jump_cooldown &gt; 0)
 }
 else
 {
-    if (!collision_line(x,y, obj_player.x, obj_player.y, obj_solid, 0, 1))
+    if (!collision_line(x,y, obj_player.x, obj_player.y, obj_solid, 0, 1) &amp;&amp; distance_to_object(obj_player) &lt; 256)
     {
-        if (distance_to_object(obj_player) &lt; 256)
+        var vx = (obj_player.x - x) + irandom_range(-jump_accuracy, jump_accuracy);
+        var vy = (obj_player.y - y) + irandom_range(-jump_accuracy, jump_accuracy);
+        var length = sqrt((vx * vx) + (vy * vy));
+        audio_play_sound(choose(snd_slime1,snd_slime2,snd_slime3),30,false);
+        if (view_distance &lt;= 0 || length &lt; view_distance)
         {
-            var vx = (obj_player.x - x) + irandom_range(-jump_accuracy, jump_accuracy);
-            var vy = (obj_player.y - y) + irandom_range(-jump_accuracy, jump_accuracy);
-            var length = sqrt((vx * vx) + (vy * vy));
-            audio_play_sound(choose(snd_slime1,snd_slime2,snd_slime3),30,false);
-            if (view_distance &lt;= 0 || length &lt; view_distance)
-            {
-                jump_cooldown = room_speed * jump_max_cooldown;
-                hsp = (vx / length) * jump_force;
-                vsp = (vy / length) * jump_force;
-            }
-        } 
+            jump_cooldown = room_speed * jump_max_cooldown;
+            hsp = (vx / length) * jump_force;
+            vsp = (vy / length) * jump_force;
+        }
+    }
+    else if x = hsp &amp;&amp; y = vsp
+    {
+        hsp = irandom_range(-20, 20)
+        vsp = irandom_range(-20, 20)
     }
 }
 
