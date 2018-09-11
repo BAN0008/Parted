@@ -46,6 +46,7 @@
       </sprites>
     </sprites>
     <sprites name="Enemies">
+      <sprite>sprites\spr_bandit1</sprite>
       <sprite>sprites\spr_slimesmall</sprite>
     </sprites>
     <sprites name="Weapons">
@@ -249,6 +250,7 @@
       <object>objects\obj_movetutorial</object>
       <object>objects\obj_welcomebeta</object>
     </objects>
+    <object>objects\obj_bandit1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>

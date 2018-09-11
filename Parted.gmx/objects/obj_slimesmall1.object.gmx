@@ -43,6 +43,7 @@ splash_sound = true;    //Allows the splash sound to play
 sploosh_sound = true    //Allows the water_walk sound to play
 quest_true = false;  //Whether the object is related to a quest
 quest = "empty";    //The quest the object is related to
+enemystate = "wandering" // the current state of the enemy
 </string>
           </argument>
         </arguments>
@@ -131,8 +132,9 @@ if (jump_cooldown &gt; 0)
 }
 else
 {
-    if (!collision_line(x,y, obj_player.x, obj_player.y, obj_solid, 0, 1) &amp;&amp; distance_to_object(obj_player) &lt; 256)
+    if (!collision_line(x,y, obj_player.x, obj_player.y, obj_solid, 0, 1) &amp;&amp; distance_to_object(obj_player) &lt; 640)
     {
+        enemystate = "attacking"
         var vx = (obj_player.x - x) + irandom_range(-jump_accuracy, jump_accuracy);
         var vy = (obj_player.y - y) + irandom_range(-jump_accuracy, jump_accuracy);
         var length = sqrt((vx * vx) + (vy * vy));
