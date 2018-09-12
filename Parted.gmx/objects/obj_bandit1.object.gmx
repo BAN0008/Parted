@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enemystate = "wandering";
+            <string>hsp = 0;
+vsp = 0;
+enemystate = "wandering";
 </string>
           </argument>
         </arguments>
@@ -48,7 +50,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (enemystate)
+            <string>///AI
+switch (enemystate)
 {
     case "wandering":
         if (!collision_line(x, y, obj_player.x, obj_player.y, obj_solid, 1, 1) &amp;&amp; distance_to_object(obj_player) &lt; 640)
@@ -63,6 +66,17 @@
             lastseeny = obj_player.y;
             enemystate = "searching"
         }
+        else
+        {
+            var vx = obj_player.x - x;
+            var vy = obj_player.y - y;
+            var length = sqrt((vx * vx) + (vy * vy));
+            var norm_vx = vx / length;
+            var norm_vy = vy / length;
+            
+            hsp = norm_vx * 10;
+            vsp = norm_vy * 10;
+        }
         break;
     case "searching":
         if (!collision_line(x, y, obj_player.x, obj_player.y, obj_solid, 1, 1))
@@ -71,6 +85,60 @@
         }
         break;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Physics
+for (i = 0; i &lt; abs(hsp); i++)
+{
+    //Check for collision
+    if (!collision_circle(x + (sign(hsp) * 0.4), y, sprite_width / 2, obj_solid, 1, 1))
+    {
+        x += sign(hsp) * 0.4;
+    }
+    else
+    {
+        hsp = 0;
+        break;
+    }
+}
+
+for (i = 0; i &lt; abs(vsp); i++)
+{
+    //Check for collision
+    if (!collision_circle(x, y + (sign(vsp) * 0.4), sprite_width / 2, obj_solid, 1, 1))
+    {
+        y += sign(vsp) * 0.4;
+    }
+    else
+    {
+        vsp = 0;
+        break;
+    }
+}
+
+hsp = hsp * 0.88;
+vsp = vsp * 0.88;
+
+if (hsp &lt; 1 &amp;&amp; hsp &gt; -1) hsp = 0;
+if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
 </string>
           </argument>
         </arguments>

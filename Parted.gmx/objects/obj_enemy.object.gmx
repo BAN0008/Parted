@@ -28,6 +28,7 @@
             <string>global.paused = false
 attack_cooldown = 0;
 global.enemystate = "WANDERING"
+level = irandom_range(global.creaturelevel-1,global.creaturelevel+1)
 </string>
           </argument>
         </arguments>

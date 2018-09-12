@@ -183,6 +183,7 @@
     <object>objects\obj_controller</object>
     <objects name="Enemies">
       <object>objects\obj_slimesmall1</object>
+      <object>objects\obj_bandit1</object>
       <object>objects\obj_enemy</object>
     </objects>
     <objects name="Enviroment Objects">
@@ -250,7 +251,6 @@
       <object>objects\obj_movetutorial</object>
       <object>objects\obj_welcomebeta</object>
     </objects>
-    <object>objects\obj_bandit1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
