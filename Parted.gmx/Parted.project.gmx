@@ -42,6 +42,12 @@
           <sprite>sprites\spr_playerleft_w</sprite>
           <sprite>sprites\spr_playerback_w</sprite>
           <sprite>sprites\spr_playerfront_w</sprite>
+          <sprites name="attacking">
+            <sprite>sprites\spr_attack_front</sprite>
+            <sprite>sprites\spr_attack_back</sprite>
+            <sprite>sprites\spr_attack_right</sprite>
+            <sprite>sprites\spr_attack_left</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
