@@ -28,6 +28,8 @@
             <string>hsp = 0;
 vsp = 0;
 enemystate = "wandering";
+attack_cooldown = 60;
+dmg = 2;
 </string>
           </argument>
         </arguments>
