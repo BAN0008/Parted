@@ -150,6 +150,15 @@
     </sprites>
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_solid_small</sprite>
+    <sprites name="Castle">
+      <sprite>sprites\spr_tower</sprite>
+      <sprite>sprites\spr_tower_top</sprite>
+      <sprite>sprites\spr_castlewall</sprite>
+      <sprite>sprites\spr_stonebridge</sprite>
+      <sprite>sprites\spr_stonebridge_h</sprite>
+      <sprite>sprites\spr_castlewindow</sprite>
+      <sprite>sprites\spr_fountain</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -160,6 +169,13 @@
     <background>background\tle_wateredge</background>
     <background>background\tle_wateredge_in</background>
     <background>background\tle_grass2</background>
+    <backgrounds name="Castle">
+      <background>background\tle_stonepath_b</background>
+      <background>background\tle_stonepath_o</background>
+      <background>background\tle_stonepath_i</background>
+      <background>background\tle_castlefloor_o</background>
+      <background>background\tle_castlefloor</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -257,9 +273,19 @@
       <object>objects\obj_movetutorial</object>
       <object>objects\obj_welcomebeta</object>
     </objects>
+    <objects name="Castle">
+      <object>objects\obj_tower</object>
+      <object>objects\obj_tower_top</object>
+      <object>objects\obj_castlewall</object>
+      <object>objects\obj_stonebridge</object>
+      <object>objects\obj_stonebridge_h</object>
+      <object>objects\obj_castlewindow</object>
+      <object>objects\obj_fountain</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
+    <room>rooms\rm_castle_test</room>
     <room>rooms\rm_watergut</room>
     <room>rooms\rm_startingshore</room>
     <room>rooms\room0</room>
