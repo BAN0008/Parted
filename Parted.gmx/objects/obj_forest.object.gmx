@@ -25,12 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var slime_count = (sprite_width * sprite_height) / (512 * 512);
+            <string>randomize();
+var enemycount_count = (sprite_width * sprite_height) / (512 * 512);
 enemy = choose(obj_slimesmall1, obj_bandit1);
-creaturelevelmodifier = irandom_range(1,10)
 if (creaturelevelmodifier &gt; 5)
 {
-global.creaturelevel = global.playerlevel + creaturelevelmodifier
+global.creaturelevel = global.playerlevel + irandom_range(1,10)
 }
 else if (creaturelevelmodifier &lt;= 5) &amp;&amp; global.playerlevel &gt; creaturelevelmodifier
 {
@@ -38,7 +38,7 @@ global.creaturelevel = global.playerlevel - creaturelevelmodifier
 }
 randomize();
 
-for (i = 0; i &lt; slime_count; i++)
+for (i = 0; i &lt; enemycount; i++)
 {
     spawn_x = irandom_range(bbox_left, bbox_right);
     spawn_y = irandom_range(bbox_top, bbox_bottom);
