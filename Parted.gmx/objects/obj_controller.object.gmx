@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>image_speed = 0.25;
 global.portals = ds_list_create();
 global.travel = true;
 global.traveling = false;
@@ -42,6 +42,8 @@ if (!directory_exists(program_directory + "Books"))
 {
     directory_create(program_directory + "Books");
 }
+
+//instance_create(0,0,obj_rain);
 </string>
           </argument>
         </arguments>
@@ -232,6 +234,44 @@ if (global.paused)
             draw_sprite(spr_inventory_slot, -1, (80 * (ix + 1)), (80 * (iy + 1)));
         }
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Weather
+texture_set_interpolation(false);
+
+if(global.weather = 1)
+{ 
+    draw_set_alpha(0.75);
+    rain = draw_sprite_stretched(spr_rain,-1,0,0,display_get_gui_width(),display_get_gui_height());
+    rain.depth = -20;
+    draw_set_alpha(1);
+}
+
+if(global.weather = 3)
+{ 
+    draw_set_alpha(0.5);
+    snow = draw_sprite_stretched(spr_snow,-1,0,0,display_get_gui_width(),display_get_gui_height());
+    snow.depth = -20;
+    draw_set_alpha(1);
 }
 </string>
           </argument>

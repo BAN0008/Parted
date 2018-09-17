@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
+            <string>/*randomize();
 var enemycount_count = (sprite_width * sprite_height) / (512 * 512);
 enemy = choose(obj_slimesmall1, obj_bandit1);
 if (creaturelevelmodifier &gt; 5)
@@ -48,7 +48,7 @@ for (i = 0; i &lt; enemycount; i++)
         spawn_y = irandom_range(bbox_top, bbox_bottom);
     }
     instance_create(spawn_x, spawn_y, enemy);
-}
+}*/
 </string>
           </argument>
         </arguments>
