@@ -284,6 +284,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_plains</room>
     <room>rooms\rm_betalobby</room>
     <room>rooms\rm_castle_test</room>
     <room>rooms\rm_watergut</room>

@@ -35,7 +35,7 @@ global.completedquests = ds_list_create();
 alarm[0] = 120;
 global.weather = 1; //0 = Clear, 1 = Rain, 2 = Storm, 3 = Snow, 4 = Dust Storm
 global.hour = 1;
-alarm[1] = 1000;
+alarm[1] = 5000;
 global.trees = "obj_oak1";
 
 if (!directory_exists(program_directory + "Books"))
@@ -95,12 +95,12 @@ file_text_close(ragnar);
             <string>if global.hour &lt;= 12 
 {
     global.hour ++;
-    alarm[1] = 1000;
+    alarm[1] = 5000;
 }
 else if global.hour = 12 
 {
     global.hour --;
-    alarm[1] = 1000;
+    alarm[1] = 5000;
 }
 </string>
           </argument>
