@@ -238,6 +238,15 @@
     </objects>
     <objects name="Buildings">
       <object>objects\obj_brokencottage1</object>
+      <objects name="Castle">
+        <object>objects\obj_tower</object>
+        <object>objects\obj_tower_top</object>
+        <object>objects\obj_castlewall</object>
+        <object>objects\obj_stonebridge</object>
+        <object>objects\obj_stonebridge_h</object>
+        <object>objects\obj_castlewindow</object>
+        <object>objects\obj_fountain</object>
+      </objects>
       <objects name="Blocks">
         <object>objects\obj_floorboards_swamp</object>
         <object>objects\obj_dooredge</object>
@@ -272,15 +281,6 @@
       </objects>
       <object>objects\obj_movetutorial</object>
       <object>objects\obj_welcomebeta</object>
-    </objects>
-    <objects name="Castle">
-      <object>objects\obj_tower</object>
-      <object>objects\obj_tower_top</object>
-      <object>objects\obj_castlewall</object>
-      <object>objects\obj_stonebridge</object>
-      <object>objects\obj_stonebridge_h</object>
-      <object>objects\obj_castlewindow</object>
-      <object>objects\obj_fountain</object>
     </objects>
   </objects>
   <rooms name="rooms">

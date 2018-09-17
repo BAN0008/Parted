@@ -36,6 +36,7 @@ alarm[0] = 120;
 global.weather = 1; //0 = Clear, 1 = Rain, 2 = Storm, 3 = Snow, 4 = Dust Storm
 global.hour = 1;
 alarm[1] = 1000;
+global.trees = "obj_oak1";
 
 if (!directory_exists(program_directory + "Books"))
 {
