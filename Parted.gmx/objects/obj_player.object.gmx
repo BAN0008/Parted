@@ -28,6 +28,7 @@
             <string>// Changable Variables
 persuasion = 10;
 armourcooldown = 240; //the amount of time it takes before your armour regenerates
+global.player_attacking = false;
 global.weaponstate = NONE;
 global.vhealth = 5;  //The player health
 global.armour = 2;   //the player armour
@@ -56,6 +57,8 @@ if(room = room0)
 }
 
 global.travel = true;   //Allows the player to travel between rooms
+
+attacking_sprite = "spr_attack_back or spr_attack_front or spr_attack_left or spr_attack_right";
 </string>
           </argument>
         </arguments>
@@ -300,31 +303,39 @@ alarm[0] = armourcooldown;
             <kind>1</kind>
             <string>///Sprite Index
 
-image_speed = 0.075;
-
-if(keyboard_check(ord("S")))
+if(global.player_attacking = true)
 {
-    sprite_index = spr_playerfront_w;
+    image_speed = 0.1;
 }
 
-if(vsp = 0 and hsp = 0)
+if(global.player_attacking = false)
 {
-    sprite_index = spr_playerfront;
-}
-
-if(keyboard_check(ord("W")))
-{
-    sprite_index = spr_playerback_w;
-}
-
-if(keyboard_check(ord("D")))
-{
-    sprite_index = spr_playerright_w;
-}
-
-if(keyboard_check(ord("A")))
-{
-    sprite_index = spr_playerleft_w;
+    image_speed = 0.075;
+    
+    if(keyboard_check(ord("S")))
+    {
+        sprite_index = spr_playerfront_w;
+    }
+    
+    if(vsp = 0 and hsp = 0)
+    {
+        sprite_index = spr_playerfront;
+    }
+    
+    if(keyboard_check(ord("W")))
+    {
+        sprite_index = spr_playerback_w;
+    }
+    
+    if(keyboard_check(ord("D")))
+    {
+        sprite_index = spr_playerright_w;
+    }
+    
+    if(keyboard_check(ord("A")))
+    {
+        sprite_index = spr_playerleft_w;
+    }
 }
 </string>
           </argument>
@@ -420,6 +431,10 @@ if global.hour &gt;= 6
     }
 }
 
+/*if(sprite_index != attacking_sprite)
+{
+    global.player_attacking = false;
+}*/
 </string>
           </argument>
         </arguments>
@@ -583,7 +598,7 @@ if(splash_sound = true)
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="6" enumb="53">
+    <event eventtype="6" enumb="50">
       <action>
         <libid>1</libid>
         <id>408</id>
@@ -634,11 +649,60 @@ if(splash_sound = true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.weaponstate == NONE)
+            <string>/*if (global.weaponstate == NONE)
 {
     global.weaponstate = CHARGING;
     instance_create(x, y, obj_steel_shortsword);
+}*/
+
+var angle = point_direction(x, y, mouse_x, mouse_y) - 90;
+
+if (angle &gt; 0 and angle &lt; 45)
+{
+    sprite_index = spr_attack_back;
 }
+
+if (angle &gt; 45 and angle &lt; 90)
+{
+    sprite_index = spr_attack_left;
+}
+
+if (angle &gt; 90 and angle &lt; 135)
+{
+    sprite_index = spr_attack_left;
+}
+
+if (angle &gt; 135 and angle &lt; 180)
+{
+    sprite_index = spr_attack_front;
+}
+
+if (angle &gt; 180 and angle &lt; 225)
+{
+    sprite_index = spr_attack_front;
+}
+
+if (angle &gt; 225 and angle &lt; 270)
+{
+    sprite_index = spr_attack_right;
+}
+
+if (angle &gt; 270 and angle &lt; 315)
+{
+    sprite_index = spr_attack_right;
+}
+
+if (angle &gt; 315 and angle &lt; 360)
+{
+    sprite_index = spr_attack_back;
+}
+
+if(angle &lt; 0)
+{
+    angle = 360 + angle;
+}
+
+global.player_attacking = true;
 </string>
           </argument>
         </arguments>
