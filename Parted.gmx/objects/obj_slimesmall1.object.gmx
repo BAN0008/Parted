@@ -33,6 +33,7 @@ hsp = 0;
 vsp = 0;
 vhealth = 3;
 dmg = 1;
+dmg_cool = false;   //Cooldown for damage
 
 jump_force = 20; //Speed and power behind each jump
 jump_max_cooldown = 1.5; //Seconds between jumps
@@ -44,6 +45,7 @@ sploosh_sound = true    //Allows the water_walk sound to play
 quest_true = false;  //Whether the object is related to a quest
 quest = "empty";    //The quest the object is related to
 enemystate = "wandering" // the current state of the enemy
+global.creaturelevel = 2;  //BEREN SET YOUR FUCKING VARIABLES SO THAT SHIT WORKS!!!
 </string>
           </argument>
         </arguments>
@@ -104,6 +106,29 @@ enemystate = "wandering" // the current state of the enemy
           <argument>
             <kind>1</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dmg_cool = false;
+</string>
           </argument>
         </arguments>
       </action>
@@ -297,6 +322,47 @@ if(splash_sound = true)
             <string>gib = instance_create(x,y,obj_slimegib);
 gib.direction = random_range(0,360);
 gib.speed = 4;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.player_attacking = true and dmg_cool = false)
+{
+    vhealth -= 1;
+    dmg_cool = true;
+    alarm[2] = 30;
+        
+        gib = instance_create(x,y,obj_slimegib);
+        gib.direction = random_range(0,360);
+        gib.speed = 4;
+        gib1 = instance_create(x,y,obj_slimegib);
+        gib1.direction = random_range(0,360);
+        gib1.speed = 4;
+        gib2 = instance_create(x,y,obj_slimegib);
+        gib2.direction = random_range(0,360);
+        gib2.speed = 4;
+        gib3 = instance_create(x,y,obj_slimegib);
+        gib3.direction = random_range(0,360);
+        gib3.speed = 4;
+}
 </string>
           </argument>
         </arguments>

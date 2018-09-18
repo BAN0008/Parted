@@ -657,44 +657,24 @@ if(splash_sound = true)
 
 var angle = point_direction(x, y, mouse_x, mouse_y) - 90;
 
-if (angle &gt; 0 and angle &lt; 45)
+if (angle &gt; -45 and angle &lt; 45)
 {
     sprite_index = spr_attack_back;
 }
 
-if (angle &gt; 45 and angle &lt; 90)
+if (angle &gt; 45 and angle &lt; 135)
 {
     sprite_index = spr_attack_left;
 }
 
-if (angle &gt; 90 and angle &lt; 135)
-{
-    sprite_index = spr_attack_left;
-}
-
-if (angle &gt; 135 and angle &lt; 180)
+if (angle &gt; 135 and angle &lt; 225)
 {
     sprite_index = spr_attack_front;
 }
 
-if (angle &gt; 180 and angle &lt; 225)
-{
-    sprite_index = spr_attack_front;
-}
-
-if (angle &gt; 225 and angle &lt; 270)
+if (angle &gt; 225 and angle &lt; 315)
 {
     sprite_index = spr_attack_right;
-}
-
-if (angle &gt; 270 and angle &lt; 315)
-{
-    sprite_index = spr_attack_right;
-}
-
-if (angle &gt; 315 and angle &lt; 360)
-{
-    sprite_index = spr_attack_back;
 }
 
 if(angle &lt; 0)
@@ -720,6 +700,40 @@ global.player_attacking = true;
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sprite_index = spr_attack_front or spr_attack_back or spr_attack_left or spr_attack_right and global.player_attacking = true)
+{
+    global.player_attacking = false;
+    switch(sprite_index)
+    {
+        case spr_attack_front: sprite_index = spr_playerfront; break;
+        case spr_attack_back: sprite_index = spr_playerback; break;
+        case spr_attack_left: sprite_index = spr_playerleft; break;
+        case spr_attack_right: sprite_index = spr_playerright; break;
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="8" enumb="64">
@@ -766,7 +780,7 @@ global.player_attacking = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x + 32,y - 32,"Active Quest: " + global.activequest);
+            <string>//draw_text(x + 32,y - 32,global.player_attacking);
 
 draw_self();
 </string>
