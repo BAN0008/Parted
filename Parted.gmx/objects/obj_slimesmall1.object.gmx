@@ -349,6 +349,7 @@ gib.speed = 4;
     vhealth -= 1;
     dmg_cool = true;
     alarm[2] = 30;
+    audio_play_sound(snd_slime1,20,false);
         
         gib = instance_create(x,y,obj_slimegib);
         gib.direction = random_range(0,360);

@@ -35,6 +35,7 @@ global.armour = 2;   //the player armour
 global.playerlevel = 1; // the player's ingame level
 global.amb = false;
 global.inside = false;
+swing_sound = true;
 depth = 10;
 ///Initialise Variables
 hsp = 0;
@@ -696,6 +697,13 @@ if(angle &lt; 0)
 }
 
 global.player_attacking = true;
+
+if(swing_sound = true)
+{
+    audio_play_sound(snd_swing,20,false);
+    swing_sound = false;
+}
+
 </string>
           </argument>
         </arguments>
@@ -735,6 +743,7 @@ global.player_attacking = true;
             <string>if(sprite_index = spr_attack_front or spr_attack_back or spr_attack_left or spr_attack_right and global.player_attacking = true)
 {
     global.player_attacking = false;
+    swing_sound = true;
     switch(sprite_index)
     {
         case spr_attack_front: sprite_index = spr_playerfront; break;
