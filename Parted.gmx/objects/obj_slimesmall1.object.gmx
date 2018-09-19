@@ -362,6 +362,9 @@ gib.speed = 4;
         gib3 = instance_create(x,y,obj_slimegib);
         gib3.direction = random_range(0,360);
         gib3.speed = 4;
+        
+    vsp = choose(10,-10);
+    hsp = choose(10,-10);
 }
 </string>
           </argument>
