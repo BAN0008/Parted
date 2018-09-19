@@ -33,6 +33,8 @@ global.weaponstate = NONE;
 global.vhealth = 5;  //The player health
 global.armour = 2;   //the player armour
 global.playerlevel = 1; // the player's ingame level
+global.amb = false;
+global.inside = false;
 ///Initialise Variables
 hsp = 0;
 vsp = 0;

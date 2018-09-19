@@ -33,10 +33,12 @@ global.paused = false;
 global.activequest = "empty";
 global.completedquests = ds_list_create();
 alarm[0] = 120;
-global.weather = 0; //0 = Clear, 1 = Rain, 2 = Storm, 3 = Snow, 4 = Dust Storm
+global.weather = 1; //0 = Clear, 1 = Rain, 2 = Storm, 3 = Snow, 4 = Dust Storm
 global.hour = 1;
 alarm[1] = 5000;
 global.trees = "obj_oak1";
+global.amb = false;
+global.inside = false;  //Whether the player is inside or not
 
 if (!directory_exists(program_directory + "Books"))
 {
@@ -204,6 +206,59 @@ if(global.weather = 1)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Ambient Noises
+if(global.amb = false)
+{
+    switch(global.weather)
+    {
+        case 0: 
+            audio_play_sound(snd_ambforest,20,true);
+            audio_stop_sound(snd_ambrain);
+            audio_stop_sound(snd_ambrain_int);
+            global.amb = true;
+            break;
+            
+        case 1: 
+            if(global.inside = false)
+            {
+                audio_play_sound(snd_ambrain,20,true);
+                audio_stop_sound(snd_ambforest);
+                audio_stop_sound(snd_ambrain_int);
+            }
+            if(global.inside = true)
+            {
+                audio_play_sound(snd_ambrain_int,20,true);
+                audio_stop_sound(snd_ambforest);
+                audio_stop_sound(snd_ambrain);
+            }
+            global.amb = true;
+            break;
+    }
+}
+if(room = rm_betalobby)
+{
+    global.inside = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="8" enumb="64">
       <action>
@@ -259,11 +314,14 @@ if (global.paused)
 texture_set_interpolation(false);
 
 if(global.weather = 1)
-{ 
-    draw_set_alpha(0.75);
-    rain = draw_sprite_stretched(spr_rain,-1,0,0,display_get_gui_width(),display_get_gui_height());
-    rain.depth = -20;
-    draw_set_alpha(1);
+{
+    if(global.inside = false)
+    {
+        draw_set_alpha(0.75);
+        rain = draw_sprite_stretched(spr_rain,-1,0,0,display_get_gui_width(),display_get_gui_height());
+        rain.depth = -20;
+        draw_set_alpha(1);
+    }
 }
 
 if(global.weather = 3)

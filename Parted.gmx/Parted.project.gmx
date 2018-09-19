@@ -26,6 +26,13 @@
     <sound>sound\snd_waterwalk8</sound>
     <sound>sound\snd_waterwalk9</sound>
     <sound>sound\snd_waterwalk10</sound>
+    <sounds name="Ambient">
+      <sound>sound\snd_ambforest</sound>
+      <sound>sound\snd_windheavy</sound>
+      <sound>sound\snd_ambtree</sound>
+      <sound>sound\snd_ambrain</sound>
+      <sound>sound\snd_ambrain_int</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Characters">
