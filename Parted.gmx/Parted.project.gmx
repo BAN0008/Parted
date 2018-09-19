@@ -186,6 +186,7 @@
     <scripts name="Items">
       <script>scripts\looting.gml</script>
       <script>scripts\damageplayer.gml</script>
+      <script>scripts\scr_pickup.gml</script>
     </scripts>
     <scripts name="NPC's">
       <script>scripts\runningaway.gml</script>
@@ -277,6 +278,7 @@
       <object>objects\obj_booksmall</object>
       <object>objects\obj_smalltable</object>
       <object>objects\obj_emptybowl</object>
+      <object>objects\obj_testobj</object>
     </objects>
     <objects name="Other">
       <objects name="Per Room Objects">

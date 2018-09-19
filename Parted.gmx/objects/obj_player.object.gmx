@@ -45,6 +45,7 @@ splash_sound = true;    //Allows the splash sound to play
 sploosh_sound = true;    //Allows the water_walk sound to play
 global.worldpos_x = obj_player.x;   //x coordinate of player in the world room
 global.worldpos_y = obj_player.y;   //y coordinate of player in the world room
+global.inventory = ds_list_create();
 
 //audio_sound_gain(snd_ambient_swamp, -10, 10);
 /*audio_play_sound(snd_ambient_swamp,5,true); Plays the ambient swamp sound
@@ -435,6 +436,12 @@ if global.hour &gt;= 6
 {
     global.player_attacking = false;
 }*/
+
+//Inventory
+if(keyboard_check(ord("T")))
+{
+    instance_create(x,y,ds_list_find_value(global.inventory,0));
+}
 </string>
           </argument>
         </arguments>
@@ -780,9 +787,14 @@ global.player_attacking = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_text(x + 32,y - 32,global.player_attacking);
+            <string>//draw_text(x + 32,y - 32,global.inventory);
 
 draw_self();
+
+for (i = 0; i &lt; ds_list_size(global.inventory); i++)
+{
+    draw_text(x, y + i * string_height(global.inventory[| i]), global.inventory[| i]);
+}
 </string>
           </argument>
         </arguments>
