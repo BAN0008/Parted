@@ -487,7 +487,7 @@ show_debug_message(depth);
             <kind>1</kind>
             <string>if(splash = true and (hsp != 0 or vsp != 0))
 {
-    instance_create(x,y + 32,obj_splash);
+    //instance_create(x,y + 32,obj_splash);
     instance_create(x,y + 32,obj_ripple);
     splash = false;
     alarm[11] = 15;

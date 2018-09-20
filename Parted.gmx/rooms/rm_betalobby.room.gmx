@@ -80,7 +80,6 @@ global.amb = false;</code>
     <instance objName="obj_oak1" x="32" y="-32" name="inst_E491103E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="224" y="0" name="inst_5F10D31C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="752" y="560" name="inst_3F91A14B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_oak1" x="880" y="592" name="inst_2F80BE09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="832" y="496" name="inst_8FF890B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="928" y="448" name="inst_FD03C63E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="800" y="416" name="inst_31B23A3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -100,8 +99,6 @@ global.amb = false;</code>
     <instance objName="obj_oak1" x="352" y="1056" name="inst_F3A48100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="64" y="1152" name="inst_15ED7DD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="736" y="736" name="inst_DB7EC933" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_oak1" x="896" y="704" name="inst_6C17C386" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_oak1" x="800" y="672" name="inst_1D10C83D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="896" y="864" name="inst_DE2D37EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="800" y="832" name="inst_F665FC58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_oak1" x="672" y="864" name="inst_573FBC52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -169,6 +166,10 @@ global.amb = false;</code>
     <instance objName="obj_solid" x="624" y="1104" name="inst_B87D1F77" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="816" y="1104" name="inst_4E25524E" locked="0" code="" scaleX="0.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="640" y="1104" name="inst_477F14F8" locked="0" code="" scaleX="5.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cliffside" x="752" y="608" name="inst_D747BA99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cliffside" x="848" y="608" name="inst_155EB158" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cliffside" x="944" y="608" name="inst_D4934F59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cliff" x="656" y="608" name="inst_063CA467" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tle_grass" x="832" y="736" w="32" h="32" xo="32" yo="0" id="10000036" name="inst_E37F9EBE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

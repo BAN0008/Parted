@@ -141,6 +141,7 @@
           <sprite>sprites\spr_waterwaves</sprite>
           <sprite>sprites\spr_goodwater</sprite>
           <sprite>sprites\spr_ripple</sprite>
+          <sprite>sprites\spr_splash</sprite>
         </sprites>
       </sprites>
       <sprites name="Trees">
@@ -154,6 +155,8 @@
       <sprite>sprites\spr_grassdetail2</sprite>
       <sprite>sprites\spr_grassdetail3</sprite>
       <sprite>sprites\spr_rock1</sprite>
+      <sprite>sprites\spr_cliffside</sprite>
+      <sprite>sprites\spr_cliff</sprite>
     </sprites>
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_solid_small</sprite>
@@ -226,6 +229,8 @@
     <objects name="Enviroment Objects">
       <objects name="Rocks">
         <object>objects\obj_rock</object>
+        <object>objects\obj_cliff</object>
+        <object>objects\obj_cliffside</object>
       </objects>
       <objects name="Foliage">
         <object>objects\obj_oakaspen</object>
@@ -244,6 +249,7 @@
       <object>objects\obj_splash</object>
       <object>objects\obj_ripple</object>
       <object>objects\obj_fire</object>
+      <object>objects\obj_lil_splash</object>
     </objects>
     <objects name="NPC's">
       <objects name="beta">
