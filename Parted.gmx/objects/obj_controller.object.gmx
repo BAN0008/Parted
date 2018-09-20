@@ -319,7 +319,7 @@ if(global.weather = 1)
     {
         draw_set_alpha(0.75);
         rain = draw_sprite_stretched(spr_rain,-1,0,0,display_get_gui_width(),display_get_gui_height());
-        rain.depth = -20;
+        //rain.depth = -20;
         draw_set_alpha(1);
     }
 }
@@ -328,7 +328,7 @@ if(global.weather = 3)
 { 
     draw_set_alpha(0.5);
     snow = draw_sprite_stretched(spr_snow,-1,0,0,display_get_gui_width(),display_get_gui_height());
-    snow.depth = -20;
+    //snow.depth = -20;
     draw_set_alpha(1);
 }
 </string>

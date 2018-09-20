@@ -3,7 +3,7 @@
   <spriteName>spr_playerfront</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -35,6 +35,7 @@ global.armour = 2;   //the player armour
 global.playerlevel = 1; // the player's ingame level
 global.amb = false;
 global.inside = false;
+depth = 10;
 ///Initialise Variables
 hsp = 0;
 vsp = 0;
@@ -188,6 +189,7 @@ attacking_sprite = "spr_attack_back or spr_attack_front or spr_attack_left or sp
           <argument>
             <kind>1</kind>
             <string>///Movement
+
 var current_speed = normal_speed;
 
 if (dodge_cooldown &gt; 0)
@@ -241,6 +243,7 @@ vsp = vsp * 0.88;
 
 if (hsp &lt; 1 &amp;&amp; hsp &gt; -1) hsp = 0;
 if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
+
 
 //sprite direction
 //image_angle = point_direction(x, y, mouse_x, mouse_y);
@@ -444,6 +447,7 @@ if(keyboard_check(ord("T")))
 {
     instance_create(x,y,ds_list_find_value(global.inventory,0));
 }
+show_debug_message(depth);
 </string>
           </argument>
         </arguments>
