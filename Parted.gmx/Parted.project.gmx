@@ -122,6 +122,7 @@
       <sprite>sprites\spr_inventory_slot</sprite>
       <sprite>sprites\spr_fire</sprite>
       <sprite>sprites\spr_fire_b</sprite>
+      <sprite>sprites\spr_grave</sprite>
     </sprites>
     <sprites name="Nature">
       <sprites name="Water">
@@ -198,6 +199,10 @@
         <background>background\tle_patch_grass_out</background>
         <background>background\tle_patch_grass_in</background>
       </backgrounds>
+      <background>background\dirt_out</background>
+      <background>background\dirt_in</background>
+      <background>background\dirt</background>
+      <background>background\tle_farm</background>
     </backgrounds>
     <backgrounds name="Old">
       <background>background\bg_grass</background>
@@ -205,6 +210,12 @@
       <background>background\bg_grass2</background>
       <background>background\tle_grass</background>
       <background>background\bk_runag</background>
+    </backgrounds>
+    <backgrounds name="House">
+      <background>background\tle_stonefloor</background>
+      <background>background\tle_stonefloor_out</background>
+      <background>background\tle_stonefloor_in</background>
+      <background>background\tle_woodwall</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -312,6 +323,7 @@
       <object>objects\obj_smalltable</object>
       <object>objects\obj_emptybowl</object>
       <object>objects\obj_testobj</object>
+      <object>objects\obj_grave</object>
     </objects>
     <objects name="Other">
       <objects name="Per Room Objects">
