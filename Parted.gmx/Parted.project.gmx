@@ -143,6 +143,7 @@
           <sprite>sprites\spr_ripple</sprite>
           <sprite>sprites\spr_splash</sprite>
         </sprites>
+        <sprite>sprites\spr_waterfall</sprite>
       </sprites>
       <sprites name="Trees">
         <sprite>sprites\spr_willow1</sprite>
@@ -151,12 +152,17 @@
         <sprite>sprites\spr_oakaspen</sprite>
         <sprite>sprites\spr_oakshadow</sprite>
       </sprites>
-      <sprite>sprites\spr_grassdetail1</sprite>
       <sprite>sprites\spr_grassdetail2</sprite>
       <sprite>sprites\spr_grassdetail3</sprite>
-      <sprite>sprites\spr_rock1</sprite>
-      <sprite>sprites\spr_cliffside</sprite>
-      <sprite>sprites\spr_cliff</sprite>
+      <sprite>sprites\spr_grassdetail1</sprite>
+      <sprites name="Rocks">
+        <sprite>sprites\spr_rock1</sprite>
+        <sprite>sprites\spr_cliffside</sprite>
+        <sprite>sprites\spr_cliff</sprite>
+        <sprite>sprites\spr_cliffwater_right</sprite>
+        <sprite>sprites\spr_cliffwater_left</sprite>
+        <sprite>sprites\spr_cliffbottom</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_solid_small</sprite>
@@ -175,20 +181,30 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_grass</background>
-    <background>background\bk_runag</background>
-    <background>background\tileset1</background>
-    <background>background\bg_grass2</background>
-    <background>background\tle_grass</background>
-    <background>background\tle_wateredge</background>
-    <background>background\tle_wateredge_in</background>
-    <background>background\tle_grass2</background>
     <backgrounds name="Castle">
       <background>background\tle_stonepath_b</background>
       <background>background\tle_stonepath_o</background>
       <background>background\tle_stonepath_i</background>
       <background>background\tle_castlefloor_o</background>
       <background>background\tle_castlefloor</background>
+    </backgrounds>
+    <backgrounds name="Nature">
+      <background>background\tle_grass2</background>
+      <background>background\tle_wateredge_in</background>
+      <background>background\tle_wateredge</background>
+      <background>background\tle_flowers</background>
+      <backgrounds name="Patch Grass">
+        <background>background\tle_patch_grass</background>
+        <background>background\tle_patch_grass_out</background>
+        <background>background\tle_patch_grass_in</background>
+      </backgrounds>
+    </backgrounds>
+    <backgrounds name="Old">
+      <background>background\bg_grass</background>
+      <background>background\tileset1</background>
+      <background>background\bg_grass2</background>
+      <background>background\tle_grass</background>
+      <background>background\bk_runag</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -230,7 +246,10 @@
       <objects name="Rocks">
         <object>objects\obj_rock</object>
         <object>objects\obj_cliff</object>
+        <object>objects\obj_cliffwater_right</object>
+        <object>objects\obj_cliffwater_left</object>
         <object>objects\obj_cliffside</object>
+        <object>objects\obj_cliffbottom</object>
       </objects>
       <objects name="Foliage">
         <object>objects\obj_oakaspen</object>
@@ -250,6 +269,7 @@
       <object>objects\obj_ripple</object>
       <object>objects\obj_fire</object>
       <object>objects\obj_lil_splash</object>
+      <object>objects\obj_waterfall</object>
     </objects>
     <objects name="NPC's">
       <objects name="beta">
