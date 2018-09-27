@@ -216,6 +216,7 @@
       <background>background\tle_stonefloor_out</background>
       <background>background\tle_stonefloor_in</background>
       <background>background\tle_woodwall</background>
+      <background>background\tle_walledge</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
