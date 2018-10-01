@@ -38,6 +38,7 @@ global.inside = false;
 swing_sound = true;
 depth = 10;
 ///Initialise Variables
+val = "empty";
 hsp = 0;
 vsp = 0;
 dodge_cooldown = 0;
@@ -446,7 +447,11 @@ if global.hour &gt;= 6
 //Inventory
 if(keyboard_check(ord("T")))
 {
-    instance_create(x,y,ds_list_find_value(global.inventory,0));
+    for (i = 0; i &lt; ds_list_size(global.inventory); i++)
+    {
+        val = ds_list_find_value(global.inventory,0);
+        //instance_create(x,y,ds_list_find_value(global.inventory,0));
+    }
 }
 show_debug_message(depth);
 </string>
@@ -810,6 +815,8 @@ for (i = 0; i &lt; ds_list_size(global.inventory); i++)
 {
     draw_text(x, y + i * string_height(global.inventory[| i]), global.inventory[| i]);
 }
+
+draw_text(x, y, val);
 </string>
           </argument>
         </arguments>
