@@ -233,6 +233,7 @@
     <scripts name="Interactable's">
       <script>scripts\krenkus_interact.gml</script>
       <script>scripts\peri_interact.gml</script>
+      <script>scripts\grave_interact.gml</script>
       <script>scripts\portal_interact.gml</script>
       <script>scripts\book_interact.gml</script>
     </scripts>
@@ -249,6 +250,9 @@
     <object>objects\obj_solid</object>
     <object>objects\obj_interactable</object>
     <object>objects\obj_controller</object>
+    <objects name="Factions">
+      <object>objects\obj_kradorcitizen</object>
+    </objects>
     <objects name="Enemies">
       <object>objects\obj_slimesmall1</object>
       <object>objects\obj_bandit1</object>

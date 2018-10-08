@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_interactable</parentName>
+  <parentName>obj_kradorcitizen</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,7 +28,6 @@
             <string>nyeh = true;
 speak = true;
 mood = "idle";
-global.paused = false;
 hsp = 0;
 vsp = 0;
 interact_script = peri_interact;
