@@ -269,6 +269,81 @@ if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Combat
+angle = -1;
+
+if (keyboard_check_pressed(ord('I')))
+{
+    angle = 0;
+}
+if (keyboard_check_pressed(ord('J')))
+{
+    angle = 100;
+}
+if (keyboard_check_pressed(ord('K')))
+{
+    angle = 200;
+}
+if (keyboard_check_pressed(ord('L')))
+{
+    angle = 300;
+}
+
+if (angle != -1)
+{
+    if (angle &gt; -45 and angle &lt; 45)
+    {
+        sprite_index = spr_attack_back;
+    }
+    
+    if (angle &gt; 45 and angle &lt; 135)
+    {
+        sprite_index = spr_attack_left;
+    }
+    
+    if (angle &gt; 135 and angle &lt; 225)
+    {
+        sprite_index = spr_attack_front;
+    }
+    
+    if (angle &gt; 225 and angle &lt; 315)
+    {
+        sprite_index = spr_attack_right;
+    }
+    
+    if(angle &lt; 0)
+    {
+        angle = 360 + angle;
+    }
+    
+    global.player_attacking = true;
+    
+    if (swing_sound = true)
+    {
+        audio_play_sound(snd_swing,20,false);
+        swing_sound = false;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Misc
 if(splash_sound = false and !place_meeting(x,y,obj_water))
 {
