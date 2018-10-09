@@ -364,6 +364,8 @@ if (global.armour &lt; 2 &amp;&amp; global.armour &gt; 0 &amp;&amp; alarm[0] &lt
 {
 alarm[0] = armourcooldown;
 }
+
+depth = -20;
 </string>
           </argument>
         </arguments>
