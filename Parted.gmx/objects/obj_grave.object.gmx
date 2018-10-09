@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>interact_script = grave_interact;
+speak = false;
 </string>
           </argument>
         </arguments>
