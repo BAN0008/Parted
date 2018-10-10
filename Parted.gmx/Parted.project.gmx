@@ -35,6 +35,7 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\temp_sprite</sprite>
     <sprites name="Characters">
       <sprite>sprites\spr_krenkus</sprite>
       <sprites name="Central Characters">
@@ -145,6 +146,7 @@
           <sprite>sprites\spr_splash</sprite>
         </sprites>
         <sprite>sprites\spr_waterfall</sprite>
+        <sprite>sprites\spr_river</sprite>
       </sprites>
       <sprites name="Trees">
         <sprite>sprites\spr_willow1</sprite>
@@ -281,6 +283,7 @@
     <objects name="Animation Objects">
       <object>objects\obj_water</object>
       <object>objects\obj_slimegib</object>
+      <object>objects\obj_river</object>
       <object>objects\obj_splash</object>
       <object>objects\obj_ripple</object>
       <object>objects\obj_fire</object>
