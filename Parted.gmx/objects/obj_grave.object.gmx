@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>interact_script = grave_interact;
+            <string>priority = 100
+interact_script = grave_interact;
 speak = false;
 </string>
           </argument>
