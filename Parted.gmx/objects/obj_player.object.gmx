@@ -50,7 +50,6 @@ splash_sound = true;    //Allows the splash sound to play
 sploosh_sound = true;    //Allows the water_walk sound to play
 global.worldpos_x = obj_player.x;   //x coordinate of player in the world room
 global.worldpos_y = obj_player.y;   //y coordinate of player in the world room
-global.inventory = ds_list_create();
 
 //audio_sound_gain(snd_ambient_swamp, -10, 10);
 /*audio_play_sound(snd_ambient_swamp,5,true); Plays the ambient swamp sound
@@ -522,12 +521,13 @@ if global.hour &gt;= 6
 }*/
 
 //Inventory
-if(keyboard_check(ord("T")))
+if(keyboard_check_pressed(ord("T")))
 {
     for (i = 0; i &lt; ds_list_size(global.inventory); i++)
     {
         val = ds_list_find_value(global.inventory,0);
         instance_create(x,y,val);
+        ds_list_delete(global.inventory,0);
         //instance_create(x,y,ds_list_find_value(global.inventory,0));
     }
 }

@@ -1,2 +1,2 @@
-ds_list_add(global.inventory,inv_id);
+ds_list_add(global.inventory,object_index);
 instance_destroy();

@@ -39,6 +39,7 @@ alarm[1] = 5000;
 global.trees = "obj_oak1";
 global.amb = false;
 global.inside = false;  //Whether the player is inside or not
+global.inventory = ds_list_create();
 
 if (!directory_exists(program_directory + "Books"))
 {
