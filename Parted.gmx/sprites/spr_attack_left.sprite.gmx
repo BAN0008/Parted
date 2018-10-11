@@ -17,8 +17,8 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>102</width>
-  <height>102</height>
+  <width>202</width>
+  <height>202</height>
   <frames>
     <frame index="0">images\spr_attack_left_0.png</frame>
     <frame index="1">images\spr_attack_left_1.png</frame>

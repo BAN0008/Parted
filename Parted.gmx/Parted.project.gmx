@@ -165,6 +165,7 @@
         <sprite>sprites\spr_cliffwater_right</sprite>
         <sprite>sprites\spr_cliffwater_left</sprite>
         <sprite>sprites\spr_cliffbottom</sprite>
+        <sprite>sprites\spr_caverock</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_solid</sprite>
@@ -220,6 +221,12 @@
       <background>background\tle_woodwall</background>
       <background>background\tle_walledge</background>
     </backgrounds>
+    <backgrounds name="Dungeon">
+      <background>background\tle_cavewall</background>
+      <background>background\tle_cavehole_i</background>
+      <background>background\tle_cavehole_o</background>
+      <background>background\tle_cavetile</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -263,6 +270,7 @@
     <objects name="Enviroment Objects">
       <objects name="Rocks">
         <object>objects\obj_rock</object>
+        <object>objects\obj_caverock</object>
         <object>objects\obj_cliff</object>
         <object>objects\obj_cliffwater_right</object>
         <object>objects\obj_cliffwater_left</object>
@@ -350,6 +358,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
+    <room>rooms\rm_cave001</room>
     <room>rooms\rm_plains</room>
     <room>rooms\rm_castle_test</room>
     <room>rooms\rm_watergut</room>
