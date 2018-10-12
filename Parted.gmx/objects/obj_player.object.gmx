@@ -616,6 +616,17 @@ if(splash_sound = true)
     hsp += other.hsp;
     vsp += other.vsp;
 }
+
+if(place_meeting(x,y,obj_skeleton))
+{
+    if(obj_skeleton.sprite_index = spr_skeleattack_left)
+    {
+        damageplayer(other.dmg)
+        other.attack_cooldown = room_speed;
+        hsp += other.hsp;
+        vsp += other.vsp;
+    }
+}
 </string>
           </argument>
         </arguments>
