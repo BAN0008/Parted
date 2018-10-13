@@ -161,6 +161,9 @@
         <sprite>sprites\spr_oak1</sprite>
         <sprite>sprites\spr_oakaspen</sprite>
         <sprite>sprites\spr_oakshadow</sprite>
+        <sprite>sprites\spr_cherryblossom</sprite>
+        <sprite>sprites\spr_blossom</sprite>
+        <sprite>sprites\spr_cherryblossom_shadow</sprite>
       </sprites>
       <sprite>sprites\spr_grassdetail2</sprite>
       <sprite>sprites\spr_grassdetail3</sprite>
@@ -290,8 +293,11 @@
         <object>objects\obj_oakaspen</object>
         <object>objects\obj_willow1</object>
         <object>objects\obj_oakshadow</object>
+        <object>objects\obj_cherryblossom_shadow</object>
         <object>objects\obj_willow2</object>
         <object>objects\obj_oak1</object>
+        <object>objects\obj_cherryblossom</object>
+        <object>objects\obj_blossom</object>
       </objects>
     </objects>
     <objects name="Weapons">
