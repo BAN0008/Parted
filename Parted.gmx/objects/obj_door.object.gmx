@@ -39,7 +39,7 @@ if (!found)
     ds_list_add(global.portals, id);
 }
 
-destination_room = rm_swamphouse1;
+destination_room = rm_watergut;
 destination_x = 624;
 destination_y = 448;
 interact_script = portal_interact;
