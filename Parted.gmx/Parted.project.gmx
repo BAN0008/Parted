@@ -97,6 +97,7 @@
     </sprites>
     <sprites name="Book Pages">
       <sprite>sprites\spr_rangartheded</sprite>
+      <sprite>sprites\spr_dialougebackground</sprite>
       <sprite>sprites\spr_bookpage</sprite>
     </sprites>
     <sprites name="Clutter">
