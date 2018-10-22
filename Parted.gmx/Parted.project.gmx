@@ -176,6 +176,7 @@
         <sprite>sprites\spr_cliffwater_left</sprite>
         <sprite>sprites\spr_cliffbottom</sprite>
         <sprite>sprites\spr_caverock</sprite>
+        <sprite>sprites\spr_cave_entrance</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_solid</sprite>
@@ -337,6 +338,7 @@
         <object>objects\obj_plaster_side</object>
         <object>objects\obj_plaster_corner</object>
         <object>objects\obj_door</object>
+        <object>objects\obj_cave_entrance</object>
       </objects>
     </objects>
     <objects name="Clutter">
