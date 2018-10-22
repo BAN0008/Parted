@@ -291,6 +291,14 @@ if (global.paused)
             draw_sprite(spr_inventory_slot, -1, (80 * (ix + 1)), (80 * (iy + 1)));
         }
     }
+    for (i = 0; i &lt; ds_list_size(global.inventory); i++)
+    {
+        dx = i % 8;
+        dx++;
+        dy = floor(i / 8);
+        dy++;
+        draw_sprite_stretched(object_get_sprite(global.inventory[|i]), -1, dx * 80, dy * 80, 48, 48);
+    }
 }
 </string>
           </argument>
