@@ -97,7 +97,6 @@
     </sprites>
     <sprites name="Book Pages">
       <sprite>sprites\spr_rangartheded</sprite>
-      <sprite>sprites\spr_dialougebackground</sprite>
       <sprite>sprites\spr_bookpage</sprite>
     </sprites>
     <sprites name="Clutter">
@@ -195,6 +194,7 @@
       <sprite>sprites\spr_snow</sprite>
     </sprites>
     <sprite>sprites\sprite108</sprite>
+    <sprite>sprites\spr_waypoint</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Castle">
@@ -371,6 +371,7 @@
     <objects name="Weather">
       <object>objects\obj_rain</object>
     </objects>
+    <object>objects\obj_waypoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
