@@ -38,9 +38,9 @@ void main()
     
     vec4 v_vColour2 = v_vColour;
     
-    v_vColour2.r -= distanceToLight;
-    v_vColour2.b -= distanceToLight;
-    v_vColour2.g -= distanceToLight;
+    //v_vColour2.r -= distanceToLight;
+    //v_vColour2.b -= distanceToLight;
+    //v_vColour2.g -= distanceToLight;
     gl_FragColor = v_vColour2 * texture2D( gm_BaseTexture, v_vTexcoord );
 }
 
