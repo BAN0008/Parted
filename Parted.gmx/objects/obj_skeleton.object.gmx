@@ -152,7 +152,7 @@ global.creaturelevel = 2;  //BEREN SET YOUR FUCKING VARIABLES SO THAT SHIT WORKS
           <argument>
             <kind>1</kind>
             <string>/// Movement
-if (jump_cooldown &gt; 0)
+/*if (jump_cooldown &gt; 0)
 {
     jump_cooldown--;
 }
@@ -178,7 +178,8 @@ else
         vsp = choose(-1, -0.5, 0.5, 1) * 15;
         jump_cooldown = room_speed * jump_max_cooldown + irandom_range(-30, 30);
     }
-}
+}*/
+
 
 for (i = 0; i &lt; abs(hsp); i++)
 {
@@ -306,6 +307,86 @@ if(distance_to_object(obj_player) &lt; 128)
         sprite_index = spr_skeleattack_left;
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///New Movement
+case GUARDING:
+        if (x != start_x || y != start_y &amp;&amp; amp; !path_exists(gpath))
+        {
+            gpath = gen_path(grid, x, y, start_x, start_y);
+            path_start(gpath, 4, path_action_stop, true);
+        }
+        else
+        {
+            if (path_exists(gpath))
+            {
+                path_delete(gpath);
+            }
+        }
+        if (distance_to_object(obj_player) &lt; lt; 500 &amp;&amp; amp; !collision_line(x + (sprite_width / 2), y + (sprite_width / 2), obj_player.x + (obj_player.sprite_width / 2), obj_player.y + (obj_player.sprite_height / 2), obj_wall, 0, 1))
+        {
+            show_debug_message("CHASING");
+            state = CHASING;
+            gpath = gen_path(grid, x, y, obj_player.x, obj_player.y);
+            path_start(gpath, 4, path_action_stop, true);
+            //show_debug_message("bi");
+        }
+        drawbar = false;
+        break;
+    case CHASING:
+        if (!collision_line(x + (sprite_width / 2), y + (sprite_width / 2), obj_player.x + (obj_player.sprite_width / 2), obj_player.y + (obj_player.sprite_height / 2), obj_wall, 0, 1))
+        {
+            path_delete(gpath);
+            gpath = gen_path(grid, x, y, obj_player.x, obj_player.y);
+            path_start(gpath, 4, path_action_stop, true);
+        }
+        else
+        {
+            if (path_exists(gpath))
+            {
+                path_end();
+                //show_debug_message("ima kms");
+                path_delete(gpath);
+            }
+            lastx = obj_player.x;
+            lasty = obj_player.y;
+            gpath = gen_path(grid, x, y, lastx, lasty);
+            path_start(gpath, 4, path_action_stop, true);
+            alarm[0] = room_speed * 10;
+            state = SEARCHING;
+            show_debug_message("SEARCHING");
+        }
+        
+        drawbar = true;
+        break;
+    case SEARCHING:
+        if (distance_to_object(obj_player) &amp;lt; 500 &amp;amp;&amp;amp; !collision_line(x + (sprite_width / 2), y + (sprite_width / 2), obj_player.x + (obj_player.sprite_width / 2), obj_player.y + (obj_player.sprite_height / 2), obj_wall, 0, 1))
+        {
+            state = CHASING;
+            gpath = gen_path(grid, x, y, obj_player.x, obj_player.y);
+            path_start(gpath, 4, path_action_stop, true);
+            show_debug_message("CHASING2");
+        }
+        drawbar = true;
+        break;
 </string>
           </argument>
         </arguments>
