@@ -47,6 +47,8 @@ quest_true = false;  //Whether the object is related to a quest
 quest = "empty";    //The quest the object is related to
 enemystate = "wandering" // the current state of the enemy
 global.creaturelevel = 2;  //BEREN SET YOUR FUCKING VARIABLES SO THAT SHIT WORKS!!!
+
+path = noone;
 </string>
           </argument>
         </arguments>
@@ -151,6 +153,41 @@ global.creaturelevel = 2;  //BEREN SET YOUR FUCKING VARIABLES SO THAT SHIT WORKS
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Good Movement
+grid = mp_grid_create(0, 0, room_width / 8, room_height / 8, 8, 8);
+mp_grid_add_instances(grid, obj_solid, true);
+
+if (path_exists(path))
+{
+    path_end();
+    path_delete(path);
+}
+
+path = path_add();
+mp_grid_path(grid, path, x, y, obj_player.x, obj_player.y, true);
+path_start(path, 2, path_action_stop, 1);
+
+mp_grid_destroy(grid);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Movement
 /*if (jump_cooldown &gt; 0)
 {
@@ -180,7 +217,7 @@ else
     }
 }*/
 
-
+/*
 for (i = 0; i &lt; abs(hsp); i++)
 {
     //Check for collision
@@ -214,6 +251,7 @@ vsp = vsp * 0.85;
 
 if (hsp &lt; 1 &amp;&amp; hsp &gt; -1) hsp = 0;
 if (vsp &lt; 1 &amp;&amp; vsp &gt; -1) vsp = 0;
+*/
 </string>
           </argument>
         </arguments>
@@ -328,6 +366,7 @@ if(distance_to_object(obj_player) &lt; 128)
           <argument>
             <kind>1</kind>
             <string>///New Movement
+/*
 case GUARDING:
         if (x != start_x || y != start_y &amp;&amp; amp; !path_exists(gpath))
         {
@@ -387,6 +426,7 @@ case GUARDING:
         }
         drawbar = true;
         break;
+*/
 </string>
           </argument>
         </arguments>
