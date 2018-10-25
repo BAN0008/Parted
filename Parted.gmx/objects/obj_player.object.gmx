@@ -621,7 +621,7 @@ if(place_meeting(x,y,obj_skeleton))
 {
     if(obj_skeleton.sprite_index = spr_skeleattack_left)
     {
-        damageplayer(other.dmg)
+        damageplayer_half(other.dmg)
         other.attack_cooldown = room_speed;
         hsp += other.hsp;
         vsp += other.vsp;

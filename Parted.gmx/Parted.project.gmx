@@ -247,6 +247,7 @@
       <script>scripts\looting.gml</script>
       <script>scripts\damageplayer.gml</script>
       <script>scripts\scr_pickup.gml</script>
+      <script>scripts\damageplayer_half.gml</script>
     </scripts>
     <scripts name="NPC's">
       <script>scripts\runningaway.gml</script>
@@ -290,7 +291,6 @@
         <object>objects\obj_cliffwater_right</object>
         <object>objects\obj_cliffwater_left</object>
         <object>objects\obj_cliffside</object>
-        <object>objects\obj_cliffbottom</object>
       </objects>
       <objects name="Foliage">
         <object>objects\obj_oakaspen</object>
@@ -305,6 +305,7 @@
     </objects>
     <objects name="Weapons">
       <object>objects\obj_steel_shortsword</object>
+      <object>objects\obj_cliffbottom</object>
     </objects>
     <objects name="Animation Objects">
       <object>objects\obj_water</object>
