@@ -149,6 +149,8 @@
         <sprites name="newwater">
           <sprite>sprites\spr_waterwaves</sprite>
           <sprite>sprites\spr_goodwater</sprite>
+          <sprite>sprites\spr_deepwaterwaves</sprite>
+          <sprite>sprites\spr_deepwater</sprite>
           <sprite>sprites\spr_ripple</sprite>
           <sprite>sprites\spr_splash</sprite>
         </sprites>
@@ -208,6 +210,7 @@
     <backgrounds name="Nature">
       <background>background\tle_grass2</background>
       <background>background\tle_wateredge_in</background>
+      <background>background\tle_deepedge</background>
       <background>background\tle_wateredge</background>
       <background>background\tle_flowers</background>
       <backgrounds name="Patch Grass">
@@ -309,6 +312,7 @@
     </objects>
     <objects name="Animation Objects">
       <object>objects\obj_water</object>
+      <object>objects\obj_deepwater</object>
       <object>objects\obj_slimegib</object>
       <object>objects\obj_river</object>
       <object>objects\obj_splash</object>
