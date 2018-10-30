@@ -299,6 +299,20 @@ if (global.paused)
         dy++;
         draw_sprite_stretched(object_get_sprite(global.inventory[|i]), -1, dx * 80, dy * 80, 48, 48);
     }
+    draw_set_colour(c_white);
+    draw_text(16, 16, "Inventory");
+    if (mouse_check_button_pressed(mb_left))
+    {
+        item_no = floor(((mouse_x - 80) / 80) + (((mouse_y - 80) / 80) * 8));
+        if (ds_list_size(global.inventory) &gt; item_no)
+        {
+            temp_object = instance_create(-100, -100, global.inventory[|item_no]);
+            if (temp_object.can_be_used)
+            {
+                script_execute(temp_object.use_script);
+            }
+        }
+    }
 }
 </string>
           </argument>

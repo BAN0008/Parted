@@ -264,6 +264,7 @@
       <script>scripts\portal_interact.gml</script>
       <script>scripts\book_interact.gml</script>
     </scripts>
+    <script>scripts\scr_health_potion.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -380,6 +381,7 @@
       <object>objects\obj_rain</object>
     </objects>
     <object>objects\obj_waypoint</object>
+    <object>objects\obj_health_potion</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>

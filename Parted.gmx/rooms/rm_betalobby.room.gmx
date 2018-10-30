@@ -193,6 +193,7 @@ global.amb = false;</code>
     <instance objName="obj_deepwater" x="192" y="864" name="inst_A77AE7D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_deepwater" x="192" y="928" name="inst_8E3D0686" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_deepwater" x="160" y="928" name="inst_39391F0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health_potion" x="640" y="384" name="inst_F694DACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tle_grass" x="832" y="736" w="32" h="32" xo="32" yo="0" id="10000036" name="inst_E37F9EBE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
