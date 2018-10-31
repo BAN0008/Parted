@@ -150,7 +150,13 @@
           <sprite>sprites\spr_waterwaves</sprite>
           <sprite>sprites\spr_goodwater</sprite>
           <sprite>sprites\spr_deepwaterwaves</sprite>
-          <sprite>sprites\spr_deepwater</sprite>
+          <sprites name="deepwater">
+            <sprite>sprites\spr_deepwater</sprite>
+            <sprite>sprites\up</sprite>
+            <sprite>sprites\right</sprite>
+            <sprite>sprites\left</sprite>
+            <sprite>sprites\down</sprite>
+          </sprites>
           <sprite>sprites\spr_ripple</sprite>
           <sprite>sprites\spr_splash</sprite>
         </sprites>
