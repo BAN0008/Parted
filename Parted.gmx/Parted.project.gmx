@@ -33,6 +33,11 @@
       <sound>sound\snd_ambrain</sound>
       <sound>sound\snd_ambrain_int</sound>
     </sounds>
+    <sounds name="Combat">
+      <sound>sound\snd_clang1</sound>
+      <sound>sound\snd_clang2</sound>
+      <sound>sound\snd_clang3</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\temp_sprite</sprite>

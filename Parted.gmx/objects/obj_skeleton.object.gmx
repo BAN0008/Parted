@@ -454,7 +454,7 @@ case GUARDING:
     vhealth -= 1;
     dmg_cool = true;
     alarm[2] = 30;
-    //audio_play_sound(snd_slime1,20,false);       
+    audio_play_sound(choose(snd_clang1,snd_clang2,snd_clang3),20,false);       
     vsp = choose(5,-5);
     hsp = choose(5,-5);
 }
