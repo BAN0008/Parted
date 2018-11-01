@@ -432,6 +432,37 @@ case GUARDING:
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_col">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.player_attacking = true and dmg_cool = false)
+{
+    vhealth -= 1;
+    dmg_cool = true;
+    alarm[2] = 30;
+    //audio_play_sound(snd_slime1,20,false);       
+    vsp = choose(5,-5);
+    hsp = choose(5,-5);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_water">
       <action>
         <libid>1</libid>
@@ -493,37 +524,6 @@ if(splash_sound = true)
             <string>gib = instance_create(x,y,obj_slimegib);
 gib.direction = random_range(0,360);
 gib.speed = 4;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_player">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(global.player_attacking = true and dmg_cool = false)
-{
-    vhealth -= 1;
-    dmg_cool = true;
-    alarm[2] = 30;
-    //audio_play_sound(snd_slime1,20,false);       
-    vsp = choose(5,-5);
-    hsp = choose(5,-5);
-}
 </string>
           </argument>
         </arguments>

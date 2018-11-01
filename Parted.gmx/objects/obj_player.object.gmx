@@ -293,21 +293,25 @@ if (angle != -1)
     if (angle &gt; -45 and angle &lt; 45)
     {
         sprite_index = spr_attack_back;
+        instance_create(x,y,obj_col_back);
     }
     
     if (angle &gt; 45 and angle &lt; 135)
     {
         sprite_index = spr_attack_left;
+        instance_create(x,y,obj_col_left);
     }
     
     if (angle &gt; 135 and angle &lt; 225)
     {
         sprite_index = spr_attack_front;
+        instance_create(x,y,obj_col_front);
     }
     
     if (angle &gt; 225 and angle &lt; 315)
     {
         sprite_index = spr_attack_right;
+        instance_create(x,y,obj_col_right);
     }
     
     if(angle &lt; 0)
@@ -762,27 +766,32 @@ if(place_meeting(x,y,obj_skeleton))
     global.weaponstate = CHARGING;
     instance_create(x, y, obj_steel_shortsword);
 }*/
+global.attack_col = false;
 
 var angle = point_direction(x, y, mouse_x, mouse_y) - 90;
 
 if (angle &gt; -45 and angle &lt; 45)
 {
     sprite_index = spr_attack_back;
+    instance_create(x,y,obj_col_back);
 }
 
 if (angle &gt; 45 and angle &lt; 135)
 {
     sprite_index = spr_attack_left;
+    instance_create(x,y,obj_col_left);
 }
 
 if (angle &gt; 135 and angle &lt; 225)
 {
     sprite_index = spr_attack_front;
+    instance_create(x,y,obj_col_front);
 }
 
 if (angle &gt; 225 and angle &lt; 315)
 {
     sprite_index = spr_attack_right;
+    instance_create(x,y,obj_col_right);
 }
 
 if(angle &lt; 0)
@@ -838,6 +847,11 @@ if(swing_sound = true)
 {
     global.player_attacking = false;
     swing_sound = true;
+    if(instance_exists(obj_col_back)){instance_destroy(obj_col_back);}
+    if(instance_exists(obj_col_front)){instance_destroy(obj_col_front);}
+    if(instance_exists(obj_col_left)){instance_destroy(obj_col_left);}
+    if(instance_exists(obj_col_right)){instance_destroy(obj_col_right);}
+    
     switch(sprite_index)
     {
         case spr_attack_front: sprite_index = spr_playerfront; break;
@@ -897,6 +911,7 @@ if(swing_sound = true)
           <argument>
             <kind>1</kind>
             <string>//draw_text(x + 32,y - 32,global.inventory);
+//draw_text(x+32,y,global.attack_col);
 
 draw_self();
 

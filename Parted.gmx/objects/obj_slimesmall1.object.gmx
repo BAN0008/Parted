@@ -260,6 +260,95 @@ if(vhealth &lt;= 0 and quest_true = true)
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Attack Collision
+/*if(global.player_attacking = true and dmg_cool = false)
+{
+    vhealth -= 1;
+    dmg_cool = true;
+    alarm[2] = 30;
+    audio_play_sound(snd_slime1,20,false);
+        
+        gib = instance_create(x,y,obj_slimegib);
+        gib.direction = random_range(0,360);
+        gib.speed = 4;
+        gib1 = instance_create(x,y,obj_slimegib);
+        gib1.direction = random_range(0,360);
+        gib1.speed = 4;
+        gib2 = instance_create(x,y,obj_slimegib);
+        gib2.direction = random_range(0,360);
+        gib2.speed = 4;
+        gib3 = instance_create(x,y,obj_slimegib);
+        gib3.direction = random_range(0,360);
+        gib3.speed = 4;
+        
+    vsp = choose(10,-10);
+    hsp = choose(10,-10);
+}*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_col">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.player_attacking = true and dmg_cool = false)
+{
+    vhealth -= 1;
+    dmg_cool = true;
+    alarm[2] = 30;
+    audio_play_sound(snd_slime1,20,false);
+        
+        gib = instance_create(x,y,obj_slimegib);
+        gib.direction = random_range(0,360);
+        gib.speed = 4;
+        gib1 = instance_create(x,y,obj_slimegib);
+        gib1.direction = random_range(0,360);
+        gib1.speed = 4;
+        gib2 = instance_create(x,y,obj_slimegib);
+        gib2.direction = random_range(0,360);
+        gib2.speed = 4;
+        gib3 = instance_create(x,y,obj_slimegib);
+        gib3.direction = random_range(0,360);
+        gib3.speed = 4;
+        
+    vsp = choose(10,-10);
+    hsp = choose(10,-10);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_water">
       <action>
@@ -322,51 +411,6 @@ if(splash_sound = true)
             <string>gib = instance_create(x,y,obj_slimegib);
 gib.direction = random_range(0,360);
 gib.speed = 4;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_player">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(global.player_attacking = true and dmg_cool = false)
-{
-    vhealth -= 1;
-    dmg_cool = true;
-    alarm[2] = 30;
-    audio_play_sound(snd_slime1,20,false);
-        
-        gib = instance_create(x,y,obj_slimegib);
-        gib.direction = random_range(0,360);
-        gib.speed = 4;
-        gib1 = instance_create(x,y,obj_slimegib);
-        gib1.direction = random_range(0,360);
-        gib1.speed = 4;
-        gib2 = instance_create(x,y,obj_slimegib);
-        gib2.direction = random_range(0,360);
-        gib2.speed = 4;
-        gib3 = instance_create(x,y,obj_slimegib);
-        gib3.direction = random_range(0,360);
-        gib3.speed = 4;
-        
-    vsp = choose(10,-10);
-    hsp = choose(10,-10);
-}
 </string>
           </argument>
         </arguments>

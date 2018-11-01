@@ -55,6 +55,12 @@
             <sprite>sprites\spr_attack_back</sprite>
             <sprite>sprites\spr_attack_right</sprite>
             <sprite>sprites\spr_attack_left</sprite>
+            <sprites name="col">
+              <sprite>sprites\spr_left_col</sprite>
+              <sprite>sprites\spr_col_front</sprite>
+              <sprite>sprites\spr_col_back</sprite>
+              <sprite>sprites\spr_col_right</sprite>
+            </sprites>
           </sprites>
         </sprites>
       </sprites>
@@ -392,6 +398,13 @@
     </objects>
     <object>objects\obj_waypoint</object>
     <object>objects\obj_health_potion</object>
+    <objects name="col">
+      <object>objects\obj_col_right</object>
+      <object>objects\obj_col_left</object>
+      <object>objects\obj_col_back</object>
+      <object>objects\obj_col_front</object>
+      <object>objects\obj_col</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_betalobby</room>
