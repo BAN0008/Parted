@@ -1,0 +1,9 @@
+[OPTIONS]
+
+name = default;
+sprite = default;
+value = 1;
+
+[CONTENTS]
+
+stuff...
