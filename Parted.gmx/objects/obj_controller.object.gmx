@@ -303,7 +303,7 @@ if (global.paused)
     draw_text(16, 16, "Inventory");
     if (mouse_check_button_pressed(mb_left))
     {
-        item_no = floor(((mouse_x - 80) / 80) + (((mouse_y - 80) / 80) * 8));
+        item_no = (floor((mouse_x - 80) / 80) + (floor((mouse_y - 80) / 80) * 8));
         if (ds_list_size(global.inventory) &gt; item_no)
         {
             temp_object = instance_create(-100, -100, global.inventory[|item_no]);
