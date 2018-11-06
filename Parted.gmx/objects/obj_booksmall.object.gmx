@@ -53,7 +53,7 @@ image_speed = 0.1;
             <kind>1</kind>
             <string>if(open = true)
 {
-    if(keyboard_check(vk_tab))
+    if(keyboard_check(vk_escape))
     {
         open = false;
         //Unpause room here
