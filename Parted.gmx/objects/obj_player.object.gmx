@@ -37,6 +37,7 @@ global.amb = false;
 global.inside = false;
 swing_sound = true;
 depth = 10;
+global.money = 10;
 ///Initialise Variables
 val = "empty";
 hsp = 0;
@@ -613,22 +614,25 @@ if(splash_sound = true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (other.attack_cooldown &lt;= 0)
+            <string>if(global.blocking = false)
 {
-    damageplayer(other.dmg)
-    other.attack_cooldown = room_speed;
-    hsp += other.hsp;
-    vsp += other.vsp;
-}
-
-if(place_meeting(x,y,obj_skeleton))
-{
-    if(obj_skeleton.sprite_index = spr_skeleattack_left)
+        if (other.attack_cooldown &lt;= 0)
     {
-        damageplayer_half(other.dmg)
+        damageplayer(other.dmg)
         other.attack_cooldown = room_speed;
         hsp += other.hsp;
         vsp += other.vsp;
+    }
+    
+    if(place_meeting(x,y,obj_skeleton))
+    {
+        if(obj_skeleton.sprite_index = spr_skeleattack_left)
+        {
+            damageplayer_half(other.dmg)
+            other.attack_cooldown = room_speed;
+            hsp += other.hsp;
+            vsp += other.vsp;
+        }
     }
 }
 </string>
@@ -826,6 +830,62 @@ if(swing_sound = true)
         <isnot>0</isnot>
       </action>
     </event>
+    <event eventtype="6" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var angle = point_direction(x, y, mouse_x, mouse_y) - 90;
+
+if (angle &gt; -45 and angle &lt; 45)
+{
+    sprite_index = spr_attack_back;
+    instance_create(x,y,obj_col_back);
+    global.blocking = true;
+}
+
+if (angle &gt; 45 and angle &lt; 135)
+{
+    sprite_index = spr_attack_left;
+    instance_create(x,y,obj_col_left);
+    global.blocking = true;
+}
+
+if (angle &gt; 135 and angle &lt; 225)
+{
+    sprite_index = spr_attack_front;
+    instance_create(x,y,obj_col_front);
+    global.blocking = true;
+}
+
+if (angle &gt; 225 and angle &lt; 315)
+{
+    sprite_index = spr_attack_right;
+    instance_create(x,y,obj_col_right);
+    global.blocking = true;
+}
+
+if(angle &lt; 0)
+{
+    angle = 360 + angle;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="7">
       <action>
         <libid>1</libid>
@@ -861,6 +921,10 @@ if(swing_sound = true)
     }
 }
 
+if(global.blocking = true)
+{
+    global.blocking = false;
+}
 </string>
           </argument>
         </arguments>
