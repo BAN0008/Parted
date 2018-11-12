@@ -1,4 +1,4 @@
-## To do list
+# To do list
 
 - make the inventory good.
 - add a trading screen.
@@ -6,3 +6,8 @@
 - make bandit work well.
 - add enviromental collision objects(cliffs, forests, deepwater)
 - add health potions
+- 
+
+## Working on it
+
+## Finished
