@@ -41,6 +41,9 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\temp_sprite</sprite>
+    <sprites name="Consumables">
+      <sprite>sprites\spr_healthpotion</sprite>
+    </sprites>
     <sprites name="Characters">
       <sprite>sprites\spr_krenkus</sprite>
       <sprites name="Central Characters">
