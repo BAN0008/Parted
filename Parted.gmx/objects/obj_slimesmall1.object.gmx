@@ -11,6 +11,20 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>604</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_inherited</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -31,7 +45,7 @@ image_speed = .1;
 jump_cooldown = 0;
 hsp = 0;
 vsp = 0;
-vhealth = 3;
+vhealth = level / 4;
 dmg = 1;
 dmg_cool = false;   //Cooldown for damage
 
@@ -45,24 +59,9 @@ sploosh_sound = true    //Allows the water_walk sound to play
 quest_true = false;  //Whether the object is related to a quest
 quest = "empty";    //The quest the object is related to
 enemystate = "wandering" // the current state of the enemy
-global.creaturelevel = 2;  //BEREN SET YOUR FUCKING VARIABLES SO THAT SHIT WORKS!!!
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>604</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_inherited</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="2" enumb="11">
