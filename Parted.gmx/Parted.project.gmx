@@ -413,6 +413,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_world</room>
     <room>rooms\rm_betalobby</room>
     <room>rooms\rm_cave001</room>
     <room>rooms\rm_plains</room>
@@ -421,6 +422,8 @@
     <room>rooms\rm_startingshore</room>
     <room>rooms\room0</room>
     <room>rooms\rm_swamphouse1</room>
+    <room>rooms\rm_oldcabin1</room>
+    <room>rooms\rm_cave002</room>
   </rooms>
   <constants number="4">
     <constant name="NONE">0</constant>
