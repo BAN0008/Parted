@@ -246,6 +246,7 @@
       <background>background\dirt_in</background>
       <background>background\dirt</background>
       <background>background\tle_farm</background>
+      <background>background\tle_path</background>
     </backgrounds>
     <backgrounds name="Old">
       <background>background\bg_grass</background>
@@ -370,7 +371,7 @@
         <object>objects\obj_cave_entrance</object>
       </objects>
     </objects>
-    <objects name="Clutter">
+    <objects name="Objects">
       <objects name="Furniture">
         <object>objects\obj_table</object>
         <object>objects\obj_stool</object>
@@ -383,8 +384,6 @@
         <object>objects\obj_bench</object>
       </objects>
       <object>objects\obj_booksmall</object>
-      <object>objects\obj_smalltable</object>
-      <object>objects\obj_emptybowl</object>
       <object>objects\obj_testobj</object>
       <object>objects\obj_grave</object>
     </objects>

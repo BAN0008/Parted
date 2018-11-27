@@ -52,9 +52,9 @@ global.amb = false;</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_booksmall" x="720" y="272" name="inst_AEDB7F41" locked="0" code="content = global.ragnartheded;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_booksmall" x="720" y="272" name="inst_AEDB7F41" locked="0" code="content = global.cavenote01;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="656" y="432" name="inst_8AEFEBF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="640" y="512" name="inst_E2907955" locked="0" code="destination_room = rm_world;&#xA;destination_x = 992;&#xA;destination_y = 16064;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="640" y="512" name="inst_E2907955" locked="0" code="destination_room = rm_world;&#xA;destination_x = 992;&#xA;destination_y = 16094;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dooredge" x="624" y="496" name="inst_C1392B6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_dooredge" x="688" y="496" name="inst_A3871149" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="obj_solid" x="320" y="544" name="inst_EC146BE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -110,9 +110,10 @@ image_speed = 0.1;
             <kind>1</kind>
             <string>if(open = true)
 {
-    page = draw_sprite(spr_bookpage,0,200,80);
+    page = draw_sprite(spr_bookpage,0,960,540);
     page.depth = 10;
-    draw_text(512,256,content);
+    draw_set_font(fnt_standard)
+    draw_text(820,280,content);
 }
 </string>
           </argument>

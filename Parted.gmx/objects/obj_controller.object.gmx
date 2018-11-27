@@ -71,6 +71,7 @@ if (!directory_exists(program_directory + "Books"))
             <string>///Books
 
 global.ragnartheded = "Aww mate, Ragnar the Ded is# Fuckin' sick!";
+global.cavenote01 = "Take the treasure from the cave# against the cliffs north of here.";
 
 var ragnar;
 ragnar = file_text_open_write(program_directory + 'Ragnar_the_Dead');

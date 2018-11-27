@@ -42,13 +42,13 @@
   </backgrounds>
   <views>
     <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1280" hview="720" xport="0" yport="0" wport="1920" hport="1080" hborder="800" vborder="1200" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="obj_controller" x="128" y="16256" name="inst_92642750" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -208,6 +208,15 @@
     <instance objName="obj_brokencottage1" x="896" y="15872" name="inst_B4BDBB4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="992" y="16032" name="inst_D3E59109" locked="0" code="destination_room = rm_oldcabin1;&#xA;" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_cave_entrance" x="768" y="15200" name="inst_AC052399" locked="0" code="destination_room = rm_cave002;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grave" x="768" y="15424" name="inst_D42D5368" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grave" x="864" y="15424" name="inst_A88CEBC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grave" x="992" y="15424" name="inst_B5976F99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grave" x="1088" y="15424" name="inst_14441901" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grave" x="992" y="15584" name="inst_7940C4FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grave" x="1088" y="15584" name="inst_C57602E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grave" x="864" y="15584" name="inst_3FA4F864" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grave" x="768" y="15584" name="inst_7BA63AFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bench" x="576" y="15680" name="inst_DA843369" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tle_grass2" x="288" y="16032" w="32" h="32" xo="0" yo="0" id="10004807" name="inst_7809FC3C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -269,16 +278,11 @@
     <tile bgName="tle_wateredge" x="608" y="15488" w="32" h="32" xo="64" yo="0" id="10004865" name="inst_210DC183" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_wateredge" x="640" y="15520" w="32" h="32" xo="64" yo="0" id="10004866" name="inst_334F54BF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_wateredge" x="672" y="15552" w="32" h="32" xo="64" yo="0" id="10004867" name="inst_42D6BAB1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="576" y="15776" w="32" h="32" xo="32" yo="0" id="10004868" name="inst_0C17F0AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="512" y="15808" w="32" h="32" xo="32" yo="0" id="10004869" name="inst_E6E738F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="640" y="15904" w="32" h="32" xo="32" yo="0" id="10004871" name="inst_7874F56A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="800" y="15744" w="32" h="32" xo="32" yo="0" id="10004872" name="inst_77289683" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="768" y="15680" w="32" h="32" xo="32" yo="0" id="10004873" name="inst_0EEAD48B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="768" y="15840" w="32" h="32" xo="32" yo="0" id="10004874" name="inst_E0B6CA3D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="448" y="15968" w="32" h="32" xo="32" yo="0" id="10004875" name="inst_0808905A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="384" y="16032" w="32" h="32" xo="32" yo="0" id="10004877" name="inst_98AB734A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="512" y="15936" w="32" h="32" xo="32" yo="0" id="10004878" name="inst_C1070B8C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="640" y="15872" w="32" h="32" xo="32" yo="0" id="10004879" name="inst_DE23DC2D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="320" y="15936" w="32" h="32" xo="32" yo="0" id="10004880" name="inst_4C0DFF1A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="160" y="15936" w="32" h="32" xo="32" yo="0" id="10004881" name="inst_E0CDD8B4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="160" y="15840" w="32" h="32" xo="32" yo="0" id="10004882" name="inst_930B3435" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -313,42 +317,23 @@
     <tile bgName="tle_grass2" x="704" y="15488" w="32" h="32" xo="32" yo="0" id="10004915" name="inst_F5F3E5B5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="736" y="15552" w="32" h="32" xo="32" yo="0" id="10004916" name="inst_A06ADF98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="768" y="15584" w="32" h="32" xo="32" yo="0" id="10004917" name="inst_C5F26DF7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="800" y="15456" w="32" h="32" xo="32" yo="0" id="10004918" name="inst_0BBB9245" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="864" y="15296" w="32" h="32" xo="32" yo="0" id="10004919" name="inst_CC2AECE4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="864" y="15328" w="32" h="32" xo="32" yo="0" id="10004920" name="inst_AA33C101" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="928" y="15360" w="32" h="32" xo="32" yo="0" id="10004921" name="inst_2834890D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="832" y="15456" w="32" h="32" xo="32" yo="0" id="10004922" name="inst_E21F31DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="928" y="15488" w="32" h="32" xo="32" yo="0" id="10004923" name="inst_57563227" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="928" y="15456" w="32" h="32" xo="32" yo="0" id="10004924" name="inst_7FF95546" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="832" y="15584" w="32" h="32" xo="32" yo="0" id="10004925" name="inst_A9097249" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="832" y="15680" w="32" h="32" xo="32" yo="0" id="10004926" name="inst_4F018463" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="832" y="15744" w="32" h="32" xo="32" yo="0" id="10004927" name="inst_A8A94A71" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="704" y="15776" w="32" h="32" xo="32" yo="0" id="10004928" name="inst_D360420C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="640" y="15840" w="32" h="32" xo="32" yo="0" id="10004929" name="inst_C59C347F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="800" y="15872" w="32" h="32" xo="32" yo="0" id="10004930" name="inst_5723303F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="864" y="15712" w="32" h="32" xo="32" yo="0" id="10004931" name="inst_3DCBBA55" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="704" y="15936" w="32" h="32" xo="32" yo="0" id="10004932" name="inst_D9C6E457" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="480" y="16032" w="32" h="32" xo="32" yo="0" id="10004933" name="inst_C073F36A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="608" y="16032" w="32" h="32" xo="32" yo="0" id="10004934" name="inst_A4FAB3E3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="896" y="15968" w="32" h="32" xo="32" yo="0" id="10004935" name="inst_B998B5A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="864" y="15904" w="32" h="32" xo="32" yo="0" id="10004936" name="inst_FF02EE88" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="736" y="16000" w="32" h="32" xo="32" yo="0" id="10004937" name="inst_CC7BC2DA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="928" y="15936" w="32" h="32" xo="32" yo="0" id="10004938" name="inst_A8A567E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="960" y="15840" w="32" h="32" xo="32" yo="0" id="10004939" name="inst_76B78A3B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1024" y="15904" w="32" h="32" xo="32" yo="0" id="10004940" name="inst_EC51D0D3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1056" y="15808" w="32" h="32" xo="32" yo="0" id="10004941" name="inst_2EF25626" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="960" y="15648" w="32" h="32" xo="32" yo="0" id="10004942" name="inst_8AC04E2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="960" y="15776" w="32" h="32" xo="32" yo="0" id="10004943" name="inst_29D474EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1088" y="15744" w="32" h="32" xo="32" yo="0" id="10004944" name="inst_36A0DFD3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="992" y="15616" w="32" h="32" xo="32" yo="0" id="10004945" name="inst_4B4C05A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1024" y="15552" w="32" h="32" xo="32" yo="0" id="10004948" name="inst_F0F63733" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1056" y="15648" w="32" h="32" xo="32" yo="0" id="10004949" name="inst_7E8EBCC0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1056" y="15680" w="32" h="32" xo="32" yo="0" id="10004950" name="inst_03D3B2EC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1024" y="15424" w="32" h="32" xo="32" yo="0" id="10004951" name="inst_A23D4150" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="1088" y="15488" w="32" h="32" xo="32" yo="0" id="10004952" name="inst_93AD1713" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1152" y="15456" w="32" h="32" xo="32" yo="0" id="10004953" name="inst_3547B14E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="1088" y="15680" w="32" h="32" xo="32" yo="0" id="10004954" name="inst_791E5CC5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="1120" y="15680" w="32" h="32" xo="32" yo="0" id="10004955" name="inst_CD05CF17" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1152" y="15552" w="32" h="32" xo="32" yo="0" id="10004956" name="inst_DF530552" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1248" y="15424" w="32" h="32" xo="32" yo="0" id="10004957" name="inst_2922483B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1248" y="15552" w="32" h="32" xo="32" yo="0" id="10004958" name="inst_FF56547D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -364,32 +349,16 @@
     <tile bgName="tle_grass2" x="1216" y="15968" w="32" h="32" xo="32" yo="0" id="10004968" name="inst_EAFF5FA2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1152" y="15872" w="32" h="32" xo="32" yo="0" id="10004969" name="inst_24E3C1F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1184" y="15808" w="32" h="32" xo="32" yo="0" id="10004971" name="inst_F13F22F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="832" y="15840" w="32" h="32" xo="0" yo="0" id="10004972" name="inst_8935C618" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="800" y="15808" w="32" h="32" xo="0" yo="0" id="10004973" name="inst_8AE18C67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="928" y="15808" w="32" h="32" xo="0" yo="0" id="10004974" name="inst_0AEA7961" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="960" y="15680" w="32" h="32" xo="0" yo="0" id="10004975" name="inst_61EB8A48" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="928" y="15904" w="32" h="32" xo="0" yo="0" id="10004976" name="inst_4F2E3B93" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1056" y="16000" w="32" h="32" xo="0" yo="0" id="10004977" name="inst_BE01250E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1152" y="15776" w="32" h="32" xo="0" yo="0" id="10004978" name="inst_9AA02D35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="992" y="15744" w="32" h="32" xo="0" yo="0" id="10004979" name="inst_2E6CF4F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="1024" y="15680" w="32" h="32" xo="0" yo="0" id="10004980" name="inst_912CF982" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="960" y="15744" w="32" h="32" xo="0" yo="0" id="10004981" name="inst_3DB7F096" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="960" y="15808" w="32" h="32" xo="0" yo="0" id="10004982" name="inst_0F67A984" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="864" y="16000" w="32" h="32" xo="0" yo="0" id="10004983" name="inst_B8D634E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="640" y="15936" w="32" h="32" xo="0" yo="0" id="10004984" name="inst_B9A1A398" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="800" y="15840" w="32" h="32" xo="0" yo="0" id="10004985" name="inst_A6F39C0A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="864" y="15776" w="32" h="32" xo="0" yo="0" id="10004986" name="inst_D73EBABE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="928" y="15648" w="32" h="32" xo="0" yo="0" id="10004987" name="inst_73AB251A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1024" y="15584" w="32" h="32" xo="0" yo="0" id="10004988" name="inst_49BC9067" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1152" y="15648" w="32" h="32" xo="0" yo="0" id="10004989" name="inst_769910E1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="960" y="15488" w="32" h="32" xo="0" yo="0" id="10004990" name="inst_A6EF6DA9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="1024" y="15648" w="32" h="32" xo="0" yo="0" id="10004991" name="inst_460033C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="928" y="15712" w="32" h="32" xo="0" yo="0" id="10004992" name="inst_947F2184" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="896" y="15616" w="32" h="32" xo="0" yo="0" id="10004993" name="inst_13EEA7F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="704" y="15744" w="32" h="32" xo="0" yo="0" id="10004994" name="inst_C01192B7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="608" y="15776" w="32" h="32" xo="0" yo="0" id="10004995" name="inst_CFC8B96C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="608" y="15840" w="32" h="32" xo="0" yo="0" id="10004996" name="inst_460FC553" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="640" y="15744" w="32" h="32" xo="0" yo="0" id="10004997" name="inst_472A10B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="576" y="15840" w="32" h="32" xo="0" yo="0" id="10004998" name="inst_65A3CF95" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="544" y="15936" w="32" h="32" xo="0" yo="0" id="10004999" name="inst_8390C84D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="384" y="15936" w="32" h="32" xo="0" yo="0" id="10005000" name="inst_A6720762" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -405,26 +374,235 @@
     <tile bgName="tle_grass2" x="320" y="15328" w="32" h="32" xo="0" yo="0" id="10005011" name="inst_154DFEB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="576" y="15296" w="32" h="32" xo="0" yo="0" id="10005012" name="inst_17B64DB6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="736" y="15424" w="32" h="32" xo="0" yo="0" id="10005013" name="inst_668666DF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_grass2" x="768" y="15456" w="32" h="32" xo="0" yo="0" id="10005014" name="inst_E5E64463" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_grass2" x="1056" y="15584" w="32" h="32" xo="0" yo="0" id="10005015" name="inst_2EBCAF20" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="736" y="15744" w="32" h="32" xo="0" yo="0" id="10005016" name="inst_77F682E2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_flowers" x="928" y="15520" w="32" h="32" xo="0" yo="0" id="10005017" name="inst_E235A578" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="96" y="15648" w="32" h="32" xo="0" yo="0" id="10005018" name="inst_D02AA158" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="352" y="15936" w="32" h="32" xo="0" yo="0" id="10005019" name="inst_D76BD552" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="128" y="15328" w="32" h="32" xo="0" yo="0" id="10005020" name="inst_365DEBDD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="736" y="16192" w="32" h="32" xo="0" yo="0" id="10005021" name="inst_237B977C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_flowers" x="768" y="15744" w="32" h="32" xo="32" yo="0" id="10005023" name="inst_FF60A60B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_flowers" x="960" y="15520" w="32" h="32" xo="32" yo="0" id="10005024" name="inst_A9EEE647" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="160" y="15328" w="32" h="32" xo="32" yo="0" id="10005025" name="inst_C5452110" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="768" y="16224" w="32" h="32" xo="64" yo="0" id="10005027" name="inst_E11C6A24" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_flowers" x="768" y="15776" w="32" h="32" xo="64" yo="0" id="10005028" name="inst_9F3D18E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tle_flowers" x="800" y="15392" w="32" h="32" xo="64" yo="0" id="10005029" name="inst_F9D25012" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="96" y="15680" w="32" h="32" xo="64" yo="0" id="10005030" name="inst_D2BBF1D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="160" y="15360" w="32" h="32" xo="64" yo="0" id="10005031" name="inst_CE63BB2D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="768" y="16192" w="32" h="32" xo="32" yo="0" id="10005032" name="inst_D6890156" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_flowers" x="512" y="15712" w="32" h="32" xo="32" yo="0" id="10005033" name="inst_8BE6C315" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_cavewall" x="0" y="15200" w="32" h="96" xo="32" yo="0" id="10005166" name="inst_EA863868" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tle_cavewall" x="704" y="15200" w="32" h="96" xo="32" yo="0" id="10005167" name="inst_91F996CC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="896" y="15648" w="32" h="32" xo="64" yo="32" id="10005168" name="inst_CC3E4BF2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1024" y="15648" w="32" h="32" xo="64" yo="32" id="10005169" name="inst_F723180C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1120" y="15648" w="32" h="32" xo="64" yo="32" id="10005170" name="inst_DDB39C82" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="800" y="15648" w="32" h="32" xo="64" yo="32" id="10005171" name="inst_CF043DC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="800" y="15488" w="32" h="32" xo="64" yo="32" id="10005172" name="inst_4B64C630" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="896" y="15488" w="32" h="32" xo="64" yo="32" id="10005173" name="inst_F03B86D2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1024" y="15488" w="32" h="32" xo="64" yo="32" id="10005174" name="inst_0DACC0F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1120" y="15488" w="32" h="32" xo="64" yo="32" id="10005175" name="inst_98918ADE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1088" y="15648" w="32" h="32" xo="0" yo="32" id="10005176" name="inst_A55F29AC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="864" y="15648" w="32" h="32" xo="0" yo="32" id="10005178" name="inst_1148C90A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="768" y="15648" w="32" h="32" xo="0" yo="32" id="10005179" name="inst_66FDA84A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="768" y="15488" w="32" h="32" xo="0" yo="32" id="10005180" name="inst_66CB0512" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="864" y="15488" w="32" h="32" xo="0" yo="32" id="10005181" name="inst_ADFC65D1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1088" y="15488" w="32" h="32" xo="0" yo="32" id="10005183" name="inst_91D9CBED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1088" y="15616" w="32" h="32" xo="0" yo="0" id="10005185" name="inst_A7A1E79A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1088" y="15456" w="32" h="32" xo="0" yo="0" id="10005186" name="inst_0E8C8290" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="864" y="15456" w="32" h="32" xo="0" yo="0" id="10005188" name="inst_A93EDEC0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="768" y="15456" w="32" h="32" xo="0" yo="0" id="10005189" name="inst_8754A47B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="768" y="15616" w="32" h="32" xo="0" yo="0" id="10005190" name="inst_B0930A5F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="800" y="15616" w="32" h="32" xo="64" yo="0" id="10005191" name="inst_C8D97946" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="800" y="15456" w="32" h="32" xo="64" yo="0" id="10005192" name="inst_279A1952" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1024" y="15456" w="32" h="32" xo="64" yo="0" id="10005194" name="inst_A6CCEAD2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1120" y="15456" w="32" h="32" xo="64" yo="0" id="10005195" name="inst_DCCB827F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1120" y="15616" w="32" h="32" xo="64" yo="0" id="10005196" name="inst_CF556D41" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1024" y="15616" w="32" h="32" xo="64" yo="0" id="10005197" name="inst_1EA2FE7E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="896" y="15616" w="32" h="32" xo="64" yo="0" id="10005198" name="inst_F17E4E36" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="864" y="15616" w="32" h="32" xo="0" yo="0" id="10005199" name="inst_BF951129" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="768" y="15680" w="32" h="32" xo="0" yo="64" id="10005200" name="inst_3A3CBA21" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="768" y="15520" w="32" h="32" xo="0" yo="64" id="10005201" name="inst_243DE098" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="864" y="15520" w="32" h="32" xo="0" yo="64" id="10005202" name="inst_320E3FD0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1088" y="15520" w="32" h="32" xo="0" yo="64" id="10005204" name="inst_CAD503C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1088" y="15680" w="32" h="32" xo="0" yo="64" id="10005205" name="inst_BD9074D1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="864" y="15680" w="32" h="32" xo="0" yo="64" id="10005207" name="inst_A94B1C86" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="800" y="15680" w="32" h="32" xo="64" yo="64" id="10005208" name="inst_EA3F8D82" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="896" y="15680" w="32" h="32" xo="64" yo="64" id="10005209" name="inst_034740F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1024" y="15680" w="32" h="32" xo="64" yo="64" id="10005210" name="inst_15603A87" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1120" y="15680" w="32" h="32" xo="64" yo="64" id="10005211" name="inst_012358B7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1120" y="15520" w="32" h="32" xo="64" yo="64" id="10005212" name="inst_43A8E1D3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="1024" y="15520" w="32" h="32" xo="64" yo="64" id="10005213" name="inst_51FD79E7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="896" y="15520" w="32" h="32" xo="64" yo="64" id="10005214" name="inst_1C71CE49" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_patch_grass_out" x="800" y="15520" w="32" h="32" xo="64" yo="64" id="10005215" name="inst_9C0F3BF0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="16096" w="32" h="32" xo="32" yo="32" id="10005232" name="inst_07F97069" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="16128" w="32" h="32" xo="32" yo="32" id="10005233" name="inst_001CD9EC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="16160" w="32" h="32" xo="32" yo="32" id="10005234" name="inst_282CEC6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="16160" w="32" h="32" xo="32" yo="32" id="10005235" name="inst_4028BECA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="16160" w="32" h="32" xo="32" yo="32" id="10005236" name="inst_B2A21A1F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="16160" w="32" h="32" xo="32" yo="32" id="10005237" name="inst_0F2C7610" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="16160" w="32" h="32" xo="32" yo="32" id="10005238" name="inst_1AEFE9A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="16160" w="32" h="32" xo="32" yo="32" id="10005239" name="inst_A49D26A9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="16128" w="32" h="32" xo="32" yo="32" id="10005240" name="inst_1F456271" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="16128" w="32" h="32" xo="32" yo="32" id="10005241" name="inst_DB51E29F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="16096" w="32" h="32" xo="32" yo="32" id="10005242" name="inst_B4315601" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="16096" w="32" h="32" xo="32" yo="32" id="10005243" name="inst_E5A29D4A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="16064" w="32" h="32" xo="32" yo="32" id="10005244" name="inst_7E14EF91" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="16064" w="32" h="32" xo="32" yo="32" id="10005245" name="inst_858777BC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="16032" w="32" h="32" xo="32" yo="32" id="10005246" name="inst_6326E8DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="16000" w="32" h="32" xo="32" yo="32" id="10005247" name="inst_F60A1CAD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="15968" w="32" h="32" xo="32" yo="32" id="10005248" name="inst_04191DFB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="15936" w="32" h="32" xo="32" yo="32" id="10005249" name="inst_96054FAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="15872" w="32" h="32" xo="32" yo="32" id="10005250" name="inst_A1E7645C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="15904" w="32" h="32" xo="32" yo="32" id="10005251" name="inst_74FD2C24" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="15840" w="32" h="32" xo="32" yo="32" id="10005252" name="inst_CD421FFF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="15840" w="32" h="32" xo="32" yo="32" id="10005253" name="inst_8972D39E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="672" y="15840" w="32" h="32" xo="32" yo="32" id="10005254" name="inst_25DFC77E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="672" y="15808" w="32" h="32" xo="32" yo="32" id="10005255" name="inst_FB81507B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="672" y="15776" w="32" h="32" xo="32" yo="32" id="10005256" name="inst_043DF50B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="640" y="15776" w="32" h="32" xo="32" yo="32" id="10005257" name="inst_B3E398AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="640" y="15744" w="32" h="32" xo="32" yo="32" id="10005258" name="inst_61C9DFB9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="576" y="15744" w="32" h="32" xo="32" yo="32" id="10005259" name="inst_58421E7D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="608" y="15744" w="32" h="32" xo="32" yo="32" id="10005260" name="inst_84DADC1D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15840" w="32" h="32" xo="32" yo="32" id="10005261" name="inst_7CEC8AE7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15808" w="32" h="32" xo="32" yo="32" id="10005262" name="inst_7CF0280C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="15808" w="32" h="32" xo="32" yo="32" id="10005263" name="inst_06CAD9F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="15776" w="32" h="32" xo="32" yo="32" id="10005264" name="inst_9C76180E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="15776" w="32" h="32" xo="32" yo="32" id="10005265" name="inst_6F5DAC52" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="15744" w="32" h="32" xo="32" yo="32" id="10005266" name="inst_1B08F42B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="15744" w="32" h="32" xo="32" yo="32" id="10005267" name="inst_56840625" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="15744" w="32" h="32" xo="32" yo="32" id="10005268" name="inst_F58733E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15744" w="32" h="32" xo="32" yo="32" id="10005269" name="inst_AC2DEC12" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15712" w="32" h="32" xo="32" yo="32" id="10005270" name="inst_9DD83AC0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15744" w="32" h="32" xo="32" yo="32" id="10005271" name="inst_A34EF432" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15680" w="32" h="32" xo="32" yo="32" id="10005272" name="inst_704FAFEC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15648" w="32" h="32" xo="32" yo="32" id="10005273" name="inst_F067D512" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15616" w="32" h="32" xo="32" yo="32" id="10005274" name="inst_EC4BFF86" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15584" w="32" h="32" xo="32" yo="32" id="10005275" name="inst_74402918" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15552" w="32" h="32" xo="32" yo="32" id="10005276" name="inst_0E83A9FE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15520" w="32" h="32" xo="32" yo="32" id="10005277" name="inst_D9F6DD68" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15488" w="32" h="32" xo="32" yo="32" id="10005278" name="inst_1096208E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15456" w="32" h="32" xo="32" yo="32" id="10005279" name="inst_371EC5C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15424" w="32" h="32" xo="32" yo="32" id="10005280" name="inst_4A1AAD24" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15424" w="32" h="32" xo="32" yo="32" id="10005281" name="inst_6F8D224E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15392" w="32" h="32" xo="32" yo="32" id="10005282" name="inst_9B8A54BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="15392" w="32" h="32" xo="32" yo="32" id="10005283" name="inst_E1011954" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="15360" w="32" h="32" xo="32" yo="32" id="10005284" name="inst_AFF5BBBA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="15360" w="32" h="32" xo="32" yo="32" id="10005285" name="inst_0220AB14" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="15360" w="32" h="32" xo="32" yo="32" id="10005286" name="inst_84ADD11C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="15328" w="32" h="32" xo="32" yo="32" id="10005287" name="inst_97D7BD67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="15328" w="32" h="32" xo="32" yo="32" id="10005288" name="inst_6EB9B446" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="15296" w="32" h="32" xo="32" yo="32" id="10005289" name="inst_37BF3264" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="16096" w="32" h="32" xo="0" yo="32" id="10005290" name="inst_43073B32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="16064" w="32" h="32" xo="0" yo="32" id="10005291" name="inst_D21AF36B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="16032" w="32" h="32" xo="0" yo="32" id="10005292" name="inst_CBEF6ECD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="16000" w="32" h="32" xo="0" yo="32" id="10005293" name="inst_9633FF27" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="15968" w="32" h="32" xo="0" yo="32" id="10005294" name="inst_A54B325C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="15936" w="32" h="32" xo="0" yo="32" id="10005295" name="inst_99C65E0B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="15904" w="32" h="32" xo="0" yo="32" id="10005296" name="inst_E9C103DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="544" y="15744" w="32" h="32" xo="0" yo="32" id="10005297" name="inst_1365E7D3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15648" w="32" h="32" xo="0" yo="32" id="10005298" name="inst_31548EE9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15680" w="32" h="32" xo="0" yo="32" id="10005299" name="inst_F1C164FA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15616" w="32" h="32" xo="0" yo="32" id="10005300" name="inst_20A6DB23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15584" w="32" h="32" xo="0" yo="32" id="10005301" name="inst_3DCEC0AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15552" w="32" h="32" xo="0" yo="32" id="10005302" name="inst_1E176DF6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15520" w="32" h="32" xo="0" yo="32" id="10005303" name="inst_9BE801D0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15488" w="32" h="32" xo="0" yo="32" id="10005304" name="inst_F4500136" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15328" w="32" h="32" xo="0" yo="32" id="10005305" name="inst_94D751A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15296" w="32" h="32" xo="0" yo="32" id="10005306" name="inst_9DA01E2A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15424" w="32" h="32" xo="64" yo="32" id="10005308" name="inst_07CBB872" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15456" w="32" h="32" xo="64" yo="32" id="10005309" name="inst_B3B4D591" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15488" w="32" h="32" xo="64" yo="32" id="10005310" name="inst_AAAF43F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15520" w="32" h="32" xo="64" yo="32" id="10005311" name="inst_37A11ED6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15552" w="32" h="32" xo="64" yo="32" id="10005312" name="inst_019F05DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15584" w="32" h="32" xo="64" yo="32" id="10005313" name="inst_BAFDEF38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15616" w="32" h="32" xo="64" yo="32" id="10005314" name="inst_2719DAA1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15648" w="32" h="32" xo="64" yo="32" id="10005315" name="inst_5CE4EF77" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15680" w="32" h="32" xo="64" yo="32" id="10005316" name="inst_32670DFA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15712" w="32" h="32" xo="64" yo="32" id="10005317" name="inst_FAB1C322" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15744" w="32" h="32" xo="64" yo="32" id="10005318" name="inst_A8DF4076" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15904" w="32" h="32" xo="64" yo="32" id="10005319" name="inst_FB25825F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15936" w="32" h="32" xo="64" yo="32" id="10005320" name="inst_73054756" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15968" w="32" h="32" xo="64" yo="32" id="10005321" name="inst_B7FFF977" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="16000" w="32" h="32" xo="64" yo="32" id="10005322" name="inst_F9BF28A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="1024" y="16160" w="32" h="32" xo="64" yo="32" id="10005323" name="inst_EFA76261" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="1024" y="16128" w="32" h="32" xo="64" yo="32" id="10005324" name="inst_76ABADA4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="1024" y="16096" w="32" h="32" xo="64" yo="32" id="10005325" name="inst_73829287" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="16192" w="32" h="32" xo="32" yo="64" id="10005326" name="inst_B3FE58EA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="16192" w="32" h="32" xo="32" yo="64" id="10005327" name="inst_9F23C97F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="16192" w="32" h="32" xo="32" yo="64" id="10005328" name="inst_F1B845C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="16192" w="32" h="32" xo="32" yo="64" id="10005329" name="inst_68388D4A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="16192" w="32" h="32" xo="32" yo="64" id="10005330" name="inst_45C8565B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="16192" w="32" h="32" xo="32" yo="64" id="10005331" name="inst_2F470B89" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="15776" w="32" h="32" xo="32" yo="64" id="10005332" name="inst_E9430F66" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15776" w="32" h="32" xo="32" yo="64" id="10005333" name="inst_26A7ED9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15776" w="32" h="32" xo="32" yo="64" id="10005334" name="inst_7A176C2F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="576" y="15776" w="32" h="32" xo="32" yo="64" id="10005335" name="inst_D600180A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="15328" w="32" h="32" xo="32" yo="0" id="10005337" name="inst_73066870" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="15712" w="32" h="32" xo="32" yo="0" id="10005338" name="inst_03BF2C61" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="15712" w="32" h="32" xo="32" yo="0" id="10005339" name="inst_0F3EAF38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="15712" w="32" h="32" xo="32" yo="0" id="10005340" name="inst_1E420720" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="576" y="15712" w="32" h="32" xo="32" yo="0" id="10005341" name="inst_2FD81335" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="608" y="15712" w="32" h="32" xo="32" yo="0" id="10005342" name="inst_5461BAA5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="640" y="15712" w="32" h="32" xo="32" yo="0" id="10005343" name="inst_9A683483" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="16128" w="32" h="32" xo="32" yo="0" id="10005344" name="inst_5C352735" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="16128" w="32" h="32" xo="32" yo="0" id="10005345" name="inst_0645141B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="1024" y="16192" w="32" h="32" xo="64" yo="64" id="10005346" name="inst_137E0467" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="15872" w="32" h="32" xo="64" yo="64" id="10005347" name="inst_F116BCE5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="15840" w="32" h="32" xo="64" yo="64" id="10005348" name="inst_04DD9B6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="15808" w="32" h="32" xo="64" yo="64" id="10005349" name="inst_A655FDA6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15776" w="32" h="32" xo="64" yo="64" id="10005350" name="inst_04B7BCED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="640" y="15872" w="32" h="32" xo="0" yo="64" id="10005352" name="inst_76921AF6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="608" y="15808" w="32" h="32" xo="0" yo="64" id="10005353" name="inst_88F26021" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="544" y="15776" w="32" h="32" xo="0" yo="64" id="10005354" name="inst_0F1537CB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="16096" w="32" h="32" xo="0" yo="64" id="10005355" name="inst_A29421E3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="16128" w="32" h="32" xo="0" yo="64" id="10005356" name="inst_B1FCDF94" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="16160" w="32" h="32" xo="0" yo="64" id="10005357" name="inst_FC0FBF29" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="16192" w="32" h="32" xo="0" yo="64" id="10005358" name="inst_874D472C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="15424" w="32" h="32" xo="0" yo="64" id="10005359" name="inst_D3C9360D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="15392" w="32" h="32" xo="0" yo="64" id="10005360" name="inst_00D648EC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15360" w="32" h="32" xo="0" yo="64" id="10005361" name="inst_CEB1C5C3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="15296" w="32" h="32" xo="64" yo="0" id="10005362" name="inst_89DA6D7E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="928" y="15328" w="32" h="32" xo="64" yo="0" id="10005363" name="inst_A69D1C8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="960" y="15360" w="32" h="32" xo="64" yo="0" id="10005364" name="inst_1DA1BD70" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="992" y="15392" w="32" h="32" xo="64" yo="0" id="10005365" name="inst_9BF4152A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="672" y="15712" w="32" h="32" xo="64" yo="0" id="10005366" name="inst_00002F42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="15744" w="32" h="32" xo="64" yo="0" id="10005367" name="inst_FC1E715D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="16032" w="32" h="32" xo="64" yo="0" id="10005368" name="inst_AA6F4100" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="16064" w="32" h="32" xo="64" yo="0" id="10005369" name="inst_951F0506" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="864" y="16096" w="32" h="32" xo="64" yo="0" id="10005370" name="inst_A0F8C6AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="544" y="15712" w="32" h="32" xo="0" yo="0" id="10005371" name="inst_B719C094" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="768" y="16032" w="32" h="32" xo="0" yo="32" id="10005372" name="inst_4EF3762F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="800" y="16064" w="32" h="32" xo="0" yo="32" id="10005373" name="inst_AD2C817B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="832" y="16096" w="32" h="32" xo="0" yo="32" id="10005374" name="inst_170CD6BF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="864" y="16128" w="32" h="32" xo="0" yo="32" id="10005375" name="inst_70EE785B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="960" y="16128" w="32" h="32" xo="32" yo="32" id="10005376" name="inst_49289A3C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="736" y="15808" w="32" h="32" xo="32" yo="32" id="10005377" name="inst_FAC6CCDC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="768" y="15776" w="32" h="32" xo="32" yo="32" id="10005378" name="inst_9F49E7E5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="800" y="15744" w="32" h="32" xo="32" yo="32" id="10005379" name="inst_952746D1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="928" y="15712" w="32" h="32" xo="32" yo="32" id="10005380" name="inst_26F0B298" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="864" y="15328" w="32" h="32" xo="0" yo="32" id="10005381" name="inst_E95E885C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="832" y="15296" w="32" h="32" xo="0" yo="32" id="10005382" name="inst_47EBB0ED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="928" y="15360" w="32" h="32" xo="0" yo="32" id="10005383" name="inst_79770F75" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="960" y="15392" w="32" h="32" xo="0" yo="32" id="10005384" name="inst_56AB3643" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="672" y="15744" w="32" h="32" xo="0" yo="32" id="10005385" name="inst_096F600A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="704" y="15808" w="32" h="32" xo="0" yo="32" id="10005386" name="inst_E4598618" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="768" y="15872" w="32" h="32" xo="0" yo="0" id="10005387" name="inst_C2E0CEED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="800" y="15840" w="32" h="32" xo="0" yo="0" id="10005388" name="inst_B8D5F6AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="832" y="15808" w="32" h="32" xo="0" yo="0" id="10005389" name="inst_A4B813CC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="864" y="15776" w="32" h="32" xo="0" yo="0" id="10005390" name="inst_D97C95F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="800" y="16160" w="32" h="32" xo="32" yo="0" id="10005391" name="inst_1888069B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="768" y="16128" w="32" h="32" xo="32" yo="0" id="10005392" name="inst_F1EE4500" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="736" y="16096" w="32" h="32" xo="32" yo="0" id="10005393" name="inst_30976A50" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="608" y="15776" w="32" h="32" xo="32" yo="0" id="10005394" name="inst_0189A34F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="640" y="15808" w="32" h="32" xo="32" yo="0" id="10005395" name="inst_1FA63A55" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="704" y="15872" w="32" h="32" xo="32" yo="0" id="10005396" name="inst_0F4C2976" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="800" y="15360" w="32" h="32" xo="32" yo="0" id="10005397" name="inst_346437A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="864" y="15392" w="32" h="32" xo="32" yo="0" id="10005398" name="inst_369E191F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="896" y="15424" w="32" h="32" xo="32" yo="0" id="10005399" name="inst_CB2B0575" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_o" x="928" y="15456" w="32" h="32" xo="32" yo="0" id="10005400" name="inst_BDED202D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="672" y="15872" w="32" h="32" xo="32" yo="64" id="10005401" name="inst_272B8450" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="640" y="15840" w="32" h="32" xo="0" yo="32" id="10005402" name="inst_FC593B1C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="704" y="15776" w="32" h="32" xo="64" yo="32" id="10005403" name="inst_E446825E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="832" y="15392" w="32" h="32" xo="32" yo="64" id="10005404" name="inst_38346231" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="736" y="15776" w="32" h="32" xo="0" yo="0" id="10005405" name="inst_74B991DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="800" y="15712" w="32" h="32" xo="0" yo="0" id="10005406" name="inst_CC7B2F15" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="768" y="15744" w="32" h="32" xo="0" yo="0" id="10005407" name="inst_781BAD92" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tle_stonepath_i" x="896" y="15456" w="32" h="32" xo="0" yo="64" id="10005408" name="inst_1EA49268" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
